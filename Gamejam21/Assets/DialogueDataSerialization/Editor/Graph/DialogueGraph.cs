@@ -44,7 +44,7 @@ using Subtegral.DialogueSystem.DataContainers;
 
         };
 
-        blackboard.SetPosition(new Rect(x: 10, y: 30, width: 200, height: 300));
+        blackboard.SetPosition(new Rect(this.maxSize.x - 10, y: 30, width: 200, height: 300));
         _graphView.Add(blackboard);
         _graphView.blackboard = blackboard;
     }
@@ -76,7 +76,7 @@ using Subtegral.DialogueSystem.DataContainers;
     private void GenerateMiniMap() {
         var minimap = new MiniMap { anchored = true };
         // this will give 10 px offset from left side
-        var cords = _graphView.contentViewContainer.WorldToLocal(p: new Vector2(this.maxSize.x -10, y: 30));//
+        var cords = _graphView.contentViewContainer.WorldToLocal(p: new Vector2(x: this.maxSize.x -10, y: 30));//
         Debug.Log(this.minSize.x);
         minimap.SetPosition(new Rect(cords.x, cords.y, width: 200, height: 140));
         _graphView.Add(minimap);

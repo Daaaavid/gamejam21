@@ -96,8 +96,6 @@ public class DialogueGraphView : GraphView
         inputPort.portName = "Input";
         dialogueNode.inputContainer.Add(inputPort);
 
-        dialogueNode.styleSheets.Add(Resources.Load<StyleSheet>("Node"));
-
         switch (type) {
             case 0:
                 dialogueNode.title = "End";
@@ -109,6 +107,7 @@ public class DialogueGraphView : GraphView
                 dialogueNode.outputContainer.Add(toggle);
                 break;
             case 1:
+                dialogueNode.styleSheets.Add(Resources.Load<StyleSheet>("NPCNode"));
                 var textField = new TextField(string.Empty);
                 textField.RegisterValueChangedCallback(evt => {
                     dialogueNode.dialogueText = evt.newValue;
@@ -121,6 +120,7 @@ public class DialogueGraphView : GraphView
                 dialogueNode.outputContainer.Add(outPutPort);
                 break;
             case 2:
+                dialogueNode.styleSheets.Add(Resources.Load<StyleSheet>("Node"));
                 dialogueNode.title = "Player Dialogue";
                 var button = new Button(clickEvent: () => { AddChoicePort(dialogueNode); });
                 button.text = "new Choice";
