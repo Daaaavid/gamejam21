@@ -16,57 +16,142 @@ MonoBehaviour:
   - BaseNodeGuid: 2dd6d499-1680-4c0b-b97d-68c6a06588c6
     PortName: Next
     TargetNodeGuid: a21f451a-b658-4463-80c9-dfd3819017b5
-  - BaseNodeGuid: a21f451a-b658-4463-80c9-dfd3819017b5
-    PortName: hello
-    TargetNodeGuid: 8cd6381c-ffb3-4e3e-b702-c478b3ce142f
-  - BaseNodeGuid: a21f451a-b658-4463-80c9-dfd3819017b5
-    PortName: Hey
-    TargetNodeGuid: 8cd6381c-ffb3-4e3e-b702-c478b3ce142f
   - BaseNodeGuid: 8cd6381c-ffb3-4e3e-b702-c478b3ce142f
     PortName: Grumpy
     TargetNodeGuid: 0189ed10-5eba-431a-95de-98c0cca71496
   - BaseNodeGuid: 8cd6381c-ffb3-4e3e-b702-c478b3ce142f
     PortName: Not grumpy
     TargetNodeGuid: 431af6f5-73bb-4821-b278-b98a2894d91b
+  - BaseNodeGuid: a21f451a-b658-4463-80c9-dfd3819017b5
+    PortName: hello
+    TargetNodeGuid: 8cd6381c-ffb3-4e3e-b702-c478b3ce142f
+  - BaseNodeGuid: a21f451a-b658-4463-80c9-dfd3819017b5
+    PortName: Hey
+    TargetNodeGuid: 8cd6381c-ffb3-4e3e-b702-c478b3ce142f
   - BaseNodeGuid: 0189ed10-5eba-431a-95de-98c0cca71496
     PortName: Output
-    TargetNodeGuid: acdeef20-e4a2-4045-a9b4-4085114afd27
+    TargetNodeGuid: 291b8a3a-aaaf-46ce-892c-0be1287514dd
+  - BaseNodeGuid: 291b8a3a-aaaf-46ce-892c-0be1287514dd
+    PortName: I thought we ought to have a converstation about the weather
+    TargetNodeGuid: ef79b025-8ac6-474d-a17b-e23d85a4fb70
+  - BaseNodeGuid: 291b8a3a-aaaf-46ce-892c-0be1287514dd
+    PortName: I wanted to ask you a complicated  question...
+    TargetNodeGuid: ef79b025-8ac6-474d-a17b-e23d85a4fb70
+  - BaseNodeGuid: ef79b025-8ac6-474d-a17b-e23d85a4fb70
+    PortName: Output
+    TargetNodeGuid: a21f451a-b658-4463-80c9-dfd3819017b5
   - BaseNodeGuid: 431af6f5-73bb-4821-b278-b98a2894d91b
+    PortName: Output
+    TargetNodeGuid: a76324f8-22cd-4885-bcc0-f360c67118a5
+  - BaseNodeGuid: 291b8a3a-aaaf-46ce-892c-0be1287514dd
+    PortName: how are you doing?
+    TargetNodeGuid: b7142b2f-c84d-434a-b602-6f7bb8d3f89e
+  - BaseNodeGuid: b7142b2f-c84d-434a-b602-6f7bb8d3f89e
+    PortName: Output
+    TargetNodeGuid: a21f451a-b658-4463-80c9-dfd3819017b5
+  - BaseNodeGuid: a76324f8-22cd-4885-bcc0-f360c67118a5
+    PortName: how are you doing?
+    TargetNodeGuid: a37155b4-34af-48f3-bb2f-e6ef354ebd07
+  - BaseNodeGuid: a37155b4-34af-48f3-bb2f-e6ef354ebd07
+    PortName: Output
+    TargetNodeGuid: acdeef20-e4a2-4045-a9b4-4085114afd27
+  - BaseNodeGuid: a76324f8-22cd-4885-bcc0-f360c67118a5
+    PortName: I wanted to ask you a complicated question...
+    TargetNodeGuid: a6952b92-0b10-4359-8dc6-2aab382d64ef
+  - BaseNodeGuid: a6952b92-0b10-4359-8dc6-2aab382d64ef
+    PortName: Output
+    TargetNodeGuid: 8f1365cd-1486-4717-8466-1ee247d2eba3
+  - BaseNodeGuid: 8f1365cd-1486-4717-8466-1ee247d2eba3
+    PortName: What is the square root of pie?
+    TargetNodeGuid: 3196fbd4-d7a0-43e2-b651-0be680dc8535
+  - BaseNodeGuid: 8f1365cd-1486-4717-8466-1ee247d2eba3
+    PortName: what is the speed of ligth?
+    TargetNodeGuid: 3196fbd4-d7a0-43e2-b651-0be680dc8535
+  - BaseNodeGuid: 3196fbd4-d7a0-43e2-b651-0be680dc8535
     PortName: Output
     TargetNodeGuid: acdeef20-e4a2-4045-a9b4-4085114afd27
   DialogueNodeData:
-  - Guid: acdeef20-e4a2-4045-a9b4-4085114afd27
-    DialogueText: NPC Dialogue
-    Position: {x: 832, y: 116}
-    type: 0
-    succes: 1
   - Guid: 8cd6381c-ffb3-4e3e-b702-c478b3ce142f
     DialogueText: NPC Dialogue
-    Position: {x: 454.4, y: 103.2}
+    Position: {x: 464, y: 84}
     type: 3
     succes: 0
   - Guid: a21f451a-b658-4463-80c9-dfd3819017b5
     DialogueText: NPC Dialogue
-    Position: {x: 210.4, y: 106.399994}
+    Position: {x: 220, y: 88}
     type: 2
     succes: 0
   - Guid: 0189ed10-5eba-431a-95de-98c0cca71496
     DialogueText: What is it?!
-    Position: {x: 628, y: 102.399994}
+    Position: {x: 635.2, y: 84}
     type: 1
     succes: 0
   - Guid: 431af6f5-73bb-4821-b278-b98a2894d91b
     DialogueText: Hello
-    Position: {x: 632, y: 212}
+    Position: {x: 639.2, y: 192.8}
+    type: 1
+    succes: 0
+  - Guid: ef79b025-8ac6-474d-a17b-e23d85a4fb70
+    DialogueText: I am not interested.
+    Position: {x: 644.8, y: -58.399998}
+    type: 1
+    succes: 0
+  - Guid: 291b8a3a-aaaf-46ce-892c-0be1287514dd
+    DialogueText: NPC Dialogue
+    Position: {x: 780, y: 81.600006}
+    type: 2
+    succes: 0
+  - Guid: a76324f8-22cd-4885-bcc0-f360c67118a5
+    DialogueText: NPC Dialogue
+    Position: {x: 784, y: 212}
+    type: 2
+    succes: 0
+  - Guid: b7142b2f-c84d-434a-b602-6f7bb8d3f89e
+    DialogueText: Terrible, now go away!
+    Position: {x: 808.8, y: -60.8}
+    type: 1
+    succes: 0
+  - Guid: a37155b4-34af-48f3-bb2f-e6ef354ebd07
+    DialogueText: oooh, thanks for asking, I am doing quite alright actually.
+    Position: {x: 1220.8, y: 304.80002}
+    type: 1
+    succes: 0
+  - Guid: a6952b92-0b10-4359-8dc6-2aab382d64ef
+    DialogueText: Ask away...
+    Position: {x: 1216.8, y: 202.4}
+    type: 1
+    succes: 0
+  - Guid: acdeef20-e4a2-4045-a9b4-4085114afd27
+    DialogueText: NPC Dialogue
+    Position: {x: 2137.6, y: 314.40002}
+    type: 0
+    succes: 1
+  - Guid: 8f1365cd-1486-4717-8466-1ee247d2eba3
+    DialogueText: NPC Dialogue
+    Position: {x: 1296.8, y: 85.600006}
+    type: 2
+    succes: 0
+  - Guid: 3196fbd4-d7a0-43e2-b651-0be680dc8535
+    DialogueText: That's a great question, but unfortunately I do not know the awnser,
+      perhaps you should google it?
+    Position: {x: 1627.2, y: 88.8}
     type: 1
     succes: 0
   exposedProperties: []
   CommentBlockData:
   - ChildNodes:
-    - 0189ed10-5eba-431a-95de-98c0cca71496
-    - a21f451a-b658-4463-80c9-dfd3819017b5
     - acdeef20-e4a2-4045-a9b4-4085114afd27
     - 8cd6381c-ffb3-4e3e-b702-c478b3ce142f
+    - a21f451a-b658-4463-80c9-dfd3819017b5
+    - 0189ed10-5eba-431a-95de-98c0cca71496
     - 431af6f5-73bb-4821-b278-b98a2894d91b
-    Position: {x: 185.59999, y: 44.00003}
+    - 291b8a3a-aaaf-46ce-892c-0be1287514dd
+    - ef79b025-8ac6-474d-a17b-e23d85a4fb70
+    - a76324f8-22cd-4885-bcc0-f360c67118a5
+    - b7142b2f-c84d-434a-b602-6f7bb8d3f89e
+    - a37155b4-34af-48f3-bb2f-e6ef354ebd07
+    - a6952b92-0b10-4359-8dc6-2aab382d64ef
+    - 8f1365cd-1486-4717-8466-1ee247d2eba3
+    - 3196fbd4-d7a0-43e2-b651-0be680dc8535
+    Position: {x: 196, y: -119.2}
     Title: All the different blocks in action
