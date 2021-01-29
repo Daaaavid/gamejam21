@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
+  m_Name: new Narrative
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 222cf75b-e38b-4791-91f6-f4e5b7e29ccc
+    PortName: Next
+    TargetNodeGuid: 317dc439-a7b9-4287-a9a4-683a7293cfa5
+  - BaseNodeGuid: 317dc439-a7b9-4287-a9a4-683a7293cfa5
+    PortName: Choice 1
+    TargetNodeGuid: f85935ef-a2dc-4231-8c79-e799e067b57c
+  - BaseNodeGuid: f85935ef-a2dc-4231-8c79-e799e067b57c
+    PortName: Choice 3
+    TargetNodeGuid: 317dc439-a7b9-4287-a9a4-683a7293cfa5
+  DialogueNodeData:
+  - Guid: 317dc439-a7b9-4287-a9a4-683a7293cfa5
+    DialogueText: Dialogue Node
+    Position: {x: 212.8, y: 164}
+  - Guid: f85935ef-a2dc-4231-8c79-e799e067b57c
+    DialogueText: Dialogue Node
+    Position: {x: 448, y: 228.8}
+  exposedProperties: []
+  CommentBlockData:
+  - ChildNodes:
+    - 317dc439-a7b9-4287-a9a4-683a7293cfa5
+    - f85935ef-a2dc-4231-8c79-e799e067b57c
+    Position: {x: 187.20001, y: 105.600006}
+    Title: Comment Block
