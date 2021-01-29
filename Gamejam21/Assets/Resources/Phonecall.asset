@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
+  m_Name: Phonecall
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: d575f6d1-b1f5-4a3a-b5a5-ab6818924bac
+    PortName: Next
+    TargetNodeGuid: ec89de1c-b401-4ec6-8c76-24fe7f3062ce
+  - BaseNodeGuid: ec89de1c-b401-4ec6-8c76-24fe7f3062ce
+    PortName: Output
+    TargetNodeGuid: f5f7f5fb-cc29-406e-94de-5b9e4ebbd113
+  - BaseNodeGuid: f5f7f5fb-cc29-406e-94de-5b9e4ebbd113
+    PortName: Just feeding my fish
+    TargetNodeGuid: d209de4f-f907-4ef2-8371-8a73374d97b0
+  - BaseNodeGuid: f5f7f5fb-cc29-406e-94de-5b9e4ebbd113
+    PortName: I am writing a thesis on the perception of the human soul
+    TargetNodeGuid: d209de4f-f907-4ef2-8371-8a73374d97b0
+  - BaseNodeGuid: f5f7f5fb-cc29-406e-94de-5b9e4ebbd113
+    PortName: I'm answering my phone...
+    TargetNodeGuid: 03f2649a-bd8c-47c3-920b-cbd05c694bae
+  - BaseNodeGuid: 03f2649a-bd8c-47c3-920b-cbd05c694bae
+    PortName: Output
+    TargetNodeGuid: 2601f384-af15-4796-9ca9-b78f3b8cd82b
+  - BaseNodeGuid: d209de4f-f907-4ef2-8371-8a73374d97b0
+    PortName: Output
+    TargetNodeGuid: 2601f384-af15-4796-9ca9-b78f3b8cd82b
+  - BaseNodeGuid: f5f7f5fb-cc29-406e-94de-5b9e4ebbd113
+    PortName: Well, I was just getting my coat because it's already past five
+    TargetNodeGuid: 313b2c4c-7c53-4831-a823-da087aca61a0
+  - BaseNodeGuid: 313b2c4c-7c53-4831-a823-da087aca61a0
+    PortName: Output
+    TargetNodeGuid: 2601f384-af15-4796-9ca9-b78f3b8cd82b
+  DialogueNodeData:
+  - Guid: 03f2649a-bd8c-47c3-920b-cbd05c694bae
+    DialogueText: Don't you smartass me, mister!
+    Position: {x: 1073, y: -46}
+    type: 1
+    succes: 0
+  - Guid: 313b2c4c-7c53-4831-a823-da087aca61a0
+    DialogueText: Home? Why are you going home?
+    Position: {x: 1244, y: 409}
+    type: 1
+    succes: 0
+  - Guid: ec89de1c-b401-4ec6-8c76-24fe7f3062ce
+    DialogueText: Hey Marty, what are you doing in your office?
+    Position: {x: 236, y: 5}
+    type: 1
+    succes: 0
+  - Guid: f5f7f5fb-cc29-406e-94de-5b9e4ebbd113
+    DialogueText: NPC Dialogue
+    Position: {x: 476, y: 199}
+    type: 2
+    succes: 0
+  - Guid: d209de4f-f907-4ef2-8371-8a73374d97b0
+    DialogueText: (Shouting) That's not what I'm paying you for!
+    Position: {x: 1095, y: 140}
+    type: 1
+    succes: 0
+  - Guid: 2601f384-af15-4796-9ca9-b78f3b8cd82b
+    DialogueText: You're here to work and there are at least a handful of souls lying
+      around in the basement. Go get them!
+    Position: {x: 1444, y: 4}
+    type: 1
+    succes: 0
+  exposedProperties: []
+  CommentBlockData: []
