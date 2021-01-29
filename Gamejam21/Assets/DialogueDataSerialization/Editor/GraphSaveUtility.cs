@@ -57,7 +57,9 @@ namespace Subtegral.DialogueSystem.DataContainers {
                 dialogueContainer.DialogueNodeData.Add(item: new DialogueNodeData {
                     Guid = dialogueNode.GUID,
                     DialogueText = dialogueNode.dialogueText,
-                    Position = dialogueNode.GetPosition().position
+                    Position = dialogueNode.GetPosition().position,
+                    type = dialogueNode.type,
+                    succes = dialogueNode.succes
                 });
             }
             return true;
@@ -74,7 +76,7 @@ namespace Subtegral.DialogueSystem.DataContainers {
                 dialogueContainer.CommentBlockData.Add(new CommentBlockData {
                     ChildNodes = nodes,
                     Title = block.title,
-                    Position = block.GetPosition().position
+                    Position = block.GetPosition().position,
                 });
             }
         }
@@ -144,12 +146,13 @@ namespace Subtegral.DialogueSystem.DataContainers {
 
         private void CreateNodes() {
             foreach (var nodeData in _containerCache.DialogueNodeData) {
-                var tempNode = _targetGraphView.CreateDialogueNode(nodeData.DialogueText, Vector2.zero);
+                var tempNode = _targetGraphView.CreateDialogueNode(nodeData.DialogueText, Vector2.zero,nodeData.type, nodeData.succes);
                 tempNode.GUID = nodeData.Guid;
                 _targetGraphView.AddElement(tempNode);
-
-                var nodePorts = _containerCache.NodeLinks.Where(x => x.BaseNodeGuid == nodeData.Guid).ToList();
-                nodePorts.ForEach(x => _targetGraphView.AddChoicePort(tempNode, x.PortName));
+                if(nodeData.type == 2) {
+                    var nodePorts = _containerCache.NodeLinks.Where(x => x.BaseNodeGuid == nodeData.Guid).ToList();
+                    nodePorts.ForEach(x => _targetGraphView.AddChoicePort(tempNode, x.PortName));
+                }
             }
         }
 

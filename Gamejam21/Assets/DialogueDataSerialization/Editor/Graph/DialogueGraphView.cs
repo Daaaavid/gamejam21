@@ -58,7 +58,7 @@ public class DialogueGraphView : GraphView
     }
 
     private DialogueNode GenerateEntryPointNode() {
-        var node = new DialogueNode {
+        var node = new DialogueNode() {
             title = "start",
             GUID = Guid.NewGuid().ToString(),
             dialogueText = "ENTRYPOINT",
@@ -79,15 +79,17 @@ public class DialogueGraphView : GraphView
         return node;
     }
 
-    public void CreateNode(string nodeName, Vector2 position) {
-        AddElement(CreateDialogueNode(nodeName, position));
+    public void CreateNode(string nodeName, Vector2 position, int type, bool succes) {
+        AddElement(CreateDialogueNode(nodeName, position, type, succes));
     }
 
-    public DialogueNode CreateDialogueNode(string nodeName, Vector2 position) {
-        var dialogueNode = new DialogueNode {
+    public DialogueNode CreateDialogueNode(string nodeName, Vector2 position, int type, bool succes) {
+        var dialogueNode = new DialogueNode() {
             title = nodeName,
             dialogueText = nodeName,
-            GUID = Guid.NewGuid().ToString()
+            GUID = Guid.NewGuid().ToString(),
+            type = type,
+            succes = succes
         };
 
         var inputPort = GeneratePort(dialogueNode, Direction.Input, Port.Capacity.Multi);
@@ -96,17 +98,45 @@ public class DialogueGraphView : GraphView
 
         dialogueNode.styleSheets.Add(Resources.Load<StyleSheet>("Node"));
 
-        var button = new Button(clickEvent: () => { AddChoicePort(dialogueNode); });
-        button.text = "new Choice";
-        dialogueNode.titleContainer.Add(button);
+        switch (type) {
+            case 0:
+                dialogueNode.title = "End";
+                var toggle = new Toggle() {text = "succes"};
+                toggle.SetValueWithoutNotify(dialogueNode.succes);
+                toggle.RegisterValueChangedCallback(evt => {
+                    dialogueNode.succes = evt.newValue;
+                });
+                dialogueNode.outputContainer.Add(toggle);
+                break;
+            case 1:
+                var textField = new TextField(string.Empty);
+                textField.RegisterValueChangedCallback(evt => {
+                    dialogueNode.dialogueText = evt.newValue;
+                    dialogueNode.title = evt.newValue;
+                });
+                textField.SetValueWithoutNotify(dialogueNode.title);
+                dialogueNode.mainContainer.Add(textField);
+                var outPutPort = GeneratePort(dialogueNode, Direction.Output, Port.Capacity.Single);
+                outPutPort.portName = "Output";
+                dialogueNode.outputContainer.Add(outPutPort);
+                break;
+            case 2:
+                dialogueNode.title = "Player Dialogue";
+                var button = new Button(clickEvent: () => { AddChoicePort(dialogueNode); });
+                button.text = "new Choice";
+                dialogueNode.titleContainer.Add(button);
+                break;
+            case 3:
+                dialogueNode.title = "Splitter";
+                var port1 = GeneratePort(dialogueNode, Direction.Output, Port.Capacity.Single);
+                port1.portName = "Grumpy";
+                dialogueNode.outputContainer.Add(port1);
+                var port2 = GeneratePort(dialogueNode, Direction.Output, Port.Capacity.Single);
+                port2.portName = "Not grumpy";
+                dialogueNode.outputContainer.Add(port2);
 
-        var textField = new TextField(string.Empty);
-        textField.RegisterValueChangedCallback(evt => {
-            dialogueNode.dialogueText = evt.newValue;
-            dialogueNode.title = evt.newValue;
-        });
-        textField.SetValueWithoutNotify(dialogueNode.title);
-        dialogueNode.mainContainer.Add(textField);
+                break;
+        }
 
         dialogueNode.RefreshExpandedState();
         dialogueNode.RefreshPorts();
@@ -114,7 +144,6 @@ public class DialogueGraphView : GraphView
 
         return dialogueNode;
     }
-
     public Group CreateCommentBlock(Rect rect, CommentBlockData commentBlockData = null) {
         if (commentBlockData == null)
             commentBlockData = new CommentBlockData();

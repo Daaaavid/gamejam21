@@ -13,26 +13,60 @@ MonoBehaviour:
   m_Name: new Narrative
   m_EditorClassIdentifier: 
   NodeLinks:
-  - BaseNodeGuid: 222cf75b-e38b-4791-91f6-f4e5b7e29ccc
+  - BaseNodeGuid: 2dd6d499-1680-4c0b-b97d-68c6a06588c6
     PortName: Next
-    TargetNodeGuid: 317dc439-a7b9-4287-a9a4-683a7293cfa5
-  - BaseNodeGuid: 317dc439-a7b9-4287-a9a4-683a7293cfa5
-    PortName: Choice 1
-    TargetNodeGuid: f85935ef-a2dc-4231-8c79-e799e067b57c
-  - BaseNodeGuid: f85935ef-a2dc-4231-8c79-e799e067b57c
-    PortName: Choice 3
-    TargetNodeGuid: 317dc439-a7b9-4287-a9a4-683a7293cfa5
+    TargetNodeGuid: a21f451a-b658-4463-80c9-dfd3819017b5
+  - BaseNodeGuid: a21f451a-b658-4463-80c9-dfd3819017b5
+    PortName: hello
+    TargetNodeGuid: 8cd6381c-ffb3-4e3e-b702-c478b3ce142f
+  - BaseNodeGuid: a21f451a-b658-4463-80c9-dfd3819017b5
+    PortName: Hey
+    TargetNodeGuid: 8cd6381c-ffb3-4e3e-b702-c478b3ce142f
+  - BaseNodeGuid: 8cd6381c-ffb3-4e3e-b702-c478b3ce142f
+    PortName: Grumpy
+    TargetNodeGuid: 0189ed10-5eba-431a-95de-98c0cca71496
+  - BaseNodeGuid: 8cd6381c-ffb3-4e3e-b702-c478b3ce142f
+    PortName: Not grumpy
+    TargetNodeGuid: 431af6f5-73bb-4821-b278-b98a2894d91b
+  - BaseNodeGuid: 0189ed10-5eba-431a-95de-98c0cca71496
+    PortName: Output
+    TargetNodeGuid: acdeef20-e4a2-4045-a9b4-4085114afd27
+  - BaseNodeGuid: 431af6f5-73bb-4821-b278-b98a2894d91b
+    PortName: Output
+    TargetNodeGuid: acdeef20-e4a2-4045-a9b4-4085114afd27
   DialogueNodeData:
-  - Guid: 317dc439-a7b9-4287-a9a4-683a7293cfa5
-    DialogueText: Dialogue Node
-    Position: {x: 212.8, y: 164}
-  - Guid: f85935ef-a2dc-4231-8c79-e799e067b57c
-    DialogueText: Dialogue Node
-    Position: {x: 448, y: 228.8}
+  - Guid: acdeef20-e4a2-4045-a9b4-4085114afd27
+    DialogueText: NPC Dialogue
+    Position: {x: 832, y: 116}
+    type: 0
+    succes: 1
+  - Guid: 8cd6381c-ffb3-4e3e-b702-c478b3ce142f
+    DialogueText: NPC Dialogue
+    Position: {x: 454.4, y: 103.2}
+    type: 3
+    succes: 0
+  - Guid: a21f451a-b658-4463-80c9-dfd3819017b5
+    DialogueText: NPC Dialogue
+    Position: {x: 210.4, y: 106.399994}
+    type: 2
+    succes: 0
+  - Guid: 0189ed10-5eba-431a-95de-98c0cca71496
+    DialogueText: What is it?!
+    Position: {x: 628, y: 102.399994}
+    type: 1
+    succes: 0
+  - Guid: 431af6f5-73bb-4821-b278-b98a2894d91b
+    DialogueText: Hello
+    Position: {x: 632, y: 212}
+    type: 1
+    succes: 0
   exposedProperties: []
   CommentBlockData:
   - ChildNodes:
-    - 317dc439-a7b9-4287-a9a4-683a7293cfa5
-    - f85935ef-a2dc-4231-8c79-e799e067b57c
-    Position: {x: 187.20001, y: 105.600006}
-    Title: Comment Block
+    - 0189ed10-5eba-431a-95de-98c0cca71496
+    - a21f451a-b658-4463-80c9-dfd3819017b5
+    - acdeef20-e4a2-4045-a9b4-4085114afd27
+    - 8cd6381c-ffb3-4e3e-b702-c478b3ce142f
+    - 431af6f5-73bb-4821-b278-b98a2894d91b
+    Position: {x: 185.59999, y: 44.00003}
+    Title: All the different blocks in action

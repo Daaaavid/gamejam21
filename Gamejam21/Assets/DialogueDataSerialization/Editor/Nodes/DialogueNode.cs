@@ -9,5 +9,7 @@ public class DialogueNode : Node
     public string GUID;
     public string dialogueText;
     public bool entryPoint;
-    public int type = 0;
+    public int type = 0; // 0 = end, 1 = NPC option, 2 = player option, 3 = grumpyness splitter
+    public bool succes = false;
 }
+

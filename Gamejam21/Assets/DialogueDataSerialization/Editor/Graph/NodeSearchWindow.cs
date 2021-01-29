@@ -26,15 +26,21 @@ public class NodeSearchWindow : ScriptableObject, ISearchWindowProvider
         var tree = new List<SearchTreeEntry> {
             new SearchTreeGroupEntry(new GUIContent("Create Elements"), 0),
             new SearchTreeGroupEntry(new GUIContent("Dialogue"), 1),
-            new SearchTreeEntry(new GUIContent("Dialogue Node", _indentationIcon)) {
-                userData = new DialogueNode(),level =2
+            new SearchTreeEntry(new GUIContent("NPC Node", _indentationIcon)) {
+                userData = new DialogueNode(){type = 1},level =2
+            },
+            new SearchTreeEntry(new GUIContent("Player Node", _indentationIcon)) {
+                userData = new DialogueNode(){type = 2},level =2
             },
             new SearchTreeEntry(new GUIContent("End Node", _indentationIcon)) {
-                userData = new DialogueNode(), level =2
+                userData = new DialogueNode(){type = 0}, level =2
             },
             new SearchTreeEntry(new GUIContent("Comment Block", _indentationIcon)) {
                 level = 1,
                 userData = new Group()
+            },
+            new SearchTreeEntry(new GUIContent("splitter", _indentationIcon)) {
+                level = 1, userData = new DialogueNode(){type = 3}
             }
         };
         return tree;
@@ -46,7 +52,7 @@ public class NodeSearchWindow : ScriptableObject, ISearchWindowProvider
         var localmousePosition = _graphView.contentViewContainer.WorldToLocal(worldMousePosition);
         switch (SearchTreeEntry.userData) {
             case DialogueNode dialogueNode:
-                _graphView.CreateNode("Dialogue Node",localmousePosition);
+                _graphView.CreateNode("NPC Dialogue",localmousePosition, dialogueNode.type,false);
                 return true;
             case Group group:
                 var rect = new Rect(localmousePosition, _graphView.defeaultNodeSize);
