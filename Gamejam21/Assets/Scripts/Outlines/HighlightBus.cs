@@ -4,7 +4,7 @@ using Outlines;
 using UnityEngine;
 using UnityEngine.Events;
 
-[CreateAssetMenu(menuName = "Outlines/OutlineGroup", fileName = "outlineGroup") ]
+[CreateAssetMenu(menuName = "Highlight", fileName = "highlightBus") ]
 public class HighlightBus : ScriptableObject
 {
     public readonly HighlightTriggerEvent OnActivate = new HighlightTriggerEvent();

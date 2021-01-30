@@ -27,6 +27,51 @@ ModelImporter:
   - first:
       74: -5950077377046351737
     second: Fishbowl|NurbsPathAction
+  - first:
+      74: 7533379155253020632
+    second: Fishbowl|Action figure.2Action
+  - first:
+      74: 5835463313732566030
+    second: Fishbowl|ComputerAction
+  - first:
+      74: -7834476546534890716
+    second: Fishbowl|Cube.002Action
+  - first:
+      74: 1560477307274110268
+    second: Fishbowl|Dead plantAction
+  - first:
+      74: 851177047097717944
+    second: Fishbowl|Elevator floor buttons.001Action
+  - first:
+      74: -9115681576543593445
+    second: Fishbowl|Elevator floor numberAction
+  - first:
+      74: -4163233482222914128
+    second: Fishbowl|Living plantAction
+  - first:
+      74: 5634254922942713881
+    second: Fishbowl|PapersAction
+  - first:
+      74: 4608836220465763846
+    second: Fishbowl|Phone hornAction
+  - first:
+      74: -8945618042148664024
+    second: Fishbowl|poster.001Action
+  - first:
+      74: -2095185070257759694
+    second: Fishbowl|posterAction
+  - first:
+      74: 8743008780268864472
+    second: Fishbowl|Stool.2Action
+  - first:
+      74: -6168063803257738448
+    second: Fishbowl|StoolAction
+  - first:
+      74: -1964557148797665569
+    second: Fishbowl|Wooden crate.2Action
+  - first:
+      74: 338305782877284515
+    second: Fishbowl|Wooden crateAction
   externalObjects: {}
   materials:
     materialImportMode: 2
