@@ -10,24 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
-  m_Name: MartyOfficeFigures2
+  m_Name: DeadPlant2
   m_EditorClassIdentifier: 
   NodeLinks:
-  - BaseNodeGuid: 063da3ce-ef02-41e1-a348-91d8c90aa4ea
+  - BaseNodeGuid: ba9ea1fc-6282-4a81-acd4-14b8aa387c65
     PortName: Next
-    TargetNodeGuid: dfbd6173-a6ee-49b5-9a07-0bf40f8ce55f
-  - BaseNodeGuid: dfbd6173-a6ee-49b5-9a07-0bf40f8ce55f
+    TargetNodeGuid: d3a7cda5-ffe8-4e4f-9d70-67a628fb4422
+  - BaseNodeGuid: d3a7cda5-ffe8-4e4f-9d70-67a628fb4422
     PortName: Output
-    TargetNodeGuid: 187be141-569a-4b4d-a5b7-d3c8561b0266
+    TargetNodeGuid: eb1ecbd1-9ab7-44ff-9fb2-25bc3fef0822
   DialogueNodeData:
-  - Guid: dfbd6173-a6ee-49b5-9a07-0bf40f8ce55f
-    DialogueText: I should finish paining these some day
-    Position: {x: 315, y: 95}
+  - Guid: d3a7cda5-ffe8-4e4f-9d70-67a628fb4422
+    DialogueText: I know how he feels
+    Position: {x: 304, y: 94}
     type: 1
     succes: 0
-  - Guid: 187be141-569a-4b4d-a5b7-d3c8561b0266
+  - Guid: eb1ecbd1-9ab7-44ff-9fb2-25bc3fef0822
     DialogueText: NPC Dialogue
-    Position: {x: 633, y: 187}
+    Position: {x: 546, y: 99}
     type: 0
     succes: 0
   exposedProperties: []

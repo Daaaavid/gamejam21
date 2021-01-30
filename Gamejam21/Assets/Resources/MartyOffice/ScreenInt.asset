@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
-  m_Name: MartyOfficeScreenInt
+  m_Name: ScreenInt
   m_EditorClassIdentifier: 
   NodeLinks:
   - BaseNodeGuid: 9e3a2d74-cb87-4d77-b00b-dcdfcd2727ae

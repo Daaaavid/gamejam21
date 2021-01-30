@@ -10,24 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
-  m_Name: MartyOfficeFiguresInt
+  m_Name: Poster2
   m_EditorClassIdentifier: 
   NodeLinks:
-  - BaseNodeGuid: 0c9a9aa7-e55f-4945-9a7b-c1584f3edc8c
+  - BaseNodeGuid: 253d3402-d89a-439f-8cff-673ddf04873e
     PortName: Next
-    TargetNodeGuid: 1662ffa0-21e7-4701-ae74-3ac437e175e9
-  - BaseNodeGuid: 1662ffa0-21e7-4701-ae74-3ac437e175e9
+    TargetNodeGuid: f176b586-7213-42b7-bce3-d604d5094eb9
+  - BaseNodeGuid: f176b586-7213-42b7-bce3-d604d5094eb9
     PortName: Output
-    TargetNodeGuid: 19bad2b0-8c32-4969-a2fc-bf585b1b7505
+    TargetNodeGuid: fe02cf24-0284-4b07-a960-33d8e0fbd8b1
   DialogueNodeData:
-  - Guid: 1662ffa0-21e7-4701-ae74-3ac437e175e9
-    DialogueText: No time to play with them, unfortunately
-    Position: {x: 303, y: 126}
+  - Guid: f176b586-7213-42b7-bce3-d604d5094eb9
+    DialogueText: I could really use a New Hope
+    Position: {x: 332, y: 96}
     type: 1
     succes: 0
-  - Guid: 19bad2b0-8c32-4969-a2fc-bf585b1b7505
+  - Guid: fe02cf24-0284-4b07-a960-33d8e0fbd8b1
     DialogueText: NPC Dialogue
-    Position: {x: 830, y: 117}
+    Position: {x: 635, y: 114}
     type: 0
     succes: 0
   exposedProperties: []

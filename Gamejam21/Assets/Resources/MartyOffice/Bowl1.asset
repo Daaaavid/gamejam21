@@ -10,24 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
-  m_Name: MartyOfficeBowl2
+  m_Name: Bowl1
   m_EditorClassIdentifier: 
   NodeLinks:
-  - BaseNodeGuid: 5591426e-1e22-4439-a668-458e6e9e4b91
+  - BaseNodeGuid: f6072474-48a2-428c-8e95-156033119447
     PortName: Next
-    TargetNodeGuid: 530720dc-c00b-4c89-af08-6a9975df82ef
-  - BaseNodeGuid: 530720dc-c00b-4c89-af08-6a9975df82ef
+    TargetNodeGuid: d4d92e4e-2a03-429a-a5b5-c68d159f6c4b
+  - BaseNodeGuid: d4d92e4e-2a03-429a-a5b5-c68d159f6c4b
     PortName: Output
-    TargetNodeGuid: b5b58ef0-0eff-4f3b-be00-e52100c73896
+    TargetNodeGuid: da3b624f-7ed6-4dfc-88bb-eea69991924e
   DialogueNodeData:
-  - Guid: 530720dc-c00b-4c89-af08-6a9975df82ef
-    DialogueText: He's always hungry
-    Position: {x: 274, y: 109}
+  - Guid: d4d92e4e-2a03-429a-a5b5-c68d159f6c4b
+    DialogueText: His name is Spot
+    Position: {x: 266, y: 100}
     type: 1
     succes: 0
-  - Guid: b5b58ef0-0eff-4f3b-be00-e52100c73896
+  - Guid: da3b624f-7ed6-4dfc-88bb-eea69991924e
     DialogueText: NPC Dialogue
-    Position: {x: 607, y: 115}
+    Position: {x: 620, y: 105}
     type: 0
     succes: 0
   exposedProperties: []

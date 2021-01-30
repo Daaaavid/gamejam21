@@ -10,13 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
-  m_Name: MartyOfficeScreen
+  m_Name: Screen
   m_EditorClassIdentifier: 
   NodeLinks:
   - BaseNodeGuid: 73020f17-a66f-4780-b1af-0b2307c56f92
-    PortName: Output
-    TargetNodeGuid: 6381ab22-d6cc-4b71-b1b5-3a8ef431a62b
-  - BaseNodeGuid: f1a34b1d-8fcc-47e8-9fcc-817852fcf6af
     PortName: Next
     TargetNodeGuid: af6d8b72-c958-48a9-bcea-95a638d81fcd
   - BaseNodeGuid: af6d8b72-c958-48a9-bcea-95a638d81fcd
@@ -25,9 +22,12 @@ MonoBehaviour:
   - BaseNodeGuid: af6d8b72-c958-48a9-bcea-95a638d81fcd
     PortName: Not grumpy
     TargetNodeGuid: 2a2a74d6-0dad-4380-9bdb-e10a09a52a59
-  - BaseNodeGuid: 2a2a74d6-0dad-4380-9bdb-e10a09a52a59
+  - BaseNodeGuid: 73020f17-a66f-4780-b1af-0b2307c56f92
     PortName: Output
     TargetNodeGuid: 6381ab22-d6cc-4b71-b1b5-3a8ef431a62b
+  - BaseNodeGuid: 2a2a74d6-0dad-4380-9bdb-e10a09a52a59
+    PortName: Output
+    TargetNodeGuid: 9cade74c-3f36-4dc5-b19c-52a5c5586365
   DialogueNodeData:
   - Guid: 6381ab22-d6cc-4b71-b1b5-3a8ef431a62b
     DialogueText: NPC Dialogue
@@ -36,18 +36,23 @@ MonoBehaviour:
     succes: 0
   - Guid: af6d8b72-c958-48a9-bcea-95a638d81fcd
     DialogueText: NPC Dialogue
-    Position: {x: 272, y: 111}
+    Position: {x: 365, y: 103}
     type: 3
     succes: 0
   - Guid: 73020f17-a66f-4780-b1af-0b2307c56f92
     DialogueText: It's all blue
-    Position: {x: 585, y: 87}
+    Position: {x: 640, y: -118}
     type: 1
     succes: 0
   - Guid: 2a2a74d6-0dad-4380-9bdb-e10a09a52a59
     DialogueText: It's not on
-    Position: {x: 572, y: 269}
+    Position: {x: 642, y: 205}
     type: 1
+    succes: 0
+  - Guid: 9cade74c-3f36-4dc5-b19c-52a5c5586365
+    DialogueText: NPC Dialogue
+    Position: {x: 891, y: 230}
+    type: 0
     succes: 0
   exposedProperties: []
   CommentBlockData: []

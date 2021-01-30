@@ -10,25 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
-  m_Name: MartyOfficeCoffeeCup2
+  m_Name: CoffeeCup1
   m_EditorClassIdentifier: 
   NodeLinks:
-  - BaseNodeGuid: 3be4a500-581b-42d5-a570-7a21a64495aa
+  - BaseNodeGuid: a70534f1-b9a6-49ba-9ca6-06c8ee8df67a
     PortName: Next
-    TargetNodeGuid: 627693f0-a07e-4d7f-8405-1f512a0ae175
-  - BaseNodeGuid: 627693f0-a07e-4d7f-8405-1f512a0ae175
+    TargetNodeGuid: 80b28b54-1a17-4c54-aa41-42fa528449cf
+  - BaseNodeGuid: 80b28b54-1a17-4c54-aa41-42fa528449cf
     PortName: Output
-    TargetNodeGuid: 48327f3d-ff2a-4443-85e1-d4d2b181049a
+    TargetNodeGuid: ace10f97-f817-4795-8fce-957c7dcea7a5
   DialogueNodeData:
-  - Guid: 48327f3d-ff2a-4443-85e1-d4d2b181049a
-    DialogueText: NPC Dialogue
-    Position: {x: 687, y: 170}
-    type: 0
-    succes: 0
-  - Guid: 627693f0-a07e-4d7f-8405-1f512a0ae175
-    DialogueText: Mmmmm coffee
-    Position: {x: 312, y: 80}
+  - Guid: 80b28b54-1a17-4c54-aa41-42fa528449cf
+    DialogueText: I like to think of it as half full
+    Position: {x: 300, y: 94}
     type: 1
+    succes: 0
+  - Guid: ace10f97-f817-4795-8fce-957c7dcea7a5
+    DialogueText: NPC Dialogue
+    Position: {x: 664, y: 96}
+    type: 0
     succes: 0
   exposedProperties: []
   CommentBlockData: []

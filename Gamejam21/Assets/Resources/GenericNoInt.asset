@@ -10,24 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
-  m_Name: MartyOfficeBowl1
+  m_Name: GenericNoInt
   m_EditorClassIdentifier: 
   NodeLinks:
-  - BaseNodeGuid: f6072474-48a2-428c-8e95-156033119447
+  - BaseNodeGuid: 963458d1-b497-4795-a5de-3c03e15c56d6
     PortName: Next
-    TargetNodeGuid: d4d92e4e-2a03-429a-a5b5-c68d159f6c4b
-  - BaseNodeGuid: d4d92e4e-2a03-429a-a5b5-c68d159f6c4b
+    TargetNodeGuid: c95f33ec-58c0-4893-a9e1-e698ea2e25ed
+  - BaseNodeGuid: c95f33ec-58c0-4893-a9e1-e698ea2e25ed
     PortName: Output
-    TargetNodeGuid: da3b624f-7ed6-4dfc-88bb-eea69991924e
+    TargetNodeGuid: b9610b5f-13aa-411e-b7e8-0a48c058b7e5
   DialogueNodeData:
-  - Guid: d4d92e4e-2a03-429a-a5b5-c68d159f6c4b
-    DialogueText: His name is Spot
-    Position: {x: 266, y: 100}
+  - Guid: c95f33ec-58c0-4893-a9e1-e698ea2e25ed
+    DialogueText: That's fine where it is
+    Position: {x: 319, y: 101}
     type: 1
     succes: 0
-  - Guid: da3b624f-7ed6-4dfc-88bb-eea69991924e
+  - Guid: b9610b5f-13aa-411e-b7e8-0a48c058b7e5
     DialogueText: NPC Dialogue
-    Position: {x: 620, y: 105}
+    Position: {x: 828, y: 146}
     type: 0
     succes: 0
   exposedProperties: []

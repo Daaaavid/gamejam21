@@ -10,24 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
-  m_Name: MartyOfficeDeadPlant1
+  m_Name: Figures1
   m_EditorClassIdentifier: 
   NodeLinks:
-  - BaseNodeGuid: e2dee443-266b-4998-96eb-4980bfd9d4ec
+  - BaseNodeGuid: 063da3ce-ef02-41e1-a348-91d8c90aa4ea
     PortName: Next
-    TargetNodeGuid: 950328f1-6e71-431c-aa3b-1caa45352773
-  - BaseNodeGuid: 950328f1-6e71-431c-aa3b-1caa45352773
+    TargetNodeGuid: dfbd6173-a6ee-49b5-9a07-0bf40f8ce55f
+  - BaseNodeGuid: dfbd6173-a6ee-49b5-9a07-0bf40f8ce55f
     PortName: Output
-    TargetNodeGuid: 786a8364-488b-4881-9261-8304b0de25b0
+    TargetNodeGuid: 187be141-569a-4b4d-a5b7-d3c8561b0266
   DialogueNodeData:
-  - Guid: 950328f1-6e71-431c-aa3b-1caa45352773
-    DialogueText: He's seen better days...
-    Position: {x: 286, y: 100}
+  - Guid: dfbd6173-a6ee-49b5-9a07-0bf40f8ce55f
+    DialogueText: They're a bit dusty
+    Position: {x: 315, y: 95}
     type: 1
     succes: 0
-  - Guid: 786a8364-488b-4881-9261-8304b0de25b0
+  - Guid: 187be141-569a-4b4d-a5b7-d3c8561b0266
     DialogueText: NPC Dialogue
-    Position: {x: 554, y: 90}
+    Position: {x: 633, y: 187}
     type: 0
     succes: 0
   exposedProperties: []

@@ -10,24 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
-  m_Name: MartyOfficeCoffeeCup1
+  m_Name: PaperPileDesc
   m_EditorClassIdentifier: 
   NodeLinks:
-  - BaseNodeGuid: a70534f1-b9a6-49ba-9ca6-06c8ee8df67a
+  - BaseNodeGuid: 2af1c3e0-1347-48de-8be1-6cc85d40b7e6
     PortName: Next
-    TargetNodeGuid: 80b28b54-1a17-4c54-aa41-42fa528449cf
-  - BaseNodeGuid: 80b28b54-1a17-4c54-aa41-42fa528449cf
+    TargetNodeGuid: c4f9c07b-81a7-454b-87ca-395ccb67f39f
+  - BaseNodeGuid: c4f9c07b-81a7-454b-87ca-395ccb67f39f
     PortName: Output
-    TargetNodeGuid: ace10f97-f817-4795-8fce-957c7dcea7a5
+    TargetNodeGuid: 420f77aa-b8a8-427a-9341-077430511a61
   DialogueNodeData:
-  - Guid: 80b28b54-1a17-4c54-aa41-42fa528449cf
-    DialogueText: I like to think of it as half full
-    Position: {x: 300, y: 94}
+  - Guid: c4f9c07b-81a7-454b-87ca-395ccb67f39f
+    DialogueText: I'm going to sort that out some day
+    Position: {x: 328, y: 98}
     type: 1
     succes: 0
-  - Guid: ace10f97-f817-4795-8fce-957c7dcea7a5
+  - Guid: 420f77aa-b8a8-427a-9341-077430511a61
     DialogueText: NPC Dialogue
-    Position: {x: 664, y: 96}
+    Position: {x: 686, y: 107}
     type: 0
     succes: 0
   exposedProperties: []

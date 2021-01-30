@@ -10,25 +10,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
-  m_Name: MartyOfficeDeadPlant2
+  m_Name: BowlInt
   m_EditorClassIdentifier: 
   NodeLinks:
-  - BaseNodeGuid: ba9ea1fc-6282-4a81-acd4-14b8aa387c65
+  - BaseNodeGuid: 95caeabc-87f7-4a68-bd45-565b0578d16f
     PortName: Next
-    TargetNodeGuid: d3a7cda5-ffe8-4e4f-9d70-67a628fb4422
-  - BaseNodeGuid: d3a7cda5-ffe8-4e4f-9d70-67a628fb4422
+    TargetNodeGuid: 1f51999a-948f-4d6c-86ad-3e2bf972847a
+  - BaseNodeGuid: 1f51999a-948f-4d6c-86ad-3e2bf972847a
     PortName: Output
-    TargetNodeGuid: eb1ecbd1-9ab7-44ff-9fb2-25bc3fef0822
+    TargetNodeGuid: a9e707ba-cce3-474f-809f-250a32f10b18
   DialogueNodeData:
-  - Guid: d3a7cda5-ffe8-4e4f-9d70-67a628fb4422
-    DialogueText: I know how he feels
-    Position: {x: 304, y: 94}
+  - Guid: 1f51999a-948f-4d6c-86ad-3e2bf972847a
+    DialogueText: Bon appetite, Spot!
+    Position: {x: 309, y: 82}
     type: 1
     succes: 0
-  - Guid: eb1ecbd1-9ab7-44ff-9fb2-25bc3fef0822
+  - Guid: a9e707ba-cce3-474f-809f-250a32f10b18
     DialogueText: NPC Dialogue
-    Position: {x: 546, y: 99}
+    Position: {x: 629, y: 119}
     type: 0
     succes: 0
   exposedProperties: []
-  CommentBlockData: []
+  CommentBlockData:
+  - ChildNodes: []
+    Position: {x: 275, y: 20.120003}
+    Title: 

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
-  m_Name: MartyOfficeFigures1
+  m_Name: Figures2
   m_EditorClassIdentifier: 
   NodeLinks:
   - BaseNodeGuid: 063da3ce-ef02-41e1-a348-91d8c90aa4ea
@@ -21,7 +21,7 @@ MonoBehaviour:
     TargetNodeGuid: 187be141-569a-4b4d-a5b7-d3c8561b0266
   DialogueNodeData:
   - Guid: dfbd6173-a6ee-49b5-9a07-0bf40f8ce55f
-    DialogueText: They're a bit dusty
+    DialogueText: I should finish paining these some day
     Position: {x: 315, y: 95}
     type: 1
     succes: 0

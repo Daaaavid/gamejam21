@@ -10,24 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
-  m_Name: MartyOfficePaperPileDesc
+  m_Name: DeadPlant1
   m_EditorClassIdentifier: 
   NodeLinks:
-  - BaseNodeGuid: 2af1c3e0-1347-48de-8be1-6cc85d40b7e6
+  - BaseNodeGuid: e2dee443-266b-4998-96eb-4980bfd9d4ec
     PortName: Next
-    TargetNodeGuid: c4f9c07b-81a7-454b-87ca-395ccb67f39f
-  - BaseNodeGuid: c4f9c07b-81a7-454b-87ca-395ccb67f39f
+    TargetNodeGuid: 950328f1-6e71-431c-aa3b-1caa45352773
+  - BaseNodeGuid: 950328f1-6e71-431c-aa3b-1caa45352773
     PortName: Output
-    TargetNodeGuid: 420f77aa-b8a8-427a-9341-077430511a61
+    TargetNodeGuid: 786a8364-488b-4881-9261-8304b0de25b0
   DialogueNodeData:
-  - Guid: c4f9c07b-81a7-454b-87ca-395ccb67f39f
-    DialogueText: I'm going to sort that out some day
-    Position: {x: 328, y: 98}
+  - Guid: 950328f1-6e71-431c-aa3b-1caa45352773
+    DialogueText: He's seen better days...
+    Position: {x: 286, y: 100}
     type: 1
     succes: 0
-  - Guid: 420f77aa-b8a8-427a-9341-077430511a61
+  - Guid: 786a8364-488b-4881-9261-8304b0de25b0
     DialogueText: NPC Dialogue
-    Position: {x: 686, y: 107}
+    Position: {x: 554, y: 90}
     type: 0
     succes: 0
   exposedProperties: []

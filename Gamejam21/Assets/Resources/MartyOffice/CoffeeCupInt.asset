@@ -10,25 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
-  m_Name: MartyOfficePoster1
+  m_Name: CoffeeCupInt
   m_EditorClassIdentifier: 
   NodeLinks:
-  - BaseNodeGuid: a376a0d0-59cd-454d-8c3b-b08519255355
+  - BaseNodeGuid: 67f69112-ea31-44f8-9c60-4e1b638c9339
     PortName: Next
-    TargetNodeGuid: 74e301ab-7d17-45e3-a2b6-5bafebbb9573
-  - BaseNodeGuid: 74e301ab-7d17-45e3-a2b6-5bafebbb9573
+    TargetNodeGuid: 05e5a701-8ac7-4198-bc44-8da23ce0bc77
+  - BaseNodeGuid: 05e5a701-8ac7-4198-bc44-8da23ce0bc77
     PortName: Output
-    TargetNodeGuid: 695f97ff-5bcf-48e6-91c7-6d27c9c3df58
+    TargetNodeGuid: 353fc813-c2b8-4f25-bf2d-1e246b6e90dd
   DialogueNodeData:
-  - Guid: 74e301ab-7d17-45e3-a2b6-5bafebbb9573
-    DialogueText: Use the force, Luke
-    Position: {x: 318, y: 94}
+  - Guid: 05e5a701-8ac7-4198-bc44-8da23ce0bc77
+    DialogueText: I need more caffiene
+    Position: {x: 324, y: 85}
     type: 1
     succes: 0
-  - Guid: 695f97ff-5bcf-48e6-91c7-6d27c9c3df58
+  - Guid: 353fc813-c2b8-4f25-bf2d-1e246b6e90dd
     DialogueText: NPC Dialogue
-    Position: {x: 697, y: 108}
+    Position: {x: 658, y: 95}
     type: 0
-    succes: 0
+    succes: 1
   exposedProperties: []
   CommentBlockData: []

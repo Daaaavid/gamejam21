@@ -10,25 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
-  m_Name: MartyOfficeCoffeeCupInt
+  m_Name: DeadPlantInt
   m_EditorClassIdentifier: 
   NodeLinks:
-  - BaseNodeGuid: 67f69112-ea31-44f8-9c60-4e1b638c9339
+  - BaseNodeGuid: 0c7b1ee6-08c3-4caa-8415-aa3c8e13b8ea
     PortName: Next
-    TargetNodeGuid: 05e5a701-8ac7-4198-bc44-8da23ce0bc77
-  - BaseNodeGuid: 05e5a701-8ac7-4198-bc44-8da23ce0bc77
+    TargetNodeGuid: c7bc3f01-ad8e-495f-bc27-95420bf40619
+  - BaseNodeGuid: c7bc3f01-ad8e-495f-bc27-95420bf40619
     PortName: Output
-    TargetNodeGuid: 353fc813-c2b8-4f25-bf2d-1e246b6e90dd
+    TargetNodeGuid: 38308611-5584-428c-a378-5a5b7ff781c4
   DialogueNodeData:
-  - Guid: 05e5a701-8ac7-4198-bc44-8da23ce0bc77
-    DialogueText: I need more caffiene
-    Position: {x: 324, y: 85}
+  - Guid: c7bc3f01-ad8e-495f-bc27-95420bf40619
+    DialogueText: It's been through enough
+    Position: {x: 318, y: 103}
     type: 1
     succes: 0
-  - Guid: 353fc813-c2b8-4f25-bf2d-1e246b6e90dd
+  - Guid: 38308611-5584-428c-a378-5a5b7ff781c4
     DialogueText: NPC Dialogue
-    Position: {x: 658, y: 95}
+    Position: {x: 625, y: 121}
     type: 0
-    succes: 1
+    succes: 0
   exposedProperties: []
   CommentBlockData: []
