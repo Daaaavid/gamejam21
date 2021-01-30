@@ -83,6 +83,7 @@ MonoBehaviour:
   MoveSystem2: {fileID: 11400000, guid: f45d7c448954c674398e409c43c27ee0, type: 2}
   ReturnOnDone: 1
   TargetPositionOnDone: {fileID: 0}
+  BypassMovement: 0
 --- !u!82 &6580789814160733382
 AudioSource:
   m_ObjectHideFlags: 0
@@ -107,7 +108,7 @@ AudioSource:
   MinDistance: 1
   MaxDistance: 500
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -140,7 +141,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0.5
       inSlope: 0
       outSlope: 0
       tangentMode: 0
