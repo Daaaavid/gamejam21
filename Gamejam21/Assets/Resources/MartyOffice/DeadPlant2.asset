@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
+  m_Name: DeadPlant2
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: ba9ea1fc-6282-4a81-acd4-14b8aa387c65
+    PortName: Next
+    TargetNodeGuid: d3a7cda5-ffe8-4e4f-9d70-67a628fb4422
+  - BaseNodeGuid: d3a7cda5-ffe8-4e4f-9d70-67a628fb4422
+    PortName: Output
+    TargetNodeGuid: eb1ecbd1-9ab7-44ff-9fb2-25bc3fef0822
+  DialogueNodeData:
+  - Guid: d3a7cda5-ffe8-4e4f-9d70-67a628fb4422
+    DialogueText: I know how he feels
+    Position: {x: 304, y: 94}
+    type: 1
+    succes: 0
+  - Guid: eb1ecbd1-9ab7-44ff-9fb2-25bc3fef0822
+    DialogueText: NPC Dialogue
+    Position: {x: 546, y: 99}
+    type: 0
+    succes: 0
+  exposedProperties: []
+  CommentBlockData: []

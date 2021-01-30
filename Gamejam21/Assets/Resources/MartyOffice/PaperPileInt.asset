@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
+  m_Name: PaperPileInt
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 6772db79-6f42-4082-945a-7f513fbe20c0
+    PortName: Next
+    TargetNodeGuid: 09fafdd5-52a6-4657-930a-c53479da4004
+  - BaseNodeGuid: 27d3421e-63a4-4277-b1bb-4b03b41309b1
+    PortName: Output
+    TargetNodeGuid: 5a91520d-1a90-4cd7-b734-27d28f01e1b5
+  - BaseNodeGuid: 10d979f1-b72e-41fe-ab42-a42225f0618c
+    PortName: Output
+    TargetNodeGuid: 5a91520d-1a90-4cd7-b734-27d28f01e1b5
+  - BaseNodeGuid: 09fafdd5-52a6-4657-930a-c53479da4004
+    PortName: Grumpy
+    TargetNodeGuid: 10d979f1-b72e-41fe-ab42-a42225f0618c
+  - BaseNodeGuid: 09fafdd5-52a6-4657-930a-c53479da4004
+    PortName: Not grumpy
+    TargetNodeGuid: 27d3421e-63a4-4277-b1bb-4b03b41309b1
+  DialogueNodeData:
+  - Guid: 5a91520d-1a90-4cd7-b734-27d28f01e1b5
+    DialogueText: NPC Dialogue
+    Position: {x: 1082, y: 111}
+    type: 0
+    succes: 0
+  - Guid: 09fafdd5-52a6-4657-930a-c53479da4004
+    DialogueText: NPC Dialogue
+    Position: {x: 287, y: 98}
+    type: 3
+    succes: 0
+  - Guid: 27d3421e-63a4-4277-b1bb-4b03b41309b1
+    DialogueText: There's a keycard in there!
+    Position: {x: 601, y: 147}
+    type: 1
+    succes: 0
+  - Guid: 10d979f1-b72e-41fe-ab42-a42225f0618c
+    DialogueText: That's all the order I can manage for now
+    Position: {x: 581, y: -5}
+    type: 1
+    succes: 0
+  exposedProperties: []
+  CommentBlockData: []

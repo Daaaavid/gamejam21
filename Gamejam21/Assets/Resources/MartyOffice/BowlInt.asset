@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
+  m_Name: BowlInt
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 95caeabc-87f7-4a68-bd45-565b0578d16f
+    PortName: Next
+    TargetNodeGuid: 1f51999a-948f-4d6c-86ad-3e2bf972847a
+  - BaseNodeGuid: 1f51999a-948f-4d6c-86ad-3e2bf972847a
+    PortName: Output
+    TargetNodeGuid: a9e707ba-cce3-474f-809f-250a32f10b18
+  DialogueNodeData:
+  - Guid: 1f51999a-948f-4d6c-86ad-3e2bf972847a
+    DialogueText: Bon appetite, Spot!
+    Position: {x: 309, y: 82}
+    type: 1
+    succes: 0
+  - Guid: a9e707ba-cce3-474f-809f-250a32f10b18
+    DialogueText: NPC Dialogue
+    Position: {x: 629, y: 119}
+    type: 0
+    succes: 0
+  exposedProperties: []
+  CommentBlockData:
+  - ChildNodes: []
+    Position: {x: 275, y: 20.120003}
+    Title: 

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
+  m_Name: GenericNoInt
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 963458d1-b497-4795-a5de-3c03e15c56d6
+    PortName: Next
+    TargetNodeGuid: c95f33ec-58c0-4893-a9e1-e698ea2e25ed
+  - BaseNodeGuid: c95f33ec-58c0-4893-a9e1-e698ea2e25ed
+    PortName: Output
+    TargetNodeGuid: b9610b5f-13aa-411e-b7e8-0a48c058b7e5
+  DialogueNodeData:
+  - Guid: c95f33ec-58c0-4893-a9e1-e698ea2e25ed
+    DialogueText: That's fine where it is
+    Position: {x: 319, y: 101}
+    type: 1
+    succes: 0
+  - Guid: b9610b5f-13aa-411e-b7e8-0a48c058b7e5
+    DialogueText: NPC Dialogue
+    Position: {x: 828, y: 146}
+    type: 0
+    succes: 0
+  exposedProperties: []
+  CommentBlockData: []

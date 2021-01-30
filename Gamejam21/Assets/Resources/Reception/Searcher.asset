@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
+  m_Name: Searcher
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 91b10ffa-77b7-428d-bd45-76f8aa5f2c77
+    PortName: Next
+    TargetNodeGuid: 7f0caf9c-5e0a-40b1-a541-908b13fc9328
+  - BaseNodeGuid: 7f0caf9c-5e0a-40b1-a541-908b13fc9328
+    PortName: Grumpy
+    TargetNodeGuid: 3c2cf459-8b73-4834-9942-b072b333afc8
+  - BaseNodeGuid: 7f0caf9c-5e0a-40b1-a541-908b13fc9328
+    PortName: Not grumpy
+    TargetNodeGuid: 0aae0a07-814d-42a0-8638-e99f8a8c1c03
+  - BaseNodeGuid: 3c2cf459-8b73-4834-9942-b072b333afc8
+    PortName: Output
+    TargetNodeGuid: 299c1b51-5218-4928-8e91-b6533b015e35
+  - BaseNodeGuid: 0aae0a07-814d-42a0-8638-e99f8a8c1c03
+    PortName: Output
+    TargetNodeGuid: 6691b7c4-52de-42fd-bcec-40b5ca9df24a
+  DialogueNodeData:
+  - Guid: 7f0caf9c-5e0a-40b1-a541-908b13fc9328
+    DialogueText: NPC Dialogue
+    Position: {x: 279, y: 100}
+    type: 3
+    succes: 0
+  - Guid: 3c2cf459-8b73-4834-9942-b072b333afc8
+    DialogueText: What do you expect me to do with that?
+    Position: {x: 632, y: 61}
+    type: 1
+    succes: 0
+  - Guid: 299c1b51-5218-4928-8e91-b6533b015e35
+    DialogueText: NPC Dialogue
+    Position: {x: 1061, y: 62}
+    type: 0
+    succes: 0
+  - Guid: 6691b7c4-52de-42fd-bcec-40b5ca9df24a
+    DialogueText: NPC Dialogue
+    Position: {x: 1056, y: 242}
+    type: 0
+    succes: 1
+  - Guid: 0aae0a07-814d-42a0-8638-e99f8a8c1c03
+    DialogueText: Thank you! I feel better already!
+    Position: {x: 632, y: 220}
+    type: 1
+    succes: 0
+  exposedProperties: []
+  CommentBlockData: []

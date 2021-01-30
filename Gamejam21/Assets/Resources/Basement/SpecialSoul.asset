@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
+  m_Name: SpecialSoul
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 4879c8fb-3d05-486d-931d-3ca7ab27b5f3
+    PortName: Next
+    TargetNodeGuid: 81a3dbcb-98b5-4691-92c0-992325c77fbf
+  - BaseNodeGuid: 81a3dbcb-98b5-4691-92c0-992325c77fbf
+    PortName: Output
+    TargetNodeGuid: 71e8a60b-3a9c-4f12-80eb-102f2216e1db
+  DialogueNodeData:
+  - Guid: 81a3dbcb-98b5-4691-92c0-992325c77fbf
+    DialogueText: That soul on the top shelf has a very strange glow to it
+    Position: {x: 318, y: 87}
+    type: 1
+    succes: 0
+  - Guid: 71e8a60b-3a9c-4f12-80eb-102f2216e1db
+    DialogueText: NPC Dialogue
+    Position: {x: 857, y: 97}
+    type: 0
+    succes: 0
+  exposedProperties: []
+  CommentBlockData: []
