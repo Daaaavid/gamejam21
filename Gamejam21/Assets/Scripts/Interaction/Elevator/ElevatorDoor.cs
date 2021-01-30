@@ -29,7 +29,7 @@ public class ElevatorDoor : MonoBehaviour {
 
     public void Close() {
         StopAllCoroutines();
-        StartCoroutine(MoveDoor(normalPosition));
+        StartCoroutine(ShutIt(normalPosition));
     }
 
     IEnumerator MoveDoor(Vector3 newPosition) {
@@ -38,4 +38,14 @@ public class ElevatorDoor : MonoBehaviour {
             yield return null;
         }
     }
+    IEnumerator ShutIt(Vector3 newPosition) {
+        Vector3 startPosition = transform.localPosition;
+        float time = 0;
+        while (time < 1) {
+            transform.localPosition = Vector3.Lerp(startPosition, newPosition, time);
+            time += Time.deltaTime;
+            yield return null;
+        }
+    }
+    
 }
