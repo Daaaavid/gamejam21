@@ -75,13 +75,17 @@ public class TwoDimensionalMovement : MonoBehaviour {
         return Vector2.Distance(a, b);
     }
 
-    public bool GoToObject(Vector3 target) {
-       return GoToObject(new Vector2(target.x, target.z));
+    public bool GoToObject(Vector3 target, bool pushThis) {
+        return GoToObject(new Vector2(target.x, target.z), pushThis);
     }
 
-    public bool GoToObject(Vector2 target) {
+    public bool GoToObject(Vector3 target) {
+       return GoToObject(new Vector2(target.x, target.z), false);
+    }
+
+    public bool GoToObject(Vector2 target, bool pushThis) {
         Debug.Log("Going to object");
-        if(state == 0) {
+        if(state == 0 || pushThis) {
             state = 1;
             targetPosition = target;
             walkingPosition = new Vector2(target.x, normalzPosition);
@@ -90,7 +94,6 @@ public class TwoDimensionalMovement : MonoBehaviour {
             return false;
         }
     }
-
     void ReturnToNormalZ() {
         transform.position = new Vector3(transform.position.x, transform.position.y, normalzPosition);
         interacted = false;
