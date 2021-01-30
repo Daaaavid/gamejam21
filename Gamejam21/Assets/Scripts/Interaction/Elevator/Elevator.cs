@@ -10,20 +10,17 @@ public class Elevator : MonoBehaviour
     [SerializeField] private ElevatorDoor rightDoor;
 
     public InteractionBus MovementBus;
-
-    private void Awake()
-    {
-        MovementBus.OnProximity.AddListener(CloseElevator);
-    }
-
     public void OpenElevator() {
+        MovementBus.OnProximity.AddListener(CloseElevator);
         leftDoor.Open();
         rightDoor.Open();
     }
 
     public void CloseElevator() {
+        Debug.Log("closing");
         leftDoor.Close();
         rightDoor.Close();
+        MovementBus.OnProximity.RemoveListener(CloseElevator);
     }
 
 }

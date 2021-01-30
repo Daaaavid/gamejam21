@@ -2077,7 +2077,7 @@ MonoBehaviour:
   Dialogue: {fileID: 11400000, guid: 1a4599e33198c6e439f157d3ebac0a6f, type: 2}
   SplitValue: 0
   MoveSystem: {fileID: 11400000, guid: ade4e19ed7cc5494f809d127ff1cd268, type: 2}
-  MoveSystem2: {fileID: 0}
+  MoveSystem2: {fileID: 11400000, guid: f45d7c448954c674398e409c43c27ee0, type: 2}
   ReturnOnDone: 0
   TargetPositionOnDone: {fileID: 1410041435}
 --- !u!65 &941992123

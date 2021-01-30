@@ -29,7 +29,7 @@ public class ElevatorDoor : MonoBehaviour {
 
     public void Close() {
         StopAllCoroutines();
-        StartCoroutine(MoveDoor(openPosition));
+        StartCoroutine(MoveDoor(normalPosition));
     }
 
     IEnumerator MoveDoor(Vector3 newPosition) {
