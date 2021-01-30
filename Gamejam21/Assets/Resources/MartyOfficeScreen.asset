@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
+  m_Name: MartyOfficeScreen
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: f1a34b1d-8fcc-47e8-9fcc-817852fcf6af
+    PortName: Next
+    TargetNodeGuid: 73020f17-a66f-4780-b1af-0b2307c56f92
+  - BaseNodeGuid: 73020f17-a66f-4780-b1af-0b2307c56f92
+    PortName: Output
+    TargetNodeGuid: 6381ab22-d6cc-4b71-b1b5-3a8ef431a62b
+  DialogueNodeData:
+  - Guid: 73020f17-a66f-4780-b1af-0b2307c56f92
+    DialogueText: It's all blue
+    Position: {x: 332, y: 98}
+    type: 1
+    succes: 0
+  - Guid: 6381ab22-d6cc-4b71-b1b5-3a8ef431a62b
+    DialogueText: NPC Dialogue
+    Position: {x: 635, y: 94}
+    type: 0
+    succes: 0
+  exposedProperties: []
+  CommentBlockData: []

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
+  m_Name: MartyOfficeCoffeeCup2
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 3be4a500-581b-42d5-a570-7a21a64495aa
+    PortName: Next
+    TargetNodeGuid: 627693f0-a07e-4d7f-8405-1f512a0ae175
+  - BaseNodeGuid: 627693f0-a07e-4d7f-8405-1f512a0ae175
+    PortName: Output
+    TargetNodeGuid: 48327f3d-ff2a-4443-85e1-d4d2b181049a
+  DialogueNodeData:
+  - Guid: 48327f3d-ff2a-4443-85e1-d4d2b181049a
+    DialogueText: NPC Dialogue
+    Position: {x: 687, y: 170}
+    type: 0
+    succes: 0
+  - Guid: 627693f0-a07e-4d7f-8405-1f512a0ae175
+    DialogueText: Mmmmm coffee
+    Position: {x: 312, y: 80}
+    type: 1
+    succes: 0
+  exposedProperties: []
+  CommentBlockData: []

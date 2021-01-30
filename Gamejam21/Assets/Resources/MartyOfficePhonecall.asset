@@ -10,12 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
-  m_Name: Phonecall
+  m_Name: MartyOfficePhonecall
   m_EditorClassIdentifier: 
   NodeLinks:
   - BaseNodeGuid: d575f6d1-b1f5-4a3a-b5a5-ab6818924bac
     PortName: Next
     TargetNodeGuid: ec89de1c-b401-4ec6-8c76-24fe7f3062ce
+  - BaseNodeGuid: 03f2649a-bd8c-47c3-920b-cbd05c694bae
+    PortName: Output
+    TargetNodeGuid: 2601f384-af15-4796-9ca9-b78f3b8cd82b
+  - BaseNodeGuid: 313b2c4c-7c53-4831-a823-da087aca61a0
+    PortName: Output
+    TargetNodeGuid: 2601f384-af15-4796-9ca9-b78f3b8cd82b
   - BaseNodeGuid: ec89de1c-b401-4ec6-8c76-24fe7f3062ce
     PortName: Output
     TargetNodeGuid: f5f7f5fb-cc29-406e-94de-5b9e4ebbd113
@@ -28,16 +34,10 @@ MonoBehaviour:
   - BaseNodeGuid: f5f7f5fb-cc29-406e-94de-5b9e4ebbd113
     PortName: I'm answering my phone...
     TargetNodeGuid: 03f2649a-bd8c-47c3-920b-cbd05c694bae
-  - BaseNodeGuid: 03f2649a-bd8c-47c3-920b-cbd05c694bae
-    PortName: Output
-    TargetNodeGuid: 2601f384-af15-4796-9ca9-b78f3b8cd82b
-  - BaseNodeGuid: d209de4f-f907-4ef2-8371-8a73374d97b0
-    PortName: Output
-    TargetNodeGuid: 2601f384-af15-4796-9ca9-b78f3b8cd82b
   - BaseNodeGuid: f5f7f5fb-cc29-406e-94de-5b9e4ebbd113
     PortName: Well, I was just getting my coat because it's already past five
     TargetNodeGuid: 313b2c4c-7c53-4831-a823-da087aca61a0
-  - BaseNodeGuid: 313b2c4c-7c53-4831-a823-da087aca61a0
+  - BaseNodeGuid: d209de4f-f907-4ef2-8371-8a73374d97b0
     PortName: Output
     TargetNodeGuid: 2601f384-af15-4796-9ca9-b78f3b8cd82b
   DialogueNodeData:

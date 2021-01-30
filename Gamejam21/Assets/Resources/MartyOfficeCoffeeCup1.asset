@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
+  m_Name: MartyOfficeCoffeeCup1
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: a70534f1-b9a6-49ba-9ca6-06c8ee8df67a
+    PortName: Next
+    TargetNodeGuid: 80b28b54-1a17-4c54-aa41-42fa528449cf
+  - BaseNodeGuid: 80b28b54-1a17-4c54-aa41-42fa528449cf
+    PortName: Output
+    TargetNodeGuid: ace10f97-f817-4795-8fce-957c7dcea7a5
+  DialogueNodeData:
+  - Guid: 80b28b54-1a17-4c54-aa41-42fa528449cf
+    DialogueText: I like to think of it as half full
+    Position: {x: 300, y: 94}
+    type: 1
+    succes: 0
+  - Guid: ace10f97-f817-4795-8fce-957c7dcea7a5
+    DialogueText: NPC Dialogue
+    Position: {x: 664, y: 96}
+    type: 0
+    succes: 0
+  exposedProperties: []
+  CommentBlockData: []

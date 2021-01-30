@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
+  m_Name: MartyOfficePaperPileDesc
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 2af1c3e0-1347-48de-8be1-6cc85d40b7e6
+    PortName: Next
+    TargetNodeGuid: c4f9c07b-81a7-454b-87ca-395ccb67f39f
+  - BaseNodeGuid: c4f9c07b-81a7-454b-87ca-395ccb67f39f
+    PortName: Output
+    TargetNodeGuid: 420f77aa-b8a8-427a-9341-077430511a61
+  DialogueNodeData:
+  - Guid: c4f9c07b-81a7-454b-87ca-395ccb67f39f
+    DialogueText: I'm going to sort that out some day
+    Position: {x: 328, y: 98}
+    type: 1
+    succes: 0
+  - Guid: 420f77aa-b8a8-427a-9341-077430511a61
+    DialogueText: NPC Dialogue
+    Position: {x: 686, y: 107}
+    type: 0
+    succes: 0
+  exposedProperties: []
+  CommentBlockData: []

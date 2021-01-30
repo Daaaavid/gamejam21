@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
+  m_Name: MartyOfficeDeadPlant1
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: e2dee443-266b-4998-96eb-4980bfd9d4ec
+    PortName: Next
+    TargetNodeGuid: 950328f1-6e71-431c-aa3b-1caa45352773
+  - BaseNodeGuid: 950328f1-6e71-431c-aa3b-1caa45352773
+    PortName: Output
+    TargetNodeGuid: 786a8364-488b-4881-9261-8304b0de25b0
+  DialogueNodeData:
+  - Guid: 950328f1-6e71-431c-aa3b-1caa45352773
+    DialogueText: He's seen better days...
+    Position: {x: 286, y: 100}
+    type: 1
+    succes: 0
+  - Guid: 786a8364-488b-4881-9261-8304b0de25b0
+    DialogueText: NPC Dialogue
+    Position: {x: 554, y: 90}
+    type: 0
+    succes: 0
+  exposedProperties: []
+  CommentBlockData: []

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
+  m_Name: MartyOfficeBowl2
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 5591426e-1e22-4439-a668-458e6e9e4b91
+    PortName: Next
+    TargetNodeGuid: 530720dc-c00b-4c89-af08-6a9975df82ef
+  - BaseNodeGuid: 530720dc-c00b-4c89-af08-6a9975df82ef
+    PortName: Output
+    TargetNodeGuid: b5b58ef0-0eff-4f3b-be00-e52100c73896
+  DialogueNodeData:
+  - Guid: 530720dc-c00b-4c89-af08-6a9975df82ef
+    DialogueText: He's always hungry
+    Position: {x: 274, y: 109}
+    type: 1
+    succes: 0
+  - Guid: b5b58ef0-0eff-4f3b-be00-e52100c73896
+    DialogueText: NPC Dialogue
+    Position: {x: 607, y: 115}
+    type: 0
+    succes: 0
+  exposedProperties: []
+  CommentBlockData: []
