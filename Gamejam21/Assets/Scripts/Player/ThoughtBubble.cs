@@ -1,12 +1,16 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Subtegral.DialogueSystem.DataContainers;
 using System.Linq;
+using Interaction;
 
 public class ThoughtBubble : MonoBehaviour
 {
+    public InteractionBus Bus;
+    
     [SerializeField] private Text thoughtBubbleText;
     [SerializeField] private Transform thoughtBubble;
     [SerializeField] public DialogueContainer _dialogue;
@@ -14,6 +18,11 @@ public class ThoughtBubble : MonoBehaviour
     [SerializeField] private DialogueNodeData currentNode;
     [Tooltip("0 = false, 1 = true")]
     [Range(0, 1)] public int _splitterValue;
+
+    private void Awake()
+    {
+        Bus.OnChange.AddListener(o => NewThoughtBubble(o.Dialogue, o.SplitValue));
+    }
 
     public void NewThoughtBubble(DialogueContainer dialogue, int splittervalue) {
         thoughtBubble.gameObject.SetActive(true);

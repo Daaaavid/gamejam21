@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Subtegral.DialogueSystem.DataContainers;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -21,20 +22,37 @@ namespace Interaction
         public readonly InteractableObjectEvent OnUse = new InteractableObjectEvent();
         public readonly InteractableObjectEvent OnStopUse = new InteractableObjectEvent();
 
+        public InteractionBus DialogBus;
+        
         public string TextOnHover;
-        
-        
-        //public Narrative?;
-        
+
+        public DialogueContainer Dialogue;
+        public int SplitValue;
+
+
+        public InteractionBus MoveSystem;
         public void Interact()
         {
-            InteractionBus.SetValue(this);
-            OnInteract.Invoke();
+            MoveSystem.SetValue(this);
+
+            StartCoroutine(WaitForMovement(
+                () =>
+                {
+                    InteractionBus.SetValue(this);
+                    OnInteract.Invoke();
+                }));
+
+        }
+
+        IEnumerator WaitForMovement(UnityAction OnDone)
+        {
+            yield return new WaitUntil(MoveSystem.IsNear);
+            OnDone.Invoke();
         }
 
         public void View()
         {
-            //Narrative.Start/play/stuff
+            DialogBus.SetValue(this);
         }
 
         private void OnMouseOver()

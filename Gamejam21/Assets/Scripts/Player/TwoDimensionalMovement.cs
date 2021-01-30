@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Interaction;
 using UnityEngine;
 
 public class TwoDimensionalMovement : MonoBehaviour {
@@ -11,10 +12,15 @@ public class TwoDimensionalMovement : MonoBehaviour {
     public float speed = 0.5f;
     public bool interacted = false;
     [SerializeField]private int state = 0; //0 = normal, 1 interacting, 2 = immovable (in converstation)
+
+    public InteractionBus MovementBus;
+    
     // Start is called before the first frame update
     void Start() {
         normalzPosition = transform.position.z;
         rb = GetComponent<Rigidbody>();
+        
+        MovementBus.OnChange.AddListener(obj => GoToObject(obj.transform.position));
     }
 
     // Update is called once per frame
@@ -50,6 +56,7 @@ public class TwoDimensionalMovement : MonoBehaviour {
             } else { // go to object
                 if (transform.position.x <= walkingPosition.x + 1 && transform.position.x >= walkingPosition.x - 1) {
                     Debug.Log(2);
+                    //if(isNearEnough) do: meuk
                     movement = new Vector2(Mathf.Clamp(targetPosition.x - transform.position.x, -1, 1), Mathf.Clamp(targetPosition.y - transform.position.z, -1, 1)) * speed;
                 } else {
                     Debug.Log(1);
