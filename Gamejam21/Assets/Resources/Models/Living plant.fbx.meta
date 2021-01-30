@@ -2,7 +2,70 @@ fileFormatVersion: 2
 guid: ab16f4aea8940dd4e835de9432b74922
 ModelImporter:
   serializedVersion: 20200
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      74: 4772523484871023015
+    second: Living plant|Action figure.2Action
+  - first:
+      74: 7190789087917569956
+    second: Living plant|Armature.001|mixamo.com|Layer0
+  - first:
+      74: -5196198093230715676
+    second: Living plant|ArmatureAction
+  - first:
+      74: 1122413539305985839
+    second: Living plant|Armature|mixamo.com|Layer0
+  - first:
+      74: 2210924472248298776
+    second: Living plant|CircleAction
+  - first:
+      74: 2939676485802770483
+    second: Living plant|ComputerAction
+  - first:
+      74: 4113271395474693683
+    second: Living plant|Cube.002Action
+  - first:
+      74: -1893035785492213960
+    second: Living plant|Dead plantAction
+  - first:
+      74: 4709739821756716760
+    second: Living plant|Elevator floor buttons.001Action
+  - first:
+      74: -4638312736100257478
+    second: Living plant|Elevator floor numberAction
+  - first:
+      74: -9087710445114622472
+    second: Living plant|Goldfish?.001Action.001
+  - first:
+      74: 5861294863275052841
+    second: Living plant|Goldfish?Action
+  - first:
+      74: 1712320330076808533
+    second: Living plant|Living plantAction
+  - first:
+      74: -7576582986575661918
+    second: Living plant|PapersAction
+  - first:
+      74: 2337733015861321412
+    second: Living plant|Phone hornAction
+  - first:
+      74: -6604722103218809975
+    second: Living plant|poster.001Action
+  - first:
+      74: 7067351189445673369
+    second: Living plant|posterAction
+  - first:
+      74: -578778955237276931
+    second: Living plant|Stool.2Action
+  - first:
+      74: 3306178792111449374
+    second: Living plant|StoolAction
+  - first:
+      74: 3095290264939191425
+    second: Living plant|Wooden crate.2Action
+  - first:
+      74: 563069185268178415
+    second: Living plant|Wooden crateAction
   externalObjects: {}
   materials:
     materialImportMode: 2

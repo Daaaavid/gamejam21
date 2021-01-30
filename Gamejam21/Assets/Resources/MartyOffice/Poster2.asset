@@ -21,7 +21,7 @@ MonoBehaviour:
     TargetNodeGuid: fe02cf24-0284-4b07-a960-33d8e0fbd8b1
   DialogueNodeData:
   - Guid: f176b586-7213-42b7-bce3-d604d5094eb9
-    DialogueText: I could really use a New Hope
+    DialogueText: I could really use a new hope...
     Position: {x: 332, y: 96}
     type: 1
     succes: 0

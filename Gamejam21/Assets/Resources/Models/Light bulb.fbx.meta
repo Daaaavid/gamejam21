@@ -1,65 +1,8 @@
 fileFormatVersion: 2
-guid: 400d821a475e9984cb82a01d53899696
+guid: b85b6300c534049e2a8a3c10cf15b34f
 ModelImporter:
   serializedVersion: 20200
-  internalIDToNameTable:
-  - first:
-      74: 1180572351687541025
-    second: Computer|Action figure.2Action
-  - first:
-      74: 8034271211951714992
-    second: Computer|Armature.001|mixamo.com|Layer0
-  - first:
-      74: 7539850091658953156
-    second: Computer|ArmatureAction
-  - first:
-      74: 3939656794832343004
-    second: Computer|Armature|mixamo.com|Layer0
-  - first:
-      74: 1040795221852709237
-    second: Computer|CircleAction
-  - first:
-      74: 2516209145651102821
-    second: Computer|ComputerAction
-  - first:
-      74: 7359365309027040699
-    second: Computer|Cube.002Action
-  - first:
-      74: -6969020817999928439
-    second: Computer|Elevator floor buttons.001Action
-  - first:
-      74: -8517420118653406938
-    second: Computer|Elevator floor numberAction
-  - first:
-      74: 6214849680223989124
-    second: Computer|Goldfish?.001Action.001
-  - first:
-      74: -5119318997405778992
-    second: Computer|Goldfish?Action
-  - first:
-      74: -7344511404244929984
-    second: Computer|PapersAction
-  - first:
-      74: 5465906655674209817
-    second: Computer|Phone hornAction
-  - first:
-      74: 5564775303649735119
-    second: Computer|poster.001Action
-  - first:
-      74: 1172322294501720665
-    second: Computer|posterAction
-  - first:
-      74: 9005207810720381009
-    second: Computer|Stool.2Action
-  - first:
-      74: -4118677204455980359
-    second: Computer|StoolAction
-  - first:
-      74: 9215068323418692995
-    second: Computer|Wooden crate.2Action
-  - first:
-      74: 5029981376492749608
-    second: Computer|Wooden crateAction
+  internalIDToNameTable: []
   externalObjects: {}
   materials:
     materialImportMode: 2
