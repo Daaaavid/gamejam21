@@ -1,77 +1,8 @@
 fileFormatVersion: 2
-guid: 590697e385834f24a88ed8456639fc3d
+guid: 12c7e539d89c3436fa0b43e1b3f4cd9a
 ModelImporter:
   serializedVersion: 20200
-  internalIDToNameTable:
-  - first:
-      74: 4533549672042262768
-    second: Phone horn|Action figure.2Action
-  - first:
-      74: 6350402529633974986
-    second: Phone horn|Armature.001|mixamo.com|Layer0
-  - first:
-      74: -6376944034517304910
-    second: Phone horn|ArmatureAction
-  - first:
-      74: -2062576343174934814
-    second: Phone horn|Armature|mixamo.com|Layer0
-  - first:
-      74: -8622155749704040718
-    second: Phone horn|CircleAction
-  - first:
-      74: -403223906149684147
-    second: Phone horn|ComputerAction
-  - first:
-      74: -2250556336784026946
-    second: Phone horn|Cube.002Action
-  - first:
-      74: -6961837372630673559
-    second: Phone horn|Elevator floor buttons.001Action
-  - first:
-      74: 6096291663330874340
-    second: Phone horn|Elevator floor numberAction
-  - first:
-      74: 2089027838462409884
-    second: Phone horn|Goldfish?.001Action.001
-  - first:
-      74: 674425042171627399
-    second: Phone horn|Goldfish?Action
-  - first:
-      74: 2533654485439104581
-    second: Phone horn|NurbsPathAction
-  - first:
-      74: 4610743717056234070
-    second: Phone horn|Phone hornAction
-  - first:
-      74: 8147089765254791823
-    second: Phone horn|poster.001Action
-  - first:
-      74: -6160105145584754295
-    second: Phone horn|posterAction
-  - first:
-      74: 4872844776970301767
-    second: Phone horn|Stool.2Action
-  - first:
-      74: 1237037964785214506
-    second: Phone horn|StoolAction
-  - first:
-      74: 5470936872444632347
-    second: Phone horn|Wooden crate.2Action
-  - first:
-      74: -92521530063387777
-    second: Phone horn|Wooden crateAction
-  - first:
-      74: -1280176155546984892
-    second: Phone horn|Dead plantAction
-  - first:
-      74: -5218417618312641355
-    second: Phone horn|FishbowlAction
-  - first:
-      74: 7598291197013000130
-    second: Phone horn|Living plantAction
-  - first:
-      74: 8917715364573963807
-    second: Phone horn|PapersAction
+  internalIDToNameTable: []
   externalObjects: {}
   materials:
     materialImportMode: 2
