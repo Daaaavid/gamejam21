@@ -16,38 +16,38 @@ MonoBehaviour:
   - BaseNodeGuid: 828481e3-7949-4cc1-a205-e0c05687d12e
     PortName: Next
     TargetNodeGuid: 40907dae-f81a-4dcc-ab87-565e284f26a8
-  - BaseNodeGuid: 40907dae-f81a-4dcc-ab87-565e284f26a8
-    PortName: Grumpy
-    TargetNodeGuid: e2bb3697-bc4f-4164-a38f-3d6ae6d7875a
-  - BaseNodeGuid: 40907dae-f81a-4dcc-ab87-565e284f26a8
-    PortName: Not grumpy
-    TargetNodeGuid: a6ee704d-18bf-4861-bf9b-8931dccc1e4f
   - BaseNodeGuid: e2bb3697-bc4f-4164-a38f-3d6ae6d7875a
     PortName: Output
     TargetNodeGuid: 50ccaac6-c933-4384-8040-634ac95a464b
   - BaseNodeGuid: a6ee704d-18bf-4861-bf9b-8931dccc1e4f
     PortName: Output
     TargetNodeGuid: 50ccaac6-c933-4384-8040-634ac95a464b
+  - BaseNodeGuid: 40907dae-f81a-4dcc-ab87-565e284f26a8
+    PortName: Grumpy
+    TargetNodeGuid: a6ee704d-18bf-4861-bf9b-8931dccc1e4f
+  - BaseNodeGuid: 40907dae-f81a-4dcc-ab87-565e284f26a8
+    PortName: Not grumpy
+    TargetNodeGuid: e2bb3697-bc4f-4164-a38f-3d6ae6d7875a
   DialogueNodeData:
   - Guid: 40907dae-f81a-4dcc-ab87-565e284f26a8
     DialogueText: NPC Dialogue
     Position: {x: 249, y: 105}
     type: 3
     succes: 0
-  - Guid: e2bb3697-bc4f-4164-a38f-3d6ae6d7875a
-    DialogueText: I wonder who it is?
-    Position: {x: 543, y: 104}
-    type: 1
-    succes: 0
-  - Guid: a6ee704d-18bf-4861-bf9b-8931dccc1e4f
-    DialogueText: All is quiet...
-    Position: {x: 550, y: 284}
-    type: 1
-    succes: 0
   - Guid: 50ccaac6-c933-4384-8040-634ac95a464b
     DialogueText: NPC Dialogue
     Position: {x: 912, y: 167}
     type: 0
+    succes: 0
+  - Guid: a6ee704d-18bf-4861-bf9b-8931dccc1e4f
+    DialogueText: All is quiet...
+    Position: {x: 556, y: 113}
+    type: 1
+    succes: 0
+  - Guid: e2bb3697-bc4f-4164-a38f-3d6ae6d7875a
+    DialogueText: I wonder who it is?
+    Position: {x: 530, y: 237}
+    type: 1
     succes: 0
   exposedProperties: []
   CommentBlockData: []

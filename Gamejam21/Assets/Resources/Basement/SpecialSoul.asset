@@ -10,24 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
-  m_Name: Lightbulb
+  m_Name: SpecialSoul
   m_EditorClassIdentifier: 
   NodeLinks:
-  - BaseNodeGuid: a8e28b27-dc9c-4bd4-952b-36ceeb91e74b
+  - BaseNodeGuid: 4879c8fb-3d05-486d-931d-3ca7ab27b5f3
     PortName: Next
-    TargetNodeGuid: 33e5db12-caab-49a5-8034-e6fbc0b3ed65
-  - BaseNodeGuid: 33e5db12-caab-49a5-8034-e6fbc0b3ed65
+    TargetNodeGuid: 81a3dbcb-98b5-4691-92c0-992325c77fbf
+  - BaseNodeGuid: 81a3dbcb-98b5-4691-92c0-992325c77fbf
     PortName: Output
-    TargetNodeGuid: 30ebb0a9-4561-418d-ba0a-c20bebc0b7d7
+    TargetNodeGuid: 71e8a60b-3a9c-4f12-80eb-102f2216e1db
   DialogueNodeData:
-  - Guid: 33e5db12-caab-49a5-8034-e6fbc0b3ed65
-    DialogueText: I'm glad they paid the electrics bill.
-    Position: {x: 322, y: 94}
+  - Guid: 81a3dbcb-98b5-4691-92c0-992325c77fbf
+    DialogueText: That soul on the top shelf has a very strange glow to it
+    Position: {x: 318, y: 87}
     type: 1
     succes: 0
-  - Guid: 30ebb0a9-4561-418d-ba0a-c20bebc0b7d7
+  - Guid: 71e8a60b-3a9c-4f12-80eb-102f2216e1db
     DialogueText: NPC Dialogue
-    Position: {x: 712, y: 117}
+    Position: {x: 857, y: 97}
     type: 0
     succes: 0
   exposedProperties: []

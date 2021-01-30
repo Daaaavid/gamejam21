@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
+  m_Name: SpecialSoulInt
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 503d8157-4580-43d1-9f11-bfe6928ed881
+    PortName: Next
+    TargetNodeGuid: 27e84466-76bd-4d4a-8c31-295893fc693b
+  - BaseNodeGuid: 27e84466-76bd-4d4a-8c31-295893fc693b
+    PortName: Grumpy
+    TargetNodeGuid: 03fc42f3-1b47-43f6-bddc-9ec68083b790
+  - BaseNodeGuid: 03fc42f3-1b47-43f6-bddc-9ec68083b790
+    PortName: Output
+    TargetNodeGuid: e48777ef-37cb-494e-b6d8-27dc97a02dd4
+  DialogueNodeData:
+  - Guid: 27e84466-76bd-4d4a-8c31-295893fc693b
+    DialogueText: NPC Dialogue
+    Position: {x: 320, y: 78}
+    type: 3
+    succes: 0
+  - Guid: 03fc42f3-1b47-43f6-bddc-9ec68083b790
+    DialogueText: I can't reach it!
+    Position: {x: 707, y: 67}
+    type: 1
+    succes: 0
+  - Guid: e48777ef-37cb-494e-b6d8-27dc97a02dd4
+    DialogueText: NPC Dialogue
+    Position: {x: 961, y: 90}
+    type: 0
+    succes: 0
+  exposedProperties: []
+  CommentBlockData: []

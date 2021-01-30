@@ -10,24 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
-  m_Name: Lightbulb
+  m_Name: Notice
   m_EditorClassIdentifier: 
   NodeLinks:
-  - BaseNodeGuid: a8e28b27-dc9c-4bd4-952b-36ceeb91e74b
+  - BaseNodeGuid: 6f68e27a-29d6-4d98-a1f6-262d8734c5f1
     PortName: Next
-    TargetNodeGuid: 33e5db12-caab-49a5-8034-e6fbc0b3ed65
-  - BaseNodeGuid: 33e5db12-caab-49a5-8034-e6fbc0b3ed65
+    TargetNodeGuid: 4ec59325-5125-4958-9816-0e5a565e7a10
+  - BaseNodeGuid: 4ec59325-5125-4958-9816-0e5a565e7a10
     PortName: Output
-    TargetNodeGuid: 30ebb0a9-4561-418d-ba0a-c20bebc0b7d7
+    TargetNodeGuid: 2e73e1d9-a6a3-41cc-9160-9adf2a98bb7c
   DialogueNodeData:
-  - Guid: 33e5db12-caab-49a5-8034-e6fbc0b3ed65
-    DialogueText: I'm glad they paid the electrics bill.
-    Position: {x: 322, y: 94}
+  - Guid: 4ec59325-5125-4958-9816-0e5a565e7a10
+    DialogueText: '"Finders fee can only be rewarded after filling out form XF-56999"'
+    Position: {x: 379, y: 84}
     type: 1
     succes: 0
-  - Guid: 30ebb0a9-4561-418d-ba0a-c20bebc0b7d7
+  - Guid: 2e73e1d9-a6a3-41cc-9160-9adf2a98bb7c
     DialogueText: NPC Dialogue
-    Position: {x: 712, y: 117}
+    Position: {x: 963, y: 94}
     type: 0
     succes: 0
   exposedProperties: []

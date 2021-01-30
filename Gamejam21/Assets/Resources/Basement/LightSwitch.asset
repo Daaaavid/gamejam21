@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
-  m_Name: BasementLightSwitch
+  m_Name: LightSwitch
   m_EditorClassIdentifier: 
   NodeLinks:
   - BaseNodeGuid: 1fa80b1b-e41b-413c-8066-f2d32e985a1a
