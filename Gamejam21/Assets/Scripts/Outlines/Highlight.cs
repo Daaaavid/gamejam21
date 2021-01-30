@@ -11,7 +11,12 @@ public class Highlight : MonoBehaviour
         foreach (var highlightBus in IsActivatedBy)
         {
             highlightBus.OnActivate.AddListener(ActivateOutline);
-            highlightBus.OnDeactivate.AddListener(DeactivateOutline);
+            highlightBus.OnDeactivate.AddListener(
+                (ht) =>
+                {
+                    StopAllCoroutines();
+                    DeactivateOutline(ht);
+                });
         }
     }
 
