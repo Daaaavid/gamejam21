@@ -1,29 +1,32 @@
 fileFormatVersion: 2
-guid: 66898744c34dbcb41add0a1c336afece
+guid: 92e08e7dc14d18b438ca2977af294221
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
-      74: -6842666708266138392
-    second: Armature|Armature.001|mixamo.com|Layer0
+      74: 7101860823163269598
+    second: Wooden crate|Armature.001|mixamo.com|Layer0
   - first:
-      74: 4781951162920444690
-    second: Armature|ArmatureAction
+      74: 7425551642340163238
+    second: Wooden crate|ArmatureAction
   - first:
-      74: -4791504522942941401
-    second: Armature|Armature|mixamo.com|Layer0
+      74: -72185312882401206
+    second: Wooden crate|Armature|mixamo.com|Layer0
   - first:
-      74: -459742428196443844
-    second: Armature|CircleAction
+      74: -6127502621937750314
+    second: Wooden crate|CircleAction
   - first:
-      74: 3254526903578860744
-    second: Armature|Goldfish?.001Action.001
+      74: -1488713730851021078
+    second: Wooden crate|Goldfish?.001Action.001
   - first:
-      74: 8296227663371784750
-    second: Armature|Goldfish?Action
+      74: 3985621645969754034
+    second: Wooden crate|Goldfish?Action
   - first:
-      74: -5911733981512947759
-    second: Armature|NurbsPathAction
+      74: 2660230913040329536
+    second: Wooden crate|NurbsPathAction
+  - first:
+      74: -2999697079008302370
+    second: Wooden crate|Wooden crateAction
   externalObjects: {}
   materials:
     materialImportMode: 2
