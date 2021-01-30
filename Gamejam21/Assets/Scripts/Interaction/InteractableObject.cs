@@ -9,29 +9,37 @@ namespace Interaction
     public class InteractableObject : MonoBehaviour
     {
         public InteractionBus InteractionBus;
-        public Sprite InventoryIcon;
-
         public bool ConsumeOnUse;
         public float DestroyOnConsumeDelay = 0.5f;
         
-        public bool IsInventoryItem;
-        public bool IsInPlayerHand;
+        [Header("Inventory")]
+        public Sprite InventoryIcon;
+        public string TextOnHover;
         private bool _interactable = true;
+        public bool IsInventoryItem;
+        [HideInInspector]public bool IsInPlayerHand;
         
-        public UnityEvent OnInteract;
+        [Space(10)]
+        [Header("Audio events")]
+        public UnityEvent OnInteractAudio;
+        public UnityEvent OnUseAudio;
+        public UnityEvent OnStopUseAudio;
+        [Tooltip("Pas de 'DestroyOnConsumeDelay' aan naar minimaal de audiolengte!")] public UnityEvent OnConsumeAudio;
+        
         public readonly InteractableObjectEvent OnUse = new InteractableObjectEvent();
         public readonly InteractableObjectEvent OnStopUse = new InteractableObjectEvent();
-
+       
+        [Space(10)]
+        [Header("Dialogue")]
         public InteractionBus DialogBus;
-        
-        public string TextOnHover;
-
         public DialogueContainer Dialogue;
         public int SplitValue;
-
-        private bool proximity;
-
+        
+        [Space(10)]
+        [Header("Movement")]
         public InteractionBus MoveSystem;
+        private bool proximity;
+        
         public void Interact()
         {
             MoveSystem.SetValue(this);
@@ -40,10 +48,9 @@ namespace Interaction
                 () =>
                 {
                     InteractionBus.SetValue(this);
-                    OnInteract.Invoke();
+                    OnInteractAudio.Invoke();
                     MoveSystem.OnInvokeReturnPlayer.Invoke();
                 }));
-
         }
 
         private bool Proximity()
@@ -73,6 +80,7 @@ namespace Interaction
                 if(!IsInPlayerHand)View();
                 else
                 {
+                    OnUseAudio.Invoke();
                     OnUse.Invoke(this);
                 }
             }
@@ -82,6 +90,7 @@ namespace Interaction
                if(!IsInPlayerHand)Interact();
                else
                {
+                   OnStopUseAudio.Invoke();
                    OnStopUse.Invoke(this);
                }
             }
@@ -95,6 +104,7 @@ namespace Interaction
 
         public IEnumerator _Consume(UnityAction<InteractableObject> OnConsume)
         {
+            OnConsumeAudio.Invoke();
             yield return new WaitForSeconds(DestroyOnConsumeDelay);
             OnConsume.Invoke(this);
             Destroy(gameObject);
