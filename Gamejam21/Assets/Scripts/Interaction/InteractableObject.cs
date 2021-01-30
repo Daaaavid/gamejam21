@@ -38,7 +38,10 @@ namespace Interaction
         [Space(10)]
         [Header("Movement")]
         public InteractionBus MoveSystem;
+        public TransformBus MoveSystem2;
         private bool proximity;
+        public bool ReturnOnDone;
+        public Transform TargetPositionOnDone;
         
         public void Interact()
         {
@@ -49,7 +52,11 @@ namespace Interaction
                 {
                     InteractionBus.SetValue(this);
                     OnInteractAudio.Invoke();
-                    MoveSystem.OnInvokeReturnPlayer.Invoke();
+                    if(ReturnOnDone) MoveSystem.OnInvokeReturnPlayer.Invoke();
+                    else
+                    {
+                        MoveSystem2.SetValue(TargetPositionOnDone);
+                    }
                 }));
         }
 
@@ -63,6 +70,7 @@ namespace Interaction
             MoveSystem.OnProximity.AddListener(() => proximity = true);
             yield return new WaitUntil(Proximity);
             proximity = false;
+            MoveSystem.OnProximity.RemoveListener(() => proximity = true);
             OnDone.Invoke();
         }
 

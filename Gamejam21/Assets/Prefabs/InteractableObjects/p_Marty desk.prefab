@@ -45,19 +45,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InteractionBus: {fileID: 11400000, guid: 645f2b9773ebf404e8d5fb2ff8ec7c66, type: 2}
-  InventoryIcon: {fileID: 0}
   ConsumeOnUse: 0
   DestroyOnConsumeDelay: 0.5
+  InventoryIcon: {fileID: 0}
+  TextOnHover: 
   IsInventoryItem: 0
   IsInPlayerHand: 0
-  OnInteract:
+  OnInteractAudio:
+    m_PersistentCalls:
+      m_Calls: []
+  OnUseAudio:
+    m_PersistentCalls:
+      m_Calls: []
+  OnStopUseAudio:
+    m_PersistentCalls:
+      m_Calls: []
+  OnConsumeAudio:
     m_PersistentCalls:
       m_Calls: []
   DialogBus: {fileID: 11400000, guid: 9c7ed349dcdb00a459c31d69f56c8157, type: 2}
-  TextOnHover: 
   Dialogue: {fileID: 0}
   SplitValue: 0
   MoveSystem: {fileID: 11400000, guid: ade4e19ed7cc5494f809d127ff1cd268, type: 2}
+  MoveSystem2: {fileID: 11400000, guid: f45d7c448954c674398e409c43c27ee0, type: 2}
+  ReturnOnDone: 1
+  TargetPositionOnDone: {fileID: 0}
 --- !u!1001 &1285946751605129739
 PrefabInstance:
   m_ObjectHideFlags: 0

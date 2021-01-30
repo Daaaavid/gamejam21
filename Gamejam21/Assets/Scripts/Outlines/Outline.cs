@@ -25,6 +25,7 @@ namespace Outlines
             rend.material.SetFloat("_ScaleFactor", scaleFactor);
             rend.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
             outlineObject.GetComponent<Outline>().enabled = false;
+            outlineObject.GetComponent<Outline>().enabled = false;
             outlineObject.GetComponent<Collider>().enabled = false;
             rend.enabled = false;
             Debug.Log(rend);

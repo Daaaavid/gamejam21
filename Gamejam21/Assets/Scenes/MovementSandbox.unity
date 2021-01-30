@@ -3170,7 +3170,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2121300737}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1416742602
 GameObject:
@@ -4229,6 +4229,7 @@ MonoBehaviour:
   leftDoor: {fileID: 716778943}
   rightDoor: {fileID: 1423442324}
   targetPositionInsideElevator: {fileID: 1410041435}
+  MovementBus: {fileID: 11400000, guid: ade4e19ed7cc5494f809d127ff1cd268, type: 2}
 --- !u!1001 &3965112052606944991
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4236,10 +4237,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3965112053105055147, guid: 78f8e579b9dc74b4199de02bb6974bde,
+        type: 3}
+      propertyPath: MovementBus2
+      value: 
+      objectReference: {fileID: 11400000, guid: f45d7c448954c674398e409c43c27ee0,
+        type: 2}
     - target: {fileID: 3965112053105055148, guid: 78f8e579b9dc74b4199de02bb6974bde,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3965112053105055148, guid: 78f8e579b9dc74b4199de02bb6974bde,
         type: 3}

@@ -18,6 +18,7 @@ public class TwoDimensionalMovement : MonoBehaviour {
     public float ProximityTreshold = 0.5f;
     
     public InteractionBus MovementBus;
+    public TransformBus MovementBus2;
     
     // Start is called before the first frame update
     void Start() {
@@ -25,6 +26,7 @@ public class TwoDimensionalMovement : MonoBehaviour {
         rb = GetComponent<Rigidbody>();
         
         MovementBus.OnChange.AddListener(obj => GoToObject(obj.transform.position));
+        MovementBus2.OnChange.AddListener(obj => GoToObject(obj.position, true));
         MovementBus.OnInvokeReturnPlayer.AddListener(() => interacted = true);
     }
 
