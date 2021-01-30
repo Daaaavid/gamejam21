@@ -60,18 +60,6 @@ ModelImporter:
   - first:
       74: -92521530063387777
     second: Phone horn|Wooden crateAction
-  - first:
-      74: -1280176155546984892
-    second: Phone horn|Dead plantAction
-  - first:
-      74: -5218417618312641355
-    second: Phone horn|FishbowlAction
-  - first:
-      74: 7598291197013000130
-    second: Phone horn|Living plantAction
-  - first:
-      74: 8917715364573963807
-    second: Phone horn|PapersAction
   externalObjects: {}
   materials:
     materialImportMode: 2
