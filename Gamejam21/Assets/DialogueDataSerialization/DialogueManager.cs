@@ -47,8 +47,8 @@ public class DialogueManager : MonoBehaviour {
         switch (node.type) {
             case 1:
                 currentSelected = 0;
-                NPCdialogue.text = node.DialogueText;
-                ContinueDialogue();
+                PlayerDialogue.text = "";
+                StartCoroutine(TypeSentence(node.DialogueText));
                 break;
             case 2:
                 var choices = dialogue.NodeLinks.Where(x => x.BaseNodeGuid == node.Guid);
@@ -56,6 +56,17 @@ public class DialogueManager : MonoBehaviour {
                 PlayerDialogue.text = choices.ElementAt(currentSelected).PortName;
                 break;
         }
+    }
+
+    IEnumerator TypeSentence(string sentence) {
+        NPCdialogue.text = "";
+        foreach (var letter in sentence.ToCharArray()) {
+            NPCdialogue.text += letter;
+            yield return new WaitForSeconds(0.05f);
+        }
+        yield return new WaitForSeconds(0.3f);
+        ContinueDialogue();
+
     }
 
     public void NextDialogueOption(int value) {
