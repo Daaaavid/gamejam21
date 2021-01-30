@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
+  m_Name: BasementShelves
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 50839c04-6378-48b6-b4fc-b60cce418020
+    PortName: Next
+    TargetNodeGuid: 2afb8e56-e012-49d7-937b-a663ef52336c
+  - BaseNodeGuid: 2afb8e56-e012-49d7-937b-a663ef52336c
+    PortName: Output
+    TargetNodeGuid: ab9d9778-3eca-44db-bf19-15dc354955c3
+  DialogueNodeData:
+  - Guid: ab9d9778-3eca-44db-bf19-15dc354955c3
+    DialogueText: NPC Dialogue
+    Position: {x: 815, y: 147}
+    type: 0
+    succes: 0
+  - Guid: 2afb8e56-e012-49d7-937b-a663ef52336c
+    DialogueText: We store all the souls here until someone comes to claim them.
+    Position: {x: 275, y: 138}
+    type: 1
+    succes: 0
+  exposedProperties: []
+  CommentBlockData: []

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
+  m_Name: MartyOfficeFiguresInt
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 0c9a9aa7-e55f-4945-9a7b-c1584f3edc8c
+    PortName: Next
+    TargetNodeGuid: 1662ffa0-21e7-4701-ae74-3ac437e175e9
+  - BaseNodeGuid: 1662ffa0-21e7-4701-ae74-3ac437e175e9
+    PortName: Output
+    TargetNodeGuid: 19bad2b0-8c32-4969-a2fc-bf585b1b7505
+  DialogueNodeData:
+  - Guid: 1662ffa0-21e7-4701-ae74-3ac437e175e9
+    DialogueText: No time to play with them, unfortunately
+    Position: {x: 303, y: 126}
+    type: 1
+    succes: 0
+  - Guid: 19bad2b0-8c32-4969-a2fc-bf585b1b7505
+    DialogueText: NPC Dialogue
+    Position: {x: 830, y: 117}
+    type: 0
+    succes: 0
+  exposedProperties: []
+  CommentBlockData: []

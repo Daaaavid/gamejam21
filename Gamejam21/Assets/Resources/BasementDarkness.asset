@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
+  m_Name: BasementDarkness
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 36ba4213-a1e5-4089-b263-dbf844aef5fa
+    PortName: Next
+    TargetNodeGuid: b5acd98f-7acf-47a7-9812-adb60209981e
+  - BaseNodeGuid: b5acd98f-7acf-47a7-9812-adb60209981e
+    PortName: Output
+    TargetNodeGuid: 822d820e-6e5b-41eb-a1b7-16114bea456e
+  DialogueNodeData:
+  - Guid: b5acd98f-7acf-47a7-9812-adb60209981e
+    DialogueText: I can't see a thing!
+    Position: {x: 313, y: 150}
+    type: 1
+    succes: 0
+  - Guid: 822d820e-6e5b-41eb-a1b7-16114bea456e
+    DialogueText: NPC Dialogue
+    Position: {x: 642, y: 123}
+    type: 0
+    succes: 0
+  exposedProperties: []
+  CommentBlockData: []
