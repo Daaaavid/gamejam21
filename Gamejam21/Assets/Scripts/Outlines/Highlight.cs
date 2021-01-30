@@ -1,39 +1,26 @@
 ﻿using System;
 using System.Collections;
+using Interaction;
 using UnityEngine;
 
 public class Highlight : MonoBehaviour
 {
-    public HighlightBus[] IsActivatedBy;
-    public GameObject target;
-    private void OnEnable()
+    public HighlightBus Bus;
+    public Outline target;
+
+    private void Awake()
     {
-        foreach (var highlightBus in IsActivatedBy)
-        {
-            highlightBus.OnActivate.AddListener(ActivateOutline);
-            highlightBus.OnDeactivate.AddListener(
-                (ht) =>
-                {
-                    StopAllCoroutines();
-                    DeactivateOutline(ht);
-                });
-        }
+        Bus.OnActivate.AddListener(t => ActivateOutline());
+        Bus.OnDeactivate.AddListener(t => DeactivateOutline());
     }
 
-    private void ActivateOutline(HighlightTrigger t)
+    private void ActivateOutline()
     {
-        target.SetActive(true);
-        if (t.EnabledDuration > 0) StartCoroutine(WaitForDeactivation(t));
+        target.enabled = true;
     }
-
-    IEnumerator WaitForDeactivation(HighlightTrigger t)
+    
+    private void DeactivateOutline()
     {
-        yield return new WaitForSeconds(t.EnabledDuration);
-        DeactivateOutline(t);
-    }
-
-    private void DeactivateOutline(HighlightTrigger t)
-    {
-        target.SetActive(false);
+        target.enabled = false;
     }
 }
