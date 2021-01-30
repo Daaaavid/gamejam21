@@ -34,12 +34,12 @@ public class TwoDimensionalMovement : MonoBehaviour {
     void Update() {
         if (state == 0) {
             if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) {
-                //walk right
-                movement = (Vector3.right * speed);
-            }
-            if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) {
                 //walk left
                 movement = (-Vector3.right * speed);
+            }
+            if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) {
+                //walk right
+                movement = (Vector3.right * speed);
             }
             if (Input.GetKey(KeyCode.P)) {
                 GoToObject(Vector3.zero);
