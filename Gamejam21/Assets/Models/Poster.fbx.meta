@@ -1,0 +1,168 @@
+fileFormatVersion: 2
+guid: 2ca5e9331152bab45987223b1916c9c7
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      74: -8469402710959469736
+    second: poster|Action figure.2Action
+  - first:
+      74: -2433781678445035992
+    second: poster|Armature.001|mixamo.com|Layer0
+  - first:
+      74: 6700072054827292873
+    second: poster|ArmatureAction
+  - first:
+      74: 1151307928537748828
+    second: poster|Armature|mixamo.com|Layer0
+  - first:
+      74: 8773128234101783616
+    second: poster|CircleAction
+  - first:
+      74: -1683782857027397748
+    second: poster|ComputerAction
+  - first:
+      74: 515802923893051458
+    second: poster|Cube.002Action
+  - first:
+      74: -599311424413785854
+    second: poster|Elevator floor buttons.001Action
+  - first:
+      74: -4837316847987369739
+    second: poster|Elevator floor numberAction
+  - first:
+      74: 6108326388492676625
+    second: poster|Goldfish?.001Action.001
+  - first:
+      74: -8760328627022280579
+    second: poster|Goldfish?Action
+  - first:
+      74: 8006068797030969734
+    second: poster|NurbsPathAction
+  - first:
+      74: 3004428904852995876
+    second: poster|poster.001Action
+  - first:
+      74: -1714981075956396451
+    second: poster|posterAction
+  - first:
+      74: -1572116617473150808
+    second: poster|Stool.2Action
+  - first:
+      74: -7661855987032011539
+    second: poster|StoolAction
+  - first:
+      74: -7148096526341809255
+    second: poster|TextAction
+  - first:
+      74: 663345418670422644
+    second: poster|TextAction.001
+  - first:
+      74: -1395445203166874321
+    second: poster|TextAction.002
+  - first:
+      74: 4578830000135823331
+    second: poster|TextAction.003
+  - first:
+      74: 8469504349233422216
+    second: poster|Wooden crate.2Action
+  - first:
+      74: -5933540631144738702
+    second: poster|Wooden crateAction
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

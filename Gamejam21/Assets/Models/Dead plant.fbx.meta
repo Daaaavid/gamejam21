@@ -1,0 +1,162 @@
+fileFormatVersion: 2
+guid: d7a19d1db04c5a04fae772eb55dc1732
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      74: 6039475550674034178
+    second: Dead plant|Action figure.2Action
+  - first:
+      74: -7477836435462687540
+    second: Dead plant|Armature.001|mixamo.com|Layer0
+  - first:
+      74: 7611687020865690954
+    second: Dead plant|ArmatureAction
+  - first:
+      74: -8643641801060645587
+    second: Dead plant|Armature|mixamo.com|Layer0
+  - first:
+      74: -7221523372783004555
+    second: Dead plant|CircleAction
+  - first:
+      74: 6030647667721597241
+    second: Dead plant|ComputerAction
+  - first:
+      74: 3562598608513411307
+    second: Dead plant|Cube.002Action
+  - first:
+      74: 6081456329118492034
+    second: Dead plant|Dead plantAction
+  - first:
+      74: -535479743707608351
+    second: Dead plant|Elevator floor buttons.001Action
+  - first:
+      74: 20189621357506166
+    second: Dead plant|Elevator floor numberAction
+  - first:
+      74: 7009501864238919454
+    second: Dead plant|Goldfish?.001Action.001
+  - first:
+      74: 8710689259100985566
+    second: Dead plant|Goldfish?Action
+  - first:
+      74: -5644001005115120220
+    second: Dead plant|PapersAction
+  - first:
+      74: 5677887842055949917
+    second: Dead plant|Phone hornAction
+  - first:
+      74: -4817334736045784753
+    second: Dead plant|poster.001Action
+  - first:
+      74: -7119118614690680639
+    second: Dead plant|posterAction
+  - first:
+      74: -4308162546410704166
+    second: Dead plant|Stool.2Action
+  - first:
+      74: 410669538389601343
+    second: Dead plant|StoolAction
+  - first:
+      74: 4040268775836765422
+    second: Dead plant|Wooden crate.2Action
+  - first:
+      74: -1496196742024606789
+    second: Dead plant|Wooden crateAction
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
