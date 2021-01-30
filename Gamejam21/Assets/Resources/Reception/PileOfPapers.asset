@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
+  m_Name: PileOfPapers
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 9e1bc0f1-d9d1-43f6-b0ab-a8f96cc2859e
+    PortName: Next
+    TargetNodeGuid: dc97733f-13f3-4c2f-89a0-0a9191239b57
+  - BaseNodeGuid: dc97733f-13f3-4c2f-89a0-0a9191239b57
+    PortName: Output
+    TargetNodeGuid: abdfc03c-ef0b-482d-a46c-18beec8a3c35
+  DialogueNodeData:
+  - Guid: dc97733f-13f3-4c2f-89a0-0a9191239b57
+    DialogueText: Liv should be somewhere behind all those forms
+    Position: {x: 379, y: 95}
+    type: 1
+    succes: 0
+  - Guid: abdfc03c-ef0b-482d-a46c-18beec8a3c35
+    DialogueText: NPC Dialogue
+    Position: {x: 843, y: 101}
+    type: 0
+    succes: 0
+  exposedProperties: []
+  CommentBlockData: []
