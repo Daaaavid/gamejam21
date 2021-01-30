@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
-  m_Name: poster2
+  m_Name: Poster2
   m_EditorClassIdentifier: 
   NodeLinks:
   - BaseNodeGuid: 253d3402-d89a-439f-8cff-673ddf04873e
