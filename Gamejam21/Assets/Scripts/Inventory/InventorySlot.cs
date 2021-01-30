@@ -3,6 +3,7 @@ using Interaction;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using Object = UnityEngine.Object;
 
 namespace Inventory
 {
@@ -29,8 +30,14 @@ namespace Inventory
 
         public void SetItem(InteractableObject obj)
         {
+            Gray.gameObject.SetActive(false);
             _item = obj;
             Target.sprite = HasItem ? ItemIcon : EmptyImage;
+        }
+        
+        public InteractableObject GetItem()
+        {
+            return _item;
         }
 
         public void OnPointerDown(PointerEventData eventData)
@@ -49,5 +56,6 @@ namespace Inventory
         {
             //tooltip hide
         }
+
     }
 }

@@ -29,9 +29,15 @@ namespace Inventory
 
         public void AddToInventory(InteractableObject obj)
         {
-            obj.gameObject.SetActive(false); //todo add an animation for this?
-            itemList.Add(obj);
-            GetFreeInventorySlot().SetItem(obj);
+            if(itemList.Contains(obj)) GetInventorySlot(obj).SetItem(obj);
+            else
+            {
+                itemList.Add(obj);
+                GetFreeInventorySlot().SetItem(obj);
+            }
+            obj.gameObject.SetActive(false);
+            obj.IsInPlayerHand = false;
+            //todo add an animation for this?
         }
 
         private InventorySlot GetFreeInventorySlot()
@@ -45,10 +51,38 @@ namespace Inventory
             return null;
         }
 
+        private InventorySlot GetInventorySlot(InteractableObject obj)
+        {
+            var slots = GetComponentsInChildren<InventorySlot>();
+            foreach (var inventorySlot in slots)
+            {
+                if (inventorySlot.GetItem() == obj) return inventorySlot;
+            }
+            return null;
+        }
+
         public void TakeInHand(InteractableObject obj)
         {
             obj.gameObject.SetActive(true);
+            obj.IsInPlayerHand = true;
             obj.transform.position = playerHandPosition.position;
+            obj.OnUse.AddListener(UseObject);
+            obj.OnStopUse.AddListener(AddToInventory);
+        }
+
+        public void RemoveFromInventory(InteractableObject obj)
+        {
+            GetInventorySlot(obj)?.SetItem(null);
+            itemList.Remove(obj);
+        }
+
+        public void UseObject(InteractableObject obj)
+        {
+            if (obj.ConsumeOnUse)
+            {
+                obj.Consume(RemoveFromInventory);
+            }
+
         }
     }
 }
