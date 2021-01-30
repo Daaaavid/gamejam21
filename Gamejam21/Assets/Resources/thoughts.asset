@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
+  m_Name: thoughts
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 57542ebe-1eb9-44c1-9878-0d369c1e37e3
+    PortName: Next
+    TargetNodeGuid: 3606d8df-2d08-4ba2-8a1f-543de36547ad
+  - BaseNodeGuid: 3606d8df-2d08-4ba2-8a1f-543de36547ad
+    PortName: Grumpy
+    TargetNodeGuid: c7f88dac-7f0b-4287-8b7b-5292ba297090
+  - BaseNodeGuid: 3606d8df-2d08-4ba2-8a1f-543de36547ad
+    PortName: Not grumpy
+    TargetNodeGuid: dc3786a0-8df1-4bb4-ae8f-aecdb1543f4a
+  - BaseNodeGuid: c7f88dac-7f0b-4287-8b7b-5292ba297090
+    PortName: Output
+    TargetNodeGuid: 17be2a38-2101-4ce5-9ff7-73bb0d0c5fd0
+  - BaseNodeGuid: dc3786a0-8df1-4bb4-ae8f-aecdb1543f4a
+    PortName: Output
+    TargetNodeGuid: 17be2a38-2101-4ce5-9ff7-73bb0d0c5fd0
+  - BaseNodeGuid: 17be2a38-2101-4ce5-9ff7-73bb0d0c5fd0
+    PortName: Output
+    TargetNodeGuid: 9654d2c1-7967-40f8-b5fb-b380bbf92e47
+  DialogueNodeData:
+  - Guid: 3606d8df-2d08-4ba2-8a1f-543de36547ad
+    DialogueText: NPC Dialogue
+    Position: {x: 204, y: 95}
+    type: 3
+    succes: 0
+  - Guid: dc3786a0-8df1-4bb4-ae8f-aecdb1543f4a
+    DialogueText: I am thinking manny a thought...
+    Position: {x: 391, y: 175}
+    type: 1
+    succes: 0
+  - Guid: c7f88dac-7f0b-4287-8b7b-5292ba297090
+    DialogueText: hmm....
+    Position: {x: 391, y: 71}
+    type: 1
+    succes: 0
+  - Guid: 17be2a38-2101-4ce5-9ff7-73bb0d0c5fd0
+    DialogueText: So much to think about...
+    Position: {x: 651, y: 69}
+    type: 1
+    succes: 0
+  - Guid: 9654d2c1-7967-40f8-b5fb-b380bbf92e47
+    DialogueText: NPC Dialogue
+    Position: {x: 849, y: 68}
+    type: 0
+    succes: 0
+  exposedProperties: []
+  CommentBlockData: []
