@@ -27,7 +27,7 @@ namespace Outlines
             outlineObject.GetComponent<Outline>().enabled = false;
             outlineObject.GetComponent<Collider>().enabled = false;
             rend.enabled = false;
-
+            Debug.Log(rend);
             return rend;
         }
 
