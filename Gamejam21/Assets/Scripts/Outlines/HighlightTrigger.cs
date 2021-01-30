@@ -3,23 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class HighlightTriggerEvent : UnityEvent<HighlightTrigger>
+namespace Outlines
 {
-}
-
-public class HighlightTrigger : MonoBehaviour
-{
-    public HighlightBus HighlightGroup;
-
-    public float EnabledDuration;
-    
-    public void Activate()
+    public class HighlightTriggerEvent : UnityEvent<HighlightTrigger>
     {
-        HighlightGroup.Activate(this);
     }
 
-    public void Deactivate()
+    public class HighlightTrigger : MonoBehaviour
     {
-        HighlightGroup.Deactivate(this);
+        public HighlightBus Bus;
+
+        public void Activate()
+        {
+            Bus.Activate(this);
+        }
+
+        public void Deactivate()
+        {
+            Bus.Deactivate(this);
+        }
     }
 }
