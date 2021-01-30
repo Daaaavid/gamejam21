@@ -58,8 +58,9 @@ public class TwoDimensionalMovement : MonoBehaviour {
                 }
             } else { // go to object
                 if (transform.position.x <= walkingPosition.x + 1 && transform.position.x >= walkingPosition.x - 1) {
-                    if (Distance() < ProximityTreshold)//2
-                    MovementBus.OnProximity.Invoke();
+                    if (Distance() < ProximityTreshold) {
+                        MovementBus.OnProximity.Invoke();
+                    }//2
                     movement = new Vector2(Mathf.Clamp(targetPosition.x - transform.position.x, -1, 1), Mathf.Clamp(targetPosition.y - transform.position.z, -1, 1)) * speed;
                 } else {//1
                     movement = new Vector2(Mathf.Clamp(walkingPosition.x - transform.position.x, -1, 1), Mathf.Clamp(walkingPosition.y - transform.position.z, -1, 1)) * speed;
