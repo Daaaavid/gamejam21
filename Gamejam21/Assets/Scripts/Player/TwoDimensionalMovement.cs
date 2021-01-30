@@ -33,12 +33,10 @@ public class TwoDimensionalMovement : MonoBehaviour {
         if (state == 0) {
             if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) {
                 //walk right
-                Debug.Log("D Pressed");
                 movement = (Vector3.right * speed);
             }
             if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) {
                 //walk left
-                Debug.Log("A Pressed");
                 movement = (-Vector3.right * speed);
             }
             if (Input.GetKey(KeyCode.P)) {
@@ -50,22 +48,18 @@ public class TwoDimensionalMovement : MonoBehaviour {
             }
 
         } else if (state == 1) {
-            if (interacted) { // go back to walking x
+            if (interacted) { // go back to walking x 4
                 if (transform.position.z <= walkingPosition.y + 0.1f && transform.position.z >= walkingPosition.y - 0.1f) {
                     ReturnToNormalZ();
-                    Debug.Log(4);
-                } else {
-                    Debug.Log(3);
+                } else {//3
                     movement = new Vector2(Mathf.Clamp(walkingPosition.x - transform.position.x, -1, 1), Mathf.Clamp(walkingPosition.y - transform.position.z, -1, 1)) * speed;
                 }
             } else { // go to object
                 if (transform.position.x <= walkingPosition.x + 1 && transform.position.x >= walkingPosition.x - 1) {
-                    Debug.Log(2);
-                    Debug.Log(Distance());
-                    if (Distance() < ProximityTreshold) MovementBus.OnProximity.Invoke();
+                    if (Distance() < ProximityTreshold)//2
+                    MovementBus.OnProximity.Invoke();
                     movement = new Vector2(Mathf.Clamp(targetPosition.x - transform.position.x, -1, 1), Mathf.Clamp(targetPosition.y - transform.position.z, -1, 1)) * speed;
-                } else {
-                    Debug.Log(1);
+                } else {//1
                     movement = new Vector2(Mathf.Clamp(walkingPosition.x - transform.position.x, -1, 1), Mathf.Clamp(walkingPosition.y - transform.position.z, -1, 1)) * speed;
                 }
             }
