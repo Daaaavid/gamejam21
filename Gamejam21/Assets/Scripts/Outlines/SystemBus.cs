@@ -10,7 +10,7 @@ namespace Outlines
         public abstract void Reset();
         public abstract void Init();
 
-        protected virtual bool InvokeWithIdenticalValue => false;
+        protected virtual bool InvokeWithIdenticalValue => true;
     }
     
     public abstract class SystemBusWithValue<T, TY> : SystemBus where TY : UnityEvent<T>, new()

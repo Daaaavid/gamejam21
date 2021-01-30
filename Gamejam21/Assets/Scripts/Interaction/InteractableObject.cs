@@ -29,6 +29,7 @@ namespace Interaction
         public DialogueContainer Dialogue;
         public int SplitValue;
 
+        private bool proximity;
 
         public InteractionBus MoveSystem;
         public void Interact()
@@ -40,13 +41,21 @@ namespace Interaction
                 {
                     InteractionBus.SetValue(this);
                     OnInteract.Invoke();
+                    MoveSystem.OnInvokeReturnPlayer.Invoke();
                 }));
 
         }
 
+        private bool Proximity()
+        {
+            return proximity;
+        }
+
         IEnumerator WaitForMovement(UnityAction OnDone)
         {
-            yield return new WaitUntil(MoveSystem.IsNear);
+            MoveSystem.OnProximity.AddListener(() => proximity = true);
+            yield return new WaitUntil(Proximity);
+            proximity = false;
             OnDone.Invoke();
         }
 

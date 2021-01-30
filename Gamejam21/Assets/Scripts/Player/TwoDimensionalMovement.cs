@@ -13,6 +13,8 @@ public class TwoDimensionalMovement : MonoBehaviour {
     public bool interacted = false;
     [SerializeField]private int state = 0; //0 = normal, 1 interacting, 2 = immovable (in converstation)
 
+    public float ProximityTreshold = 0.5f;
+    
     public InteractionBus MovementBus;
     
     // Start is called before the first frame update
@@ -21,6 +23,7 @@ public class TwoDimensionalMovement : MonoBehaviour {
         rb = GetComponent<Rigidbody>();
         
         MovementBus.OnChange.AddListener(obj => GoToObject(obj.transform.position));
+        MovementBus.OnInvokeReturnPlayer.AddListener(() => interacted = true);
     }
 
     // Update is called once per frame
@@ -56,7 +59,8 @@ public class TwoDimensionalMovement : MonoBehaviour {
             } else { // go to object
                 if (transform.position.x <= walkingPosition.x + 1 && transform.position.x >= walkingPosition.x - 1) {
                     Debug.Log(2);
-                    //if(isNearEnough) do: meuk
+                    Debug.Log(Distance());
+                    if (Distance() < ProximityTreshold) MovementBus.OnProximity.Invoke();
                     movement = new Vector2(Mathf.Clamp(targetPosition.x - transform.position.x, -1, 1), Mathf.Clamp(targetPosition.y - transform.position.z, -1, 1)) * speed;
                 } else {
                     Debug.Log(1);
@@ -65,6 +69,14 @@ public class TwoDimensionalMovement : MonoBehaviour {
             }
         }
 
+    }
+
+    private float Distance()
+    {
+        var a = new Vector2(targetPosition.x, targetPosition.y);
+        var position = transform.position;
+        var b = new Vector2(position.x, position.z);
+        return Vector2.Distance(a, b);
     }
 
     public bool GoToObject(Vector3 target) {
