@@ -8,9 +8,11 @@ public class TwoDimensionalMovement : MonoBehaviour {
     private Vector2 movement;
     public Vector2 walkingPosition;
     public Vector2 targetPosition;
+
     private Rigidbody rb;
     public float speed = 0.5f;
     public bool interacted = false;
+    [SerializeField] private Transform playermoddel;
     [SerializeField]private int state = 0; //0 = normal, 1 interacting, 2 = immovable (in converstation)
 
     public float ProximityTreshold = 0.5f;
@@ -32,12 +34,12 @@ public class TwoDimensionalMovement : MonoBehaviour {
             if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) {
                 //walk right
                 Debug.Log("D Pressed");
-                movement = (transform.right * speed);
+                movement = (Vector3.right * speed);
             }
             if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) {
                 //walk left
                 Debug.Log("A Pressed");
-                movement = (-transform.right * speed);
+                movement = (-Vector3.right * speed);
             }
             if (Input.GetKey(KeyCode.P)) {
                 GoToObject(Vector3.zero);
@@ -106,6 +108,7 @@ public class TwoDimensionalMovement : MonoBehaviour {
         if(state == 0) {
             rb.velocity = new Vector3(movement.x, rb.velocity.y, 0);
             movement.x *= 0.9f;
+            movement.y = 0;
         } else if (state == 1){
             rb.velocity = new Vector3(movement.x, rb.velocity.y, movement.y);
             movement.x *= 0.9f;
@@ -113,5 +116,6 @@ public class TwoDimensionalMovement : MonoBehaviour {
         } else {
             rb.velocity = Vector3.zero;
         }
+        playermoddel.LookAt(transform.position + new Vector3( movement.x, 0, movement.y));
     }
 }
