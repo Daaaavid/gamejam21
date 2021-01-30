@@ -8,21 +8,20 @@ public class Elevator : MonoBehaviour
 {
     [SerializeField] private ElevatorDoor leftDoor;
     [SerializeField] private ElevatorDoor rightDoor;
-    public Transform targetPositionInsideElevator;
 
     public InteractionBus MovementBus;
 
     private void Awake()
     {
-        MovementBus.OnProximity.AddListener(GoOutOfElevator);
+        MovementBus.OnProximity.AddListener(CloseElevator);
     }
 
-    public void GoIntoElevator() {
+    public void OpenElevator() {
         leftDoor.Open();
         rightDoor.Open();
     }
 
-    public void GoOutOfElevator() {
+    public void CloseElevator() {
         leftDoor.Close();
         rightDoor.Close();
     }
