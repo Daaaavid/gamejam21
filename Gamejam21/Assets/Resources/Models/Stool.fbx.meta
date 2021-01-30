@@ -1,29 +1,53 @@
 fileFormatVersion: 2
-guid: 66898744c34dbcb41add0a1c336afece
+guid: 96ec2483b0d796049af659033cb5db92
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
-      74: -6842666708266138392
-    second: Armature|Armature.001|mixamo.com|Layer0
+      74: 5587260087255479500
+    second: Stool|Action figure.2Action
   - first:
-      74: 4781951162920444690
-    second: Armature|ArmatureAction
+      74: 2572158012192336600
+    second: Stool|Armature.001|mixamo.com|Layer0
   - first:
-      74: -4791504522942941401
-    second: Armature|Armature|mixamo.com|Layer0
+      74: 1051974023087051146
+    second: Stool|ArmatureAction
   - first:
-      74: -459742428196443844
-    second: Armature|CircleAction
+      74: 115858097583834629
+    second: Stool|Armature|mixamo.com|Layer0
   - first:
-      74: 3254526903578860744
-    second: Armature|Goldfish?.001Action.001
+      74: 1564166075361538814
+    second: Stool|CircleAction
   - first:
-      74: 8296227663371784750
-    second: Armature|Goldfish?Action
+      74: 4832115762486435487
+    second: Stool|ComputerAction
   - first:
-      74: -5911733981512947759
-    second: Armature|NurbsPathAction
+      74: -7242417498338579476
+    second: Stool|Cube.002Action
+  - first:
+      74: 8297707256390027415
+    second: Stool|Elevator floor buttons.001Action
+  - first:
+      74: -3181042753840122716
+    second: Stool|Elevator floor numberAction
+  - first:
+      74: -5522802335701342621
+    second: Stool|Goldfish?.001Action.001
+  - first:
+      74: 7119675035758929056
+    second: Stool|Goldfish?Action
+  - first:
+      74: 7539291628552120217
+    second: Stool|NurbsPathAction
+  - first:
+      74: -5470154945930556316
+    second: Stool|StoolAction
+  - first:
+      74: -5470388313819530720
+    second: Stool|Wooden crate.2Action
+  - first:
+      74: -4819199212886442502
+    second: Stool|Wooden crateAction
   externalObjects: {}
   materials:
     materialImportMode: 2
