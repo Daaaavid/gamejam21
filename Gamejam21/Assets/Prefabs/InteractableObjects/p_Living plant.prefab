@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2705990664152107595}
-  - component: {fileID: 2705990664152107596}
   m_Layer: 0
   m_Name: p_Living plant
   m_TagString: Untagged
@@ -32,13 +31,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2705990664152107596
+--- !u!114 &8943140108841112369
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2705990664152107597}
+  m_GameObject: {fileID: 2976023924415583724}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5db3849c6cf24bb49f0bdf660c17b8e4, type: 3}
@@ -70,6 +69,21 @@ MonoBehaviour:
   MoveSystem2: {fileID: 11400000, guid: f45d7c448954c674398e409c43c27ee0, type: 2}
   ReturnOnDone: 1
   TargetPositionOnDone: {fileID: 0}
+  BypassMovement: 0
+--- !u!64 &7399010094137938450
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2976023924415583724}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1121494663513942994, guid: ab16f4aea8940dd4e835de9432b74922, type: 3}
 --- !u!1001 &2705990664949590205
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -149,6 +163,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab16f4aea8940dd4e835de9432b74922, type: 3}
+--- !u!1 &2976023924415583724 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ab16f4aea8940dd4e835de9432b74922,
+    type: 3}
+  m_PrefabInstance: {fileID: 2705990664949590205}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2451969553080160086 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ab16f4aea8940dd4e835de9432b74922,
