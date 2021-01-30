@@ -42,11 +42,18 @@ namespace Interaction
         private bool proximity;
         public bool ReturnOnDone;
         public Transform TargetPositionOnDone;
+
+        public bool BypassMovement;
         
         public void Interact()
         {
             MoveSystem.SetValue(this);
 
+            if (BypassMovement)
+            {
+                InteractionBus.SetValue(this);
+                OnInteractAudio.Invoke();
+            }
             StartCoroutine(WaitForMovement(
                 () =>
                 {
@@ -84,6 +91,7 @@ namespace Interaction
             if (!_interactable) return;
             if (Input.GetMouseButtonUp(0))
             {
+                Debug.Log("leftClick");
                 //Left click
                 if(!IsInPlayerHand)View();
                 else
@@ -94,6 +102,7 @@ namespace Interaction
             }
             if (Input.GetMouseButtonUp(1))
             {
+                Debug.Log("rightClick");
                //right click
                if(!IsInPlayerHand)Interact();
                else

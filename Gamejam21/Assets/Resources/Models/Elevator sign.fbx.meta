@@ -1,29 +1,53 @@
 fileFormatVersion: 2
-guid: 66898744c34dbcb41add0a1c336afece
+guid: edd3d2a4c6b88c3489a247694d28df81
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
-      74: -6842666708266138392
-    second: Armature|Armature.001|mixamo.com|Layer0
+      74: -2080170876065344436
+    second: Elevator floor number|Action figure.2Action
   - first:
-      74: 4781951162920444690
-    second: Armature|ArmatureAction
+      74: -5458353211540103424
+    second: Elevator floor number|Armature.001|mixamo.com|Layer0
   - first:
-      74: -4791504522942941401
-    second: Armature|Armature|mixamo.com|Layer0
+      74: 4470106890843356218
+    second: Elevator floor number|ArmatureAction
   - first:
-      74: -459742428196443844
-    second: Armature|CircleAction
+      74: -4395623293934755733
+    second: Elevator floor number|Armature|mixamo.com|Layer0
   - first:
-      74: 3254526903578860744
-    second: Armature|Goldfish?.001Action.001
+      74: 2741637833631170452
+    second: Elevator floor number|CircleAction
   - first:
-      74: 8296227663371784750
-    second: Armature|Goldfish?Action
+      74: 4057347551901996193
+    second: Elevator floor number|ComputerAction
   - first:
-      74: -5911733981512947759
-    second: Armature|NurbsPathAction
+      74: -4453914322270081736
+    second: Elevator floor number|Cube.002Action
+  - first:
+      74: -722850452366660758
+    second: Elevator floor number|Elevator floor buttons.001Action
+  - first:
+      74: 8074801512780647712
+    second: Elevator floor number|Elevator floor numberAction
+  - first:
+      74: 7475643168428423925
+    second: Elevator floor number|Goldfish?.001Action.001
+  - first:
+      74: -8995021672088448432
+    second: Elevator floor number|Goldfish?Action
+  - first:
+      74: 1176479687870185192
+    second: Elevator floor number|NurbsPathAction
+  - first:
+      74: 5692160703211569802
+    second: Elevator floor number|StoolAction
+  - first:
+      74: 2742328726024945082
+    second: Elevator floor number|Wooden crate.2Action
+  - first:
+      74: 6023365827533836986
+    second: Elevator floor number|Wooden crateAction
   externalObjects: {}
   materials:
     materialImportMode: 2

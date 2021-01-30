@@ -1,0 +1,198 @@
+fileFormatVersion: 2
+guid: 576b2fe4b2c74f84d96e92a5b540be6f
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      74: 7160315644126958605
+    second: Goldfish?.001|Armature.001|mixamo.com|Layer0
+  - first:
+      74: 7040341747173196112
+    second: Goldfish?.001|ArmatureAction
+  - first:
+      74: 8881363132170716912
+    second: Goldfish?.001|Armature|mixamo.com|Layer0
+  - first:
+      74: -356119028773938666
+    second: Goldfish?.001|CircleAction
+  - first:
+      74: 8763411346561434499
+    second: Goldfish?.001|FishbowlAction
+  - first:
+      74: -9031012215794935189
+    second: Goldfish?.001|Goldfish?.001Action.001
+  - first:
+      74: -6467446399457555999
+    second: Goldfish?.001|Goldfish?.002|Goldfish?.001|Armature.001|mixamo.com|Layer0|
+  - first:
+      74: 3906721672418570048
+    second: Goldfish?.001|Goldfish?.002|Goldfish?.001|Armature.001|mixamo.com|Layer0|Gold
+  - first:
+      74: 2717594818512280805
+    second: Goldfish?.001|Goldfish?.002|Goldfish?.001|ArmatureAction|Goldfish?.001|Ar
+  - first:
+      74: 8819276094895756522
+    second: Goldfish?.001|Goldfish?.002|Goldfish?.001|ArmatureAction|Goldfish?.001|Armatu
+  - first:
+      74: -779729624698818158
+    second: Goldfish?.001|Goldfish?.002|Goldfish?.001|Armature|mixamo.com|Layer0|Gold
+  - first:
+      74: -1961621767079259575
+    second: Goldfish?.001|Goldfish?.002|Goldfish?.001|Armature|mixamo.com|Layer0|Goldfish
+  - first:
+      74: 2310465405174960397
+    second: Goldfish?.001|Goldfish?.002|Goldfish?.001|CircleAction|Goldfish?.001|Circ
+  - first:
+      74: -6142316088187537708
+    second: Goldfish?.001|Goldfish?.002|Goldfish?.001|CircleAction|Goldfish?.001|CircleAc
+  - first:
+      74: 8450461586417603136
+    second: Goldfish?.001|Goldfish?.002|Goldfish?.001|FishbowlAction|Goldfish?.001|Fi
+  - first:
+      74: -436168052994037096
+    second: Goldfish?.001|Goldfish?.002|Goldfish?.001|FishbowlAction|Goldfish?.001|Fishbo
+  - first:
+      74: -4698499708485847791
+    second: Goldfish?.001|Goldfish?.002|Goldfish?.001|Goldfish?.001Action.001|Goldfis
+  - first:
+      74: 4148054492606471862
+    second: Goldfish?.001|Goldfish?.002|Goldfish?.001|Goldfish?.001Action.001|Goldfish?.0
+  - first:
+      74: 1884308595172458385
+    second: Goldfish?.001|Goldfish?.002|Goldfish?.001|Goldfish?.002|Goldfish?.001|Arm
+  - first:
+      74: -1143480938309895436
+    second: Goldfish?.001|Goldfish?.002|Goldfish?.001|Goldfish?.002|Goldfish?.001|Arm.001
+  - first:
+      74: -7734915930618856872
+    second: Goldfish?.001|Goldfish?.002|Goldfish?.001|Goldfish?.002|Goldfish?.001|Armatur
+  - first:
+      74: 5882463517548240956
+    second: Goldfish?.001|Goldfish?.002|Goldfish?.001|Goldfish?.002|Goldfish?.001|CircleA
+  - first:
+      74: -6325793431144046747
+    second: Goldfish?.001|Goldfish?.002|Goldfish?.001|Goldfish?.002|Goldfish?.001|Fishbow
+  - first:
+      74: 6614198129993881692
+    second: Goldfish?.001|Goldfish?.002|Goldfish?.001|Goldfish?.002|Goldfish?.001|Gol
+  - first:
+      74: -8601924458057798347
+    second: Goldfish?.001|Goldfish?.002|Goldfish?.001|Goldfish?.002|Goldfish?.001|Goldfis
+  - first:
+      74: 8270663179152977674
+    second: Goldfish?.001|Goldfish?.002|Goldfish?.001|Goldfish?.002|Goldfish?.001|NurbsPa
+  - first:
+      74: 8989094508552875886
+    second: Goldfish?.001|Goldfish?.002|Goldfish?.001|Goldfish?Action|Goldfish?.001|G
+  - first:
+      74: -2644861561932990598
+    second: Goldfish?.001|Goldfish?.002|Goldfish?.001|Goldfish?Action|Goldfish?.001|Goldf
+  - first:
+      74: -1269950539335815272
+    second: Goldfish?.001|Goldfish?.002|Goldfish?.001|NurbsPathAction|Goldfish?.001|N
+  - first:
+      74: 4007263990479511914
+    second: Goldfish?.001|Goldfish?.002|Goldfish?.001|NurbsPathAction|Goldfish?.001|Nurbs
+  - first:
+      74: 5519927271713873352
+    second: Goldfish?.001|Goldfish?Action
+  - first:
+      74: -3719803680921824552
+    second: Goldfish?.001|NurbsPathAction
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

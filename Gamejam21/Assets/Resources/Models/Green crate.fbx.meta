@@ -1,29 +1,38 @@
 fileFormatVersion: 2
-guid: 66898744c34dbcb41add0a1c336afece
+guid: f4c4cd85e113c2f48b8916ca7abd4fc4
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
-      74: -6842666708266138392
-    second: Armature|Armature.001|mixamo.com|Layer0
+      74: 6487140484080538951
+    second: Cube.002|Armature.001|mixamo.com|Layer0
   - first:
-      74: 4781951162920444690
-    second: Armature|ArmatureAction
+      74: 7583391367500633076
+    second: Cube.002|ArmatureAction
   - first:
-      74: -4791504522942941401
-    second: Armature|Armature|mixamo.com|Layer0
+      74: -5684672910152580945
+    second: Cube.002|Armature|mixamo.com|Layer0
   - first:
-      74: -459742428196443844
-    second: Armature|CircleAction
+      74: 3028308839008296571
+    second: Cube.002|CircleAction
   - first:
-      74: 3254526903578860744
-    second: Armature|Goldfish?.001Action.001
+      74: 6712369695479197947
+    second: Cube.002|Cube.002Action
   - first:
-      74: 8296227663371784750
-    second: Armature|Goldfish?Action
+      74: 2905291891649768036
+    second: Cube.002|Goldfish?.001Action.001
   - first:
-      74: -5911733981512947759
-    second: Armature|NurbsPathAction
+      74: 6770302095038700959
+    second: Cube.002|Goldfish?Action
+  - first:
+      74: -4230080723370906155
+    second: Cube.002|NurbsPathAction
+  - first:
+      74: -6693125564820889496
+    second: Cube.002|Wooden crate.2Action
+  - first:
+      74: 9021523543653598991
+    second: Cube.002|Wooden crateAction
   externalObjects: {}
   materials:
     materialImportMode: 2

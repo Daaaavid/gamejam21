@@ -1,29 +1,32 @@
 fileFormatVersion: 2
-guid: 66898744c34dbcb41add0a1c336afece
+guid: 6a87e3da45d3e3a44acea63cb0221dce
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
-      74: -6842666708266138392
-    second: Armature|Armature.001|mixamo.com|Layer0
+      74: 1310793837176414102
+    second: Fishbowl|Armature.001|mixamo.com|Layer0
   - first:
-      74: 4781951162920444690
-    second: Armature|ArmatureAction
+      74: 909741751586072056
+    second: Fishbowl|ArmatureAction
   - first:
-      74: -4791504522942941401
-    second: Armature|Armature|mixamo.com|Layer0
+      74: 4647612465964409341
+    second: Fishbowl|Armature|mixamo.com|Layer0
   - first:
-      74: -459742428196443844
-    second: Armature|CircleAction
+      74: 1014844079431764532
+    second: Fishbowl|CircleAction
   - first:
-      74: 3254526903578860744
-    second: Armature|Goldfish?.001Action.001
+      74: 6775875558703533631
+    second: Fishbowl|FishbowlAction
   - first:
-      74: 8296227663371784750
-    second: Armature|Goldfish?Action
+      74: 5368182891011606330
+    second: Fishbowl|Goldfish?.001Action.001
   - first:
-      74: -5911733981512947759
-    second: Armature|NurbsPathAction
+      74: -4329847464306017515
+    second: Fishbowl|Goldfish?Action
+  - first:
+      74: -5950077377046351737
+    second: Fishbowl|NurbsPathAction
   externalObjects: {}
   materials:
     materialImportMode: 2

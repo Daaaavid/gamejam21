@@ -1,29 +1,50 @@
 fileFormatVersion: 2
-guid: 66898744c34dbcb41add0a1c336afece
+guid: fcd5b21b5dfb8fc4e836d8e7cf53f692
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
-      74: -6842666708266138392
-    second: Armature|Armature.001|mixamo.com|Layer0
+      74: -3856438872588883717
+    second: Elevator floor buttons.001|Action figure.2Action
   - first:
-      74: 4781951162920444690
-    second: Armature|ArmatureAction
+      74: -5739962405450051376
+    second: Elevator floor buttons.001|Armature.001|mixamo.com|Layer0
   - first:
-      74: -4791504522942941401
-    second: Armature|Armature|mixamo.com|Layer0
+      74: 4568772304859483523
+    second: Elevator floor buttons.001|ArmatureAction
   - first:
-      74: -459742428196443844
-    second: Armature|CircleAction
+      74: 6843114994764490355
+    second: Elevator floor buttons.001|Armature|mixamo.com|Layer0
   - first:
-      74: 3254526903578860744
-    second: Armature|Goldfish?.001Action.001
+      74: 4118611098868402746
+    second: Elevator floor buttons.001|CircleAction
   - first:
-      74: 8296227663371784750
-    second: Armature|Goldfish?Action
+      74: 8324334238998200816
+    second: Elevator floor buttons.001|ComputerAction
   - first:
-      74: -5911733981512947759
-    second: Armature|NurbsPathAction
+      74: -4825308113186216690
+    second: Elevator floor buttons.001|Cube.002Action
+  - first:
+      74: 4305038759837540311
+    second: Elevator floor buttons.001|Elevator floor buttons.001Action
+  - first:
+      74: 6873555988098249733
+    second: Elevator floor buttons.001|Goldfish?.001Action.001
+  - first:
+      74: 4437410904930580887
+    second: Elevator floor buttons.001|Goldfish?Action
+  - first:
+      74: -8452189399788500475
+    second: Elevator floor buttons.001|NurbsPathAction
+  - first:
+      74: -8187541309197412039
+    second: Elevator floor buttons.001|StoolAction
+  - first:
+      74: -7294968765599459182
+    second: Elevator floor buttons.001|Wooden crate.2Action
+  - first:
+      74: 4924035972435757754
+    second: Elevator floor buttons.001|Wooden crateAction
   externalObjects: {}
   materials:
     materialImportMode: 2

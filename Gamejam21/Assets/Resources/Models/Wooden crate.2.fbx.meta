@@ -1,29 +1,50 @@
 fileFormatVersion: 2
-guid: 66898744c34dbcb41add0a1c336afece
+guid: 38bf8b4643fc0904aae7b89c20635797
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
-      74: -6842666708266138392
-    second: Armature|Armature.001|mixamo.com|Layer0
+      74: 7250959141781412140
+    second: Wooden crate.2|Action figure.2Action
   - first:
-      74: 4781951162920444690
-    second: Armature|ArmatureAction
+      74: 2605490840313849675
+    second: Wooden crate.2|Armature.001|mixamo.com|Layer0
   - first:
-      74: -4791504522942941401
-    second: Armature|Armature|mixamo.com|Layer0
+      74: 1762858598459389718
+    second: Wooden crate.2|ArmatureAction
   - first:
-      74: -459742428196443844
-    second: Armature|CircleAction
+      74: -8404136894362126953
+    second: Wooden crate.2|Armature|mixamo.com|Layer0
   - first:
-      74: 3254526903578860744
-    second: Armature|Goldfish?.001Action.001
+      74: -8687200520448021459
+    second: Wooden crate.2|CircleAction
   - first:
-      74: 8296227663371784750
-    second: Armature|Goldfish?Action
+      74: -8280611946315397075
+    second: Wooden crate.2|ComputerAction
   - first:
-      74: -5911733981512947759
-    second: Armature|NurbsPathAction
+      74: 6231785208023324464
+    second: Wooden crate.2|Cube.002Action
+  - first:
+      74: 4971273700464980021
+    second: Wooden crate.2|Elevator floor buttons.001Action
+  - first:
+      74: 1133880624021616129
+    second: Wooden crate.2|Goldfish?.001Action.001
+  - first:
+      74: -7146386772347610580
+    second: Wooden crate.2|Goldfish?Action
+  - first:
+      74: -3677840094159931648
+    second: Wooden crate.2|NurbsPathAction
+  - first:
+      74: 1986977633798537859
+    second: Wooden crate.2|StoolAction
+  - first:
+      74: 3694958637784314944
+    second: Wooden crate.2|Wooden crate.2Action
+  - first:
+      74: 682421391963503083
+    second: Wooden crate.2|Wooden crateAction
   externalObjects: {}
   materials:
     materialImportMode: 2

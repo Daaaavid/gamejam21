@@ -1,29 +1,8 @@
 fileFormatVersion: 2
-guid: 66898744c34dbcb41add0a1c336afece
+guid: 70596548e1bc44d449ec61c0209da9e3
 ModelImporter:
   serializedVersion: 20200
-  internalIDToNameTable:
-  - first:
-      74: -6842666708266138392
-    second: Armature|Armature.001|mixamo.com|Layer0
-  - first:
-      74: 4781951162920444690
-    second: Armature|ArmatureAction
-  - first:
-      74: -4791504522942941401
-    second: Armature|Armature|mixamo.com|Layer0
-  - first:
-      74: -459742428196443844
-    second: Armature|CircleAction
-  - first:
-      74: 3254526903578860744
-    second: Armature|Goldfish?.001Action.001
-  - first:
-      74: 8296227663371784750
-    second: Armature|Goldfish?Action
-  - first:
-      74: -5911733981512947759
-    second: Armature|NurbsPathAction
+  internalIDToNameTable: []
   externalObjects: {}
   materials:
     materialImportMode: 2
