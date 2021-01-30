@@ -9,8 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5164447688933754785}
-  - component: {fileID: 5164447688933754786}
-  - component: {fileID: 5278908978017967262}
   m_Layer: 0
   m_Name: p_Keyboard
   m_TagString: Untagged
@@ -33,13 +31,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5164447688933754786
+--- !u!114 &8796665432802746577
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5164447688933754787}
+  m_GameObject: {fileID: 5434336350507121120}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5db3849c6cf24bb49f0bdf660c17b8e4, type: 3}
@@ -55,7 +53,7 @@ MonoBehaviour:
   OnInteractAudio:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5278908978017967262}
+      - m_Target: {fileID: 4363459361496327541}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
         m_Mode: 1
@@ -84,13 +82,13 @@ MonoBehaviour:
   ReturnOnDone: 1
   TargetPositionOnDone: {fileID: 0}
   BypassMovement: 0
---- !u!82 &5278908978017967262
+--- !u!82 &4363459361496327541
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5164447688933754787}
+  m_GameObject: {fileID: 5434336350507121120}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -8385574942841076014, guid: d76fcbb8e72bb9a48ad2eb01979c85df,
@@ -181,6 +179,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!64 &4005501034514247364
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5434336350507121120}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -327218276259777663, guid: 0add4dc70cda9d446a1230c4432c0691, type: 3}
 --- !u!1001 &5164447689705063601
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -260,6 +272,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0add4dc70cda9d446a1230c4432c0691, type: 3}
+--- !u!1 &5434336350507121120 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0add4dc70cda9d446a1230c4432c0691,
+    type: 3}
+  m_PrefabInstance: {fileID: 5164447689705063601}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4621103003922359130 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0add4dc70cda9d446a1230c4432c0691,

@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2491242230856148644}
-  - component: {fileID: 2491242230856148645}
   m_Layer: 0
   m_Name: p_Rotary phone
   m_TagString: Untagged
@@ -32,44 +31,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2491242230856148645
-MonoBehaviour:
+--- !u!64 &526292660071130240
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2491242230856148646}
+  m_GameObject: {fileID: 3338225388193818936}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5db3849c6cf24bb49f0bdf660c17b8e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InteractionBus: {fileID: 11400000, guid: 645f2b9773ebf404e8d5fb2ff8ec7c66, type: 2}
-  ConsumeOnUse: 0
-  DestroyOnConsumeDelay: 0.5
-  InventoryIcon: {fileID: 0}
-  TextOnHover: 
-  IsInventoryItem: 0
-  IsInPlayerHand: 0
-  OnInteractAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnUseAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnStopUseAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnConsumeAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  DialogBus: {fileID: 11400000, guid: 9c7ed349dcdb00a459c31d69f56c8157, type: 2}
-  Dialogue: {fileID: 0}
-  SplitValue: 0
-  MoveSystem: {fileID: 11400000, guid: ade4e19ed7cc5494f809d127ff1cd268, type: 2}
-  MoveSystem2: {fileID: 11400000, guid: f45d7c448954c674398e409c43c27ee0, type: 2}
-  ReturnOnDone: 1
-  TargetPositionOnDone: {fileID: 0}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6564437785683303110, guid: d0fb53f966d165d419dfc1acb2731130, type: 3}
 --- !u!1001 &2491242231188853865
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -149,6 +124,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0fb53f966d165d419dfc1acb2731130, type: 3}
+--- !u!1 &3338225388193818936 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d0fb53f966d165d419dfc1acb2731130,
+    type: 3}
+  m_PrefabInstance: {fileID: 2491242231188853865}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2672907137793651586 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d0fb53f966d165d419dfc1acb2731130,
