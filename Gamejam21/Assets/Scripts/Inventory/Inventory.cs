@@ -65,7 +65,8 @@ namespace Inventory
         {
             obj.gameObject.SetActive(true);
             obj.IsInPlayerHand = true;
-            obj.transform.position = playerHandPosition.position;
+            obj.transform.position = Vector3.zero;
+            obj.transform.SetParent(playerHandPosition, false);
             obj.OnUse.AddListener(UseObject);
             obj.OnStopUse.AddListener(AddToInventory);
         }
