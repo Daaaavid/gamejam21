@@ -2074,7 +2074,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   DialogBus: {fileID: 11400000, guid: 9c7ed349dcdb00a459c31d69f56c8157, type: 2}
-  Dialogue: {fileID: 0}
+  Dialogue: {fileID: 11400000, guid: 1a4599e33198c6e439f157d3ebac0a6f, type: 2}
   SplitValue: 0
   MoveSystem: {fileID: 11400000, guid: ade4e19ed7cc5494f809d127ff1cd268, type: 2}
   MoveSystem2: {fileID: 0}
