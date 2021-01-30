@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
+  m_Name: LightSwitch
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 1fa80b1b-e41b-413c-8066-f2d32e985a1a
+    PortName: Output
+    TargetNodeGuid: 0d30b093-57b7-4b66-a588-a50faa409bec
+  - BaseNodeGuid: 141833e1-bd5d-41f9-b896-433bd783df7f
+    PortName: Next
+    TargetNodeGuid: 2a61ec8b-e4ea-43f8-956d-ea91d62dc0c0
+  - BaseNodeGuid: 2a61ec8b-e4ea-43f8-956d-ea91d62dc0c0
+    PortName: Grumpy
+    TargetNodeGuid: 1fa80b1b-e41b-413c-8066-f2d32e985a1a
+  - BaseNodeGuid: 2a61ec8b-e4ea-43f8-956d-ea91d62dc0c0
+    PortName: Not grumpy
+    TargetNodeGuid: dc1b116e-1665-46aa-8913-a17433b885d3
+  - BaseNodeGuid: dc1b116e-1665-46aa-8913-a17433b885d3
+    PortName: Output
+    TargetNodeGuid: 0d30b093-57b7-4b66-a588-a50faa409bec
+  DialogueNodeData:
+  - Guid: 0d30b093-57b7-4b66-a588-a50faa409bec
+    DialogueText: NPC Dialogue
+    Position: {x: 754, y: 247}
+    type: 0
+    succes: 0
+  - Guid: 2a61ec8b-e4ea-43f8-956d-ea91d62dc0c0
+    DialogueText: NPC Dialogue
+    Position: {x: 289, y: 69}
+    type: 3
+    succes: 0
+  - Guid: 1fa80b1b-e41b-413c-8066-f2d32e985a1a
+    DialogueText: There's the switch.
+    Position: {x: 510, y: 91}
+    type: 1
+    succes: 0
+  - Guid: dc1b116e-1665-46aa-8913-a17433b885d3
+    DialogueText: The light is turned on.
+    Position: {x: 511, y: 274}
+    type: 1
+    succes: 0
+  exposedProperties: []
+  CommentBlockData: []

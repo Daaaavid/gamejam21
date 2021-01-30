@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
+  m_Name: Desk
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: e2dddfa8-7554-4bb5-98a5-e631b184ee9a
+    PortName: Next
+    TargetNodeGuid: c4f9d93f-fa70-48f3-8f0d-b18067acd679
+  - BaseNodeGuid: c4f9d93f-fa70-48f3-8f0d-b18067acd679
+    PortName: Output
+    TargetNodeGuid: c0ff1dec-e04a-41aa-96fb-6799c8ea1429
+  DialogueNodeData:
+  - Guid: c0ff1dec-e04a-41aa-96fb-6799c8ea1429
+    DialogueText: NPC Dialogue
+    Position: {x: 612, y: 107}
+    type: 0
+    succes: 0
+  - Guid: c4f9d93f-fa70-48f3-8f0d-b18067acd679
+    DialogueText: That's even worse than my desk!
+    Position: {x: 314, y: 93}
+    type: 1
+    succes: 0
+  exposedProperties: []
+  CommentBlockData: []

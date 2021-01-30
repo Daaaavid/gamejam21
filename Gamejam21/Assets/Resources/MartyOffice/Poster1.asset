@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
+  m_Name: Poster1
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: a376a0d0-59cd-454d-8c3b-b08519255355
+    PortName: Next
+    TargetNodeGuid: 74e301ab-7d17-45e3-a2b6-5bafebbb9573
+  - BaseNodeGuid: 74e301ab-7d17-45e3-a2b6-5bafebbb9573
+    PortName: Output
+    TargetNodeGuid: 695f97ff-5bcf-48e6-91c7-6d27c9c3df58
+  DialogueNodeData:
+  - Guid: 74e301ab-7d17-45e3-a2b6-5bafebbb9573
+    DialogueText: Use the force, Luke
+    Position: {x: 318, y: 94}
+    type: 1
+    succes: 0
+  - Guid: 695f97ff-5bcf-48e6-91c7-6d27c9c3df58
+    DialogueText: NPC Dialogue
+    Position: {x: 697, y: 108}
+    type: 0
+    succes: 0
+  exposedProperties: []
+  CommentBlockData: []

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
+  m_Name: Bench
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: e2bf2342-4839-4a61-bb77-13e0fb738867
+    PortName: Next
+    TargetNodeGuid: 05bd1b06-a72a-43a7-9249-147844a46026
+  - BaseNodeGuid: 05bd1b06-a72a-43a7-9249-147844a46026
+    PortName: Output
+    TargetNodeGuid: 0926f532-583f-44fd-8edc-d3c76fbb1ba3
+  DialogueNodeData:
+  - Guid: 05bd1b06-a72a-43a7-9249-147844a46026
+    DialogueText: Why doesn't anyone wait there?
+    Position: {x: 334, y: 174}
+    type: 1
+    succes: 0
+  - Guid: 0926f532-583f-44fd-8edc-d3c76fbb1ba3
+    DialogueText: NPC Dialogue
+    Position: {x: 780, y: 246}
+    type: 0
+    succes: 0
+  exposedProperties: []
+  CommentBlockData: []

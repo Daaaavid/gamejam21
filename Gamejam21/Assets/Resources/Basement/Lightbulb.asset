@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
+  m_Name: Lightbulb
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: a8e28b27-dc9c-4bd4-952b-36ceeb91e74b
+    PortName: Next
+    TargetNodeGuid: 33e5db12-caab-49a5-8034-e6fbc0b3ed65
+  - BaseNodeGuid: 33e5db12-caab-49a5-8034-e6fbc0b3ed65
+    PortName: Output
+    TargetNodeGuid: 30ebb0a9-4561-418d-ba0a-c20bebc0b7d7
+  DialogueNodeData:
+  - Guid: 33e5db12-caab-49a5-8034-e6fbc0b3ed65
+    DialogueText: I'm glad they paid the electrics bill.
+    Position: {x: 322, y: 94}
+    type: 1
+    succes: 0
+  - Guid: 30ebb0a9-4561-418d-ba0a-c20bebc0b7d7
+    DialogueText: NPC Dialogue
+    Position: {x: 712, y: 117}
+    type: 0
+    succes: 0
+  exposedProperties: []
+  CommentBlockData: []

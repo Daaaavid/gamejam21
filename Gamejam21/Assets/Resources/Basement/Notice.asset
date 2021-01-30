@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
+  m_Name: Notice
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 6f68e27a-29d6-4d98-a1f6-262d8734c5f1
+    PortName: Next
+    TargetNodeGuid: 4ec59325-5125-4958-9816-0e5a565e7a10
+  - BaseNodeGuid: 4ec59325-5125-4958-9816-0e5a565e7a10
+    PortName: Output
+    TargetNodeGuid: 2e73e1d9-a6a3-41cc-9160-9adf2a98bb7c
+  DialogueNodeData:
+  - Guid: 4ec59325-5125-4958-9816-0e5a565e7a10
+    DialogueText: '"Finders fee can only be rewarded after filling out form XF-56999"'
+    Position: {x: 379, y: 84}
+    type: 1
+    succes: 0
+  - Guid: 2e73e1d9-a6a3-41cc-9160-9adf2a98bb7c
+    DialogueText: NPC Dialogue
+    Position: {x: 963, y: 94}
+    type: 0
+    succes: 0
+  exposedProperties: []
+  CommentBlockData: []
