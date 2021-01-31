@@ -13,13 +13,15 @@ public class DialogueManager : MonoBehaviour {
     [SerializeField] private DialogueContainer dialogue;
     [SerializeField] private DialogueNodeData currentNode;
     [SerializeField] private int currentSelected;
+    [SerializeField] private Transform leftButton;
+    [SerializeField] private Transform rightButton;
+    [SerializeField] private int nextScene;
 
 
     [Tooltip("0 = grumpy, 1 = not grumpy")]
     [Range(0, 1)] public int grumpy;
 
     private void Start() {
-        NPCname.text = "Mr. Eckhart (on the phone)";
         PlayerDialogue.text = "";
         var narrativeData = dialogue.NodeLinks.First(); //Entrypoint node
         currentNode = NextNode(narrativeData.TargetNodeGuid);
@@ -41,8 +43,10 @@ public class DialogueManager : MonoBehaviour {
         }
         if(node.type == 0) {
             Debug.Log("Succes: " + node.succes);
-            if(node.succes)
-            SceneManager.LoadScene(1);
+            if (node.succes)
+                SceneManager.LoadScene(nextScene);
+            else
+                Application.Quit();
             return null;
         }
         return node;
@@ -53,12 +57,16 @@ public class DialogueManager : MonoBehaviour {
             case 1:
                 currentSelected = 0;
                 PlayerDialogue.text = "";
+                leftButton.gameObject.SetActive(false);
+                rightButton.gameObject.SetActive(false);
                 StartCoroutine(TypeSentence(node.DialogueText));
                 break;
             case 2:
                 var choices = dialogue.NodeLinks.Where(x => x.BaseNodeGuid == node.Guid);
                 currentSelected = Random.Range(0, choices.Count());
                 PlayerDialogue.text = choices.ElementAt(currentSelected).PortName;
+                leftButton.gameObject.SetActive(true);
+                rightButton.gameObject.SetActive(true);
                 break;
         }
     }

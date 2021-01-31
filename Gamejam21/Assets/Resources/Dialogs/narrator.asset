@@ -1,0 +1,124 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
+  m_Name: narrator
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: cc7a6159-33c9-416b-b6d5-611f7c2f98d0
+    PortName: Next
+    TargetNodeGuid: ca34f03e-7d78-46f0-aa5e-2ce7c35ceb7c
+  - BaseNodeGuid: ca34f03e-7d78-46f0-aa5e-2ce7c35ceb7c
+    PortName: Output
+    TargetNodeGuid: 774aa4a3-a094-4324-9ada-4848eb8f70d8
+  - BaseNodeGuid: 774aa4a3-a094-4324-9ada-4848eb8f70d8
+    PortName: Output
+    TargetNodeGuid: 4da83291-7a6a-417b-aee6-9539a0d74de0
+  - BaseNodeGuid: 4da83291-7a6a-417b-aee6-9539a0d74de0
+    PortName: Output
+    TargetNodeGuid: ed23168c-6ef1-4a52-997c-fcbee7c6d9c0
+  - BaseNodeGuid: ed23168c-6ef1-4a52-997c-fcbee7c6d9c0
+    PortName: Output
+    TargetNodeGuid: f381f962-4ce5-4f44-8f42-cc7cc7bbe7cf
+  - BaseNodeGuid: f381f962-4ce5-4f44-8f42-cc7cc7bbe7cf
+    PortName: Output
+    TargetNodeGuid: 95736016-7bd4-475f-a758-6f568c65cbd4
+  - BaseNodeGuid: 95736016-7bd4-475f-a758-6f568c65cbd4
+    PortName: Output
+    TargetNodeGuid: 7e2b1363-7c7e-4503-a3d4-ecfa39e26566
+  - BaseNodeGuid: 7e2b1363-7c7e-4503-a3d4-ecfa39e26566
+    PortName: Output
+    TargetNodeGuid: 13f6f3cb-e0ff-4435-bb58-1bfac1e72738
+  - BaseNodeGuid: 13f6f3cb-e0ff-4435-bb58-1bfac1e72738
+    PortName: Output
+    TargetNodeGuid: 972d5c8a-cb8c-401b-8020-1bfa01572512
+  - BaseNodeGuid: 972d5c8a-cb8c-401b-8020-1bfa01572512
+    PortName: Output
+    TargetNodeGuid: 8fda4216-483e-44a6-b076-c92324ff1a01
+  - BaseNodeGuid: 8fda4216-483e-44a6-b076-c92324ff1a01
+    PortName: Output
+    TargetNodeGuid: a0640dd8-45da-46f9-86ef-643a72a51163
+  - BaseNodeGuid: a0640dd8-45da-46f9-86ef-643a72a51163
+    PortName: Restart
+    TargetNodeGuid: f3759919-01b5-4973-8ee0-0b86a17b450f
+  - BaseNodeGuid: a0640dd8-45da-46f9-86ef-643a72a51163
+    PortName: Quit
+    TargetNodeGuid: 7adb3f15-539a-40fe-ab2d-2e7415b47dbc
+  DialogueNodeData:
+  - Guid: ca34f03e-7d78-46f0-aa5e-2ce7c35ceb7c
+    DialogueText: Unfortunately Marty and his collegues where unable to finish all
+      the work that day.
+    Position: {x: 190, y: 104}
+    type: 1
+    succes: 0
+  - Guid: 774aa4a3-a094-4324-9ada-4848eb8f70d8
+    DialogueText: It had to do with a seemingly endless supply of tasks...
+    Position: {x: 196, y: 216}
+    type: 1
+    succes: 0
+  - Guid: 4da83291-7a6a-417b-aee6-9539a0d74de0
+    DialogueText: ...and the occasional less then desirable output of certain computerprograms.
+    Position: {x: 197, y: 325}
+    type: 1
+    succes: 0
+  - Guid: ed23168c-6ef1-4a52-997c-fcbee7c6d9c0
+    DialogueText: So they continued on, acompanied by a healthy amount of setbacks
+      and victories.
+    Position: {x: 197, y: 432}
+    type: 1
+    succes: 0
+  - Guid: f381f962-4ce5-4f44-8f42-cc7cc7bbe7cf
+    DialogueText: Like Martys goldfish William 'Bill' Zackerman might say...
+    Position: {x: 199, y: 543}
+    type: 1
+    succes: 0
+  - Guid: 95736016-7bd4-475f-a758-6f568c65cbd4
+    DialogueText: ...if he could say anything...
+    Position: {x: 202, y: 648}
+    type: 1
+    succes: 0
+  - Guid: 7e2b1363-7c7e-4503-a3d4-ecfa39e26566
+    DialogueText: '"it is not the destination that matters,..'
+    Position: {x: 204, y: 752}
+    type: 1
+    succes: 0
+  - Guid: 13f6f3cb-e0ff-4435-bb58-1bfac1e72738
+    DialogueText: ...but the journey."
+    Position: {x: 205, y: 859}
+    type: 1
+    succes: 0
+  - Guid: 972d5c8a-cb8c-401b-8020-1bfa01572512
+    DialogueText: Legend says he is still swimming in circles.
+    Position: {x: 206, y: 968}
+    type: 1
+    succes: 0
+  - Guid: 8fda4216-483e-44a6-b076-c92324ff1a01
+    DialogueText: THE END
+    Position: {x: 207, y: 1077}
+    type: 1
+    succes: 0
+  - Guid: a0640dd8-45da-46f9-86ef-643a72a51163
+    DialogueText: NPC Dialogue
+    Position: {x: 209, y: 1181}
+    type: 2
+    succes: 0
+  - Guid: f3759919-01b5-4973-8ee0-0b86a17b450f
+    DialogueText: NPC Dialogue
+    Position: {x: 485, y: 1140}
+    type: 0
+    succes: 1
+  - Guid: 7adb3f15-539a-40fe-ab2d-2e7415b47dbc
+    DialogueText: NPC Dialogue
+    Position: {x: 487, y: 1225}
+    type: 0
+    succes: 0
+  exposedProperties: []
+  CommentBlockData: []

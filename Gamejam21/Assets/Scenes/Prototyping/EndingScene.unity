@@ -650,7 +650,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0.000000010506582}
+  m_BoundingSphereOverride: {x: 0, y: 1.090527e-21, z: 4.5905e-41, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -3358,7 +3358,7 @@ MonoBehaviour:
   NPCname: {fileID: 1921256376}
   NPCdialogue: {fileID: 251830347}
   PlayerDialogue: {fileID: 542784928}
-  dialogue: {fileID: 11400000, guid: 3a4313526f689ad42a5d58ba764195c0, type: 2}
+  dialogue: {fileID: 11400000, guid: 2c6d110f30b897442af8a3c55f387c41, type: 2}
   currentNode:
     Guid: 
     DialogueText: 
@@ -3368,7 +3368,7 @@ MonoBehaviour:
   currentSelected: 0
   leftButton: {fileID: 627523556}
   rightButton: {fileID: 874549749}
-  nextScene: 1
+  nextScene: 0
   grumpy: 0
 --- !u!4 &872200289
 Transform:
@@ -7198,7 +7198,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Mr. Eckhart (on the phone)
+  m_Text: Narrator (on the phone)
 --- !u!222 &1921256377
 CanvasRenderer:
   m_ObjectHideFlags: 0

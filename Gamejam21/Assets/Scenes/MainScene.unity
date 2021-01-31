@@ -1440,6 +1440,9 @@ MonoBehaviour:
     type: 0
     succes: 0
   currentSelected: 0
+  leftButton: {fileID: 0}
+  rightButton: {fileID: 0}
+  nextScene: 0
   grumpy: 0
 --- !u!1001 &861440319
 PrefabInstance:
@@ -1758,7 +1761,7 @@ PrefabInstance:
     - target: {fileID: 7914021241906090489, guid: 6796d7c07fe62184a9dbeb10633a1a6a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 25.12
+      value: 21.73
       objectReference: {fileID: 0}
     - target: {fileID: 7914021241906090489, guid: 6796d7c07fe62184a9dbeb10633a1a6a,
         type: 3}
