@@ -19,7 +19,8 @@ public class TransistionCamera : MonoBehaviour {
         }
         player.gameObject.SetActive(true);
         targetElevator.OpenElevator(false);
-        player.interacted = true;
+        yield return new WaitForSeconds(.5f);//de deur moet eerst opengaan voordat de speler interactionComplete op true zet, anders loopt ie tegen de deur aan.
+        player.interactionComplete = true;
         transform.gameObject.SetActive(false);
     }
 }

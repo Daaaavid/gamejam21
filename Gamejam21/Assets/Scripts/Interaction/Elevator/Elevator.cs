@@ -14,25 +14,23 @@ public class Elevator : MonoBehaviour
     [SerializeField] private TwoDimensionalMovement player;
     [SerializeField] private Camera playerCamera;
 
-    public InteractionBus MovementBus;
+    [SerializeField] private float WaitTillCloseDelay = 1.5f;
+    
     public void OpenElevator(bool gettingIn) {
-        //MovementBus.OnProximity.AddListener(CloseElevator);
         leftDoor.Open();
         rightDoor.Open();
         StartCoroutine(WaitTillClose(gettingIn));
     }
 
     public void CloseElevator(bool gettingIn) {
-        Debug.Log("closing");
         leftDoor.Close();
         rightDoor.Close();
         if (gettingIn)
             StartCoroutine(WaitForTransition());
-        //MovementBus.OnProximity.RemoveListener(CloseElevator());
     }
 
     IEnumerator WaitTillClose(bool gettingIn) {
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(WaitTillCloseDelay);
         CloseElevator(gettingIn);
     }
 
