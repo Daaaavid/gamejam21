@@ -9,12 +9,6 @@ public class ShakingPhone : MonoBehaviour
     [SerializeField] private Transform horn;
     [SerializeField] private Transform wantedPosition;
     [SerializeField] private Transform dialogueBox;
-	
-	public AudioSource phoneloopSource;
-	public AudioSource phonehornSource;
-	//public AudioSource bossvoSource;
-	//public AudioClip pickupClip;
-	//public AudioClip endClip;
 
 
     public void Start() {
@@ -28,7 +22,7 @@ public class ShakingPhone : MonoBehaviour
     }
 
     IEnumerator WaitTillRing() {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(8);
         GetComponent<AudioSource>().Play();
         StartCoroutine(ShakePhone(rotation1, rotation2));
     }
@@ -46,7 +40,7 @@ public class ShakingPhone : MonoBehaviour
     IEnumerator AwnserPhone() {
         Vector3 startRotation = transform.rotation.eulerAngles;
         Vector3 startPosition = transform.position;
-        Vector3 endRotation = wantedPosition.rotation.eulerAngles;	
+        Vector3 endRotation = wantedPosition.rotation.eulerAngles;
         float time = 0;
         while (time < 1) {
             transform.rotation = Quaternion.Lerp(Quaternion.Euler(startRotation),wantedPosition.rotation, time);
@@ -55,12 +49,6 @@ public class ShakingPhone : MonoBehaviour
             yield return null;
         }
         dialogueBox.gameObject.SetActive(true);
-		if(phoneloopSource != null){
-			phoneloopSource.Play();
-		}
-		if(phonehornSource != null){
-			phonehornSource.Play();
-		}
     }
 
     public void PickUpPhone() {

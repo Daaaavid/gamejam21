@@ -25,6 +25,7 @@ public class ThoughtBubble : MonoBehaviour
     }
 
     public void NewThoughtBubble(DialogueContainer dialogue, int splittervalue) {
+        if(!dialogue) return;
         thoughtBubble.gameObject.SetActive(true);
         thoughtBubbleText.text = "";
         _dialogue = dialogue;
