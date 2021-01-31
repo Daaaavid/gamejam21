@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44692057, g: 0.49680722, b: 0.5750168, a: 1}
+  m_IndirectSpecularColor: {r: 0.44692075, g: 0.4968074, b: 0.5750174, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4892,8 +4892,13 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3965112053105055147, guid: 78f8e579b9dc74b4199de02bb6974bde,
         type: 3}
-      propertyPath: ProximityTreshold
-      value: 5
+      propertyPath: targetPosition.x
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 3965112053105055147, guid: 78f8e579b9dc74b4199de02bb6974bde,
+        type: 3}
+      propertyPath: targetPosition.y
+      value: 28.2
       objectReference: {fileID: 0}
     - target: {fileID: 3965112053105055148, guid: 78f8e579b9dc74b4199de02bb6974bde,
         type: 3}
@@ -4903,7 +4908,7 @@ PrefabInstance:
     - target: {fileID: 3965112053105055148, guid: 78f8e579b9dc74b4199de02bb6974bde,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 21.4
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 3965112053105055148, guid: 78f8e579b9dc74b4199de02bb6974bde,
         type: 3}
@@ -4913,7 +4918,7 @@ PrefabInstance:
     - target: {fileID: 3965112053105055148, guid: 78f8e579b9dc74b4199de02bb6974bde,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 35.89
+      value: 28.2
       objectReference: {fileID: 0}
     - target: {fileID: 3965112053105055148, guid: 78f8e579b9dc74b4199de02bb6974bde,
         type: 3}
@@ -4954,16 +4959,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 4554213352316410574, guid: 78f8e579b9dc74b4199de02bb6974bde,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4554213352316410574, guid: 78f8e579b9dc74b4199de02bb6974bde,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78f8e579b9dc74b4199de02bb6974bde, type: 3}
@@ -10735,6 +10730,9 @@ MonoBehaviour:
   leftButton: {fileID: 0}
   rightButton: {fileID: 0}
   nextScene: 0
+  audio: {fileID: 0}
+  talking: {fileID: 0}
+  endOfSentence: {fileID: 0}
   grumpy: 0
 --- !u!1001 &842704330
 PrefabInstance:

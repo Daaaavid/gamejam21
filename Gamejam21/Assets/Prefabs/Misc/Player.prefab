@@ -802,12 +802,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1cbbae217299284fa7a1dec50174fc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkingPosition: {x: 0, y: 0}
+  walkingPosition: {x: 60, y: 35.89}
   targetPosition: {x: 0, y: 0}
   speed: 12.5
-  interactionComplete: 0
+  interactionComplete: 1
   playermoddel: {fileID: 3965112051691731495}
-  state: 0
+  state: 1
   myAnimator: {fileID: 5866666021814564639}
   MovementBus: {fileID: 11400000, guid: ade4e19ed7cc5494f809d127ff1cd268, type: 2}
   MovementBus2: {fileID: 11400000, guid: f45d7c448954c674398e409c43c27ee0, type: 2}

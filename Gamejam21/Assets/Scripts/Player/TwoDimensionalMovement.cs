@@ -23,7 +23,10 @@ public class TwoDimensionalMovement : MonoBehaviour {
     
     // Start is called before the first frame update
     void Start() {
-        normalzPosition = transform.position.z;
+        if (walkingPosition != Vector2.zero)
+            normalzPosition = walkingPosition.y;
+        else
+            normalzPosition = transform.position.z;
         rb = GetComponentInChildren<Rigidbody>();
         
         MovementBus.OnChange.AddListener(obj => GoToObject(obj.transform.position, obj.ProximityTreshold));
