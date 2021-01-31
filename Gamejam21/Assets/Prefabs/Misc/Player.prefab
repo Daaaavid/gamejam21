@@ -623,7 +623,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3965112052159290109
 Transform:
   m_ObjectHideFlags: 0
@@ -803,7 +803,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkingPosition: {x: 60, y: 35.89}
-  targetPosition: {x: 0, y: 0}
+  targetPosition: {x: 60, y: 28.2}
   speed: 12.5
   interactionComplete: 1
   playermoddel: {fileID: 3965112051691731495}
