@@ -47,9 +47,9 @@ MonoBehaviour:
   InteractionBus: {fileID: 11400000, guid: 645f2b9773ebf404e8d5fb2ff8ec7c66, type: 2}
   ConsumeOnUse: 0
   DestroyOnConsumeDelay: 0.5
-  InventoryIcon: {fileID: 0}
+  InventoryIcon: {fileID: 21300000, guid: 3fb9dcd8cbc96b94abe6bf4e428a701a, type: 3}
   TextOnHover: 
-  IsInventoryItem: 0
+  IsInventoryItem: 1
   IsInPlayerHand: 0
   OnInteractAudio:
     m_PersistentCalls:
@@ -68,6 +68,7 @@ MonoBehaviour:
   SplitValue: 0
   MoveSystem: {fileID: 11400000, guid: ade4e19ed7cc5494f809d127ff1cd268, type: 2}
   MoveSystem2: {fileID: 11400000, guid: f45d7c448954c674398e409c43c27ee0, type: 2}
+  ProximityTreshold: 5
   ReturnOnDone: 1
   TargetPositionOnDone: {fileID: 0}
   BypassMovement: 0

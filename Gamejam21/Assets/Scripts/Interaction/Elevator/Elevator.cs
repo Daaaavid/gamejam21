@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using Interaction;
 using Subtegral.DialogueSystem.DataContainers;
-using UnityEditor.VersionControl;
 using UnityEngine;
 
 public class Elevator : MonoBehaviour
