@@ -3,9 +3,10 @@ using UnityEngine;
 
 namespace Interaction
 {
-    public class GrowPlantOnInteract : MonoBehaviour
+    public class GrowPlant : MonoBehaviour
     {
         public GameObject GrownPlant;
+        public GameObject DeadPlant;
 
         private void Awake()
         {
@@ -16,7 +17,7 @@ namespace Interaction
         public void Grow()
         {
             GrownPlant.SetActive(true);
-            gameObject.SetActive(false);
+            DeadPlant.SetActive(false);
         }
     }
 }
