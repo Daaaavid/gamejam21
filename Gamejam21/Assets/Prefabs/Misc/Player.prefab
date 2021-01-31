@@ -623,7 +623,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3965112052159290109
 Transform:
   m_ObjectHideFlags: 0
@@ -668,7 +668,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3965112052582979075}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.3753357, y: -0.39000034, z: 0}
+  m_LocalPosition: {x: -0.3753357, y: -0.39000034, z: 0.21}
   m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_Children: []
   m_Father: {fileID: 3965112052159290109}
@@ -809,7 +809,7 @@ MonoBehaviour:
   playermoddel: {fileID: 3965112051691731495}
   state: 0
   myAnimator: {fileID: 5866666021814564639}
-  ProximityTreshold: 7
+  ProximityTreshold: 6
   MovementBus: {fileID: 11400000, guid: ade4e19ed7cc5494f809d127ff1cd268, type: 2}
   MovementBus2: {fileID: 11400000, guid: f45d7c448954c674398e409c43c27ee0, type: 2}
 --- !u!114 &3965112053105055142
