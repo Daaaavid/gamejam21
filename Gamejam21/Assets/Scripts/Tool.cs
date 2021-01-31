@@ -12,30 +12,10 @@ namespace DefaultNamespace
 
         public void DoStuff()
         {
-            // var r = FindObjectsOfType<Transform>();
-            // Debug.Log(r.Length);
-            // foreach (var transform1 in r)
-            // {
-            //     var p = Instantiate(empty);
-            //     transform1.SetParent(p.transform);
-            //     p.name = "prefab_" + transform1.name;
-            // }
+            var a = FindObjectsOfType<AudioListener>();
             
-            StartCoroutine(CaptureAll());
-        }
-
-        IEnumerator CaptureAll()
-        {
-            Debug.Log(transform.childCount);
-            Debug.Log("trying");
-            for(int i = 0; i < transform.childCount; i++)
-            {
-                var obj = transform.GetChild(i);
-                obj.gameObject.SetActive(true);
-                yield return new WaitForSeconds(1f);
-                obj.gameObject.SetActive(false);
-                yield return null;
-            }
+            Debug.Log(a[0].name);
+            Debug.Log(a[1].name);
         }
     }
 }
