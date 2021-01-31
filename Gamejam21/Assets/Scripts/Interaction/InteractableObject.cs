@@ -85,8 +85,8 @@ namespace Interaction
         {
             DialogBus.SetValue(this);
         }
-
-        private void OnMouseOver()
+        
+        public void OnMouseOverChild()
         {
             if (!_interactable) return;
             if (Input.GetMouseButtonUp(0))
@@ -119,7 +119,7 @@ namespace Interaction
             StartCoroutine(_Consume(OnConsumed));
         }
 
-        public IEnumerator _Consume(UnityAction<InteractableObject> OnConsume)
+        private IEnumerator _Consume(UnityAction<InteractableObject> OnConsume)
         {
             OnConsumeAudio.Invoke();
             yield return new WaitForSeconds(DestroyOnConsumeDelay);

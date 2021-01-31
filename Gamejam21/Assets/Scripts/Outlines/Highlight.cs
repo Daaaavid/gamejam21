@@ -1,26 +1,29 @@
-﻿using System;
-using System.Collections;
-using Interaction;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class Highlight : MonoBehaviour
+namespace Outlines
 {
-    public HighlightBus Bus;
-    public Outline target;
-
-    private void Awake()
+    [RequireComponent(typeof(Outline))]
+    public class Highlight : MonoBehaviour
     {
-        Bus.OnActivate.AddListener(t => ActivateOutline());
-        Bus.OnDeactivate.AddListener(t => DeactivateOutline());
-    }
+        public HighlightBus Bus;
+        private Outline _target;
 
-    private void ActivateOutline()
-    {
-        target.enabled = true;
-    }
+        private void Awake()
+        {
+            _target = GetComponent<Outline>();
+            _target.enabled = false;
+            Bus.OnActivate.AddListener(t => ActivateOutline());
+            Bus.OnDeactivate.AddListener(t => DeactivateOutline());
+        }
+
+        private void ActivateOutline()
+        {
+            _target.enabled = true;
+        }
     
-    private void DeactivateOutline()
-    {
-        target.enabled = false;
+        private void DeactivateOutline()
+        {
+            _target.enabled = false;
+        }
     }
 }
