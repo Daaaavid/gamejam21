@@ -22,7 +22,7 @@ public class ShakingPhone : MonoBehaviour
     }
 
     IEnumerator WaitTillRing() {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(8);
         GetComponent<AudioSource>().Play();
         StartCoroutine(ShakePhone(rotation1, rotation2));
     }
