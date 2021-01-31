@@ -71,6 +71,18 @@ MonoBehaviour:
   ReturnOnDone: 1
   TargetPositionOnDone: {fileID: 0}
   BypassMovement: 0
+--- !u!114 &1341783281403414533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8343402522119103383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d37abe64b3af4722a50eb98d79248604, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &2547322561759184464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -102,18 +114,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bus: {fileID: 11400000, guid: 54b817c7977a5a5468e30cfb283f3755, type: 2}
---- !u!114 &1341783281403414533
-MonoBehaviour:
+--- !u!64 &5663546106821374373
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8343402522119103383}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d37abe64b3af4722a50eb98d79248604, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -4213873895049120728, guid: f81516691340af746aef985f6424f0a9, type: 3}
 --- !u!1001 &9153796807632674502
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -43,6 +43,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bus: {fileID: 11400000, guid: 54b817c7977a5a5468e30cfb283f3755, type: 2}
+--- !u!64 &6394628382402785370
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 399691748031030991}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1121494663513942994, guid: 6f21cd341c9caaf408e41191598f4c93, type: 3}
 --- !u!1 &1999302836146457301
 GameObject:
   m_ObjectHideFlags: 0

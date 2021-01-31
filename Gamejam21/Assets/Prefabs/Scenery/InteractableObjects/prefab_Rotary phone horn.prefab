@@ -1,5 +1,13 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!81 &2921852128818276244
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816536723178732747}
+  m_Enabled: 1
 --- !u!114 &4683994386843653756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31,14 +39,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bus: {fileID: 11400000, guid: 54b817c7977a5a5468e30cfb283f3755, type: 2}
---- !u!81 &2921852128818276244
-AudioListener:
+--- !u!64 &6912043068021231482
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1816536723178732747}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3549467245965373904, guid: cd7fc7239f8e6e048857739942590c36, type: 3}
 --- !u!1 &8941634498626550121
 GameObject:
   m_ObjectHideFlags: 0
