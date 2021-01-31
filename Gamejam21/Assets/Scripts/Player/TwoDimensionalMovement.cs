@@ -43,11 +43,11 @@ public class TwoDimensionalMovement : MonoBehaviour {
                 movement = (Vector3.right * speed);
             }
             if (Input.GetKey(KeyCode.P)) {
-                GoToObject(Vector3.zero);
+            //    GoToObject(Vector3.zero);
             }
 
             if (Input.GetKey(KeyCode.T)) {
-                GetComponent<ThoughtBubble>().NewThoughtBubble(GetComponent<ThoughtBubble>()._dialogue, 0);
+            //    GetComponent<ThoughtBubble>().NewThoughtBubble(GetComponent<ThoughtBubble>()._dialogue, 0);
             }
 
         } else if (state == 1) {
