@@ -16,7 +16,9 @@ public class DialogueManager : MonoBehaviour {
     [SerializeField] private Transform leftButton;
     [SerializeField] private Transform rightButton;
     [SerializeField] private int nextScene;
-
+    [SerializeField] private AudioSource audio;
+    [SerializeField] private AudioClip talking;
+    [SerializeField] private AudioClip endOfSentence;
 
     [Tooltip("0 = grumpy, 1 = not grumpy")]
     [Range(0, 1)] public int grumpy;
@@ -74,10 +76,15 @@ public class DialogueManager : MonoBehaviour {
 
     IEnumerator TypeSentence(string sentence) {
         NPCdialogue.text = "";
+        audio.clip = talking;
         foreach (var letter in sentence.ToCharArray()) {
             NPCdialogue.text += letter;
+            if (letter.ToString() != " ")
+                audio.Play();
             yield return new WaitForSeconds(0.05f);
         }
+        audio.clip = endOfSentence;
+        audio.Play();
         yield return new WaitForSeconds(0.3f);
         ContinueDialogue();
 
