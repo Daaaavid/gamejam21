@@ -14,6 +14,9 @@ public class ThoughtBubble : MonoBehaviour
     [SerializeField] private Text thoughtBubbleText;
     [SerializeField] private Transform thoughtBubble;
     [SerializeField] public DialogueContainer _dialogue;
+    [SerializeField] private AudioSource audio;
+    [SerializeField] private AudioClip open;
+    [SerializeField] private AudioClip close;
 
     [SerializeField] private DialogueNodeData currentNode;
     [Tooltip("0 = false, 1 = true")]
@@ -25,6 +28,8 @@ public class ThoughtBubble : MonoBehaviour
     }
 
     public void NewThoughtBubble(DialogueContainer dialogue, int splittervalue) {
+        audio.clip = open;
+        audio.Play();
         if(!dialogue) return;
         thoughtBubble.gameObject.SetActive(true);
         thoughtBubbleText.text = "";
@@ -43,6 +48,8 @@ public class ThoughtBubble : MonoBehaviour
             node = _dialogue.DialogueNodeData.Find(x => x.Guid == choices.ElementAt(_splitterValue).TargetNodeGuid);
         }
         if (node.type == 0) {
+            audio.clip = close;
+            audio.Play();
             thoughtBubble.gameObject.SetActive(false);
             return null;
         }
@@ -68,7 +75,7 @@ public class ThoughtBubble : MonoBehaviour
             thoughtBubbleText.text += letter;
             yield return new WaitForSeconds(0.05f);
         }
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
         ContinueThoughts();
 
     }
