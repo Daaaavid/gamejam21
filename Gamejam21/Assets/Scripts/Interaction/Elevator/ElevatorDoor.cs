@@ -34,7 +34,7 @@ public class ElevatorDoor : MonoBehaviour {
 
     IEnumerator MoveDoor(Vector3 newPosition) {
         while (Vector3.Distance(transform.localPosition,newPosition) > 0.00001f) {
-            transform.localPosition = Vector3.Slerp(transform.localPosition, newPosition, Time.deltaTime);
+            transform.localPosition = Vector3.Lerp(transform.localPosition, newPosition, Time.deltaTime);
             yield return null;
         }
     }

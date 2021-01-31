@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Interaction;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class TwoDimensionalMovement : MonoBehaviour {
     float normalzPosition;
@@ -11,7 +12,7 @@ public class TwoDimensionalMovement : MonoBehaviour {
 
     private Rigidbody rb;
     public float speed = 0.5f;
-    public bool interacted = false;
+    [FormerlySerializedAs("interacted")] public bool interactionComplete = false;
     [SerializeField] private Transform playermoddel;
     [SerializeField]private int state = 0; //0 = normal, 1 interacting, 2 = immovable (in converstation)
 
@@ -27,7 +28,7 @@ public class TwoDimensionalMovement : MonoBehaviour {
         
         MovementBus.OnChange.AddListener(obj => GoToObject(obj.transform.position));
         MovementBus2.OnChange.AddListener(obj => GoToObject(obj.position, true));
-        MovementBus.OnInvokeReturnPlayer.AddListener(() => interacted = true);
+        MovementBus.OnInvokeReturnPlayer.AddListener(() => interactionComplete = true);
     }
 
     // Update is called once per frame
@@ -50,7 +51,7 @@ public class TwoDimensionalMovement : MonoBehaviour {
             }
 
         } else if (state == 1) {
-            if (interacted) { // go back to walking x 4
+            if (interactionComplete) { // go back to walking x 4
                 if (transform.position.z <= walkingPosition.y + 0.1f && transform.position.z >= walkingPosition.y - 0.1f) {
                     ReturnToNormalZ();
                 } else {//3
@@ -99,7 +100,7 @@ public class TwoDimensionalMovement : MonoBehaviour {
     }
     void ReturnToNormalZ() {
         transform.position = new Vector3(transform.position.x, transform.position.y, normalzPosition);
-        interacted = false;
+        interactionComplete = false;
         state = 0;
     }
 

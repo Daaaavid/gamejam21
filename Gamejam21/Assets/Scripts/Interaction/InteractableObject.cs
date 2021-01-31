@@ -47,6 +47,7 @@ namespace Interaction
         
         public void Interact()
         {
+            Debug.Log("InvokedInteract");
             MoveSystem.SetValue(this);
 
             if (BypassMovement)
@@ -57,6 +58,7 @@ namespace Interaction
             StartCoroutine(WaitForMovement(
                 () =>
                 {
+                    Debug.Log("InvokedDone");
                     InteractionBus.SetValue(this);
                     OnInteractAudio.Invoke();
                     if(ReturnOnDone) MoveSystem.OnInvokeReturnPlayer.Invoke();

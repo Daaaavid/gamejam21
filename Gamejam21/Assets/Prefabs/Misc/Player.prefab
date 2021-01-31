@@ -785,11 +785,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkingPosition: {x: 0, y: 0}
   targetPosition: {x: 0, y: 0}
-  speed: 5
+  speed: 12.5
   interacted: 0
   playermoddel: {fileID: 3965112051691731495}
   state: 0
-  ProximityTreshold: 0.8
+  ProximityTreshold: 3
   MovementBus: {fileID: 11400000, guid: ade4e19ed7cc5494f809d127ff1cd268, type: 2}
   MovementBus2: {fileID: 11400000, guid: f45d7c448954c674398e409c43c27ee0, type: 2}
 --- !u!114 &3965112053105055142
