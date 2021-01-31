@@ -59,6 +59,7 @@ public class TwoDimensionalMovement : MonoBehaviour {
                 }
             } else { // go to object
                 if (transform.position.x <= walkingPosition.x + 1 && transform.position.x >= walkingPosition.x - 1) {
+                    Debug.Log(Distance());
                     if (Distance() < ProximityTreshold) {
                         MovementBus.OnProximity.Invoke();
                     }//2

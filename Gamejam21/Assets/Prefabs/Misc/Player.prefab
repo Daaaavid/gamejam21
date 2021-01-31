@@ -40,13 +40,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3965112051472425164}
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 3.94, z: 7.8499985}
+  m_LocalRotation: {x: 0, y: 0.99506426, z: -0.09923292, w: 0}
+  m_LocalPosition: {x: 0, y: 14.25, z: 14.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4554213352316410574}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 11.39, y: 180, z: 0}
 --- !u!20 &3965112051472425162
 Camera:
   m_ObjectHideFlags: 0
@@ -238,7 +238,7 @@ Transform:
   m_GameObject: {fileID: 3965112051691731496}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 1.5}
   m_Children:
   - {fileID: 4085404559534270092}
   m_Father: {fileID: 4554213352316410574}
@@ -786,7 +786,7 @@ MonoBehaviour:
   walkingPosition: {x: 0, y: 0}
   targetPosition: {x: 0, y: 0}
   speed: 12.5
-  interacted: 0
+  interactionComplete: 0
   playermoddel: {fileID: 3965112051691731495}
   state: 0
   ProximityTreshold: 3
