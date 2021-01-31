@@ -59,6 +59,7 @@ public class DialogueManager : MonoBehaviour {
                 PlayerDialogue.text = "";
                 leftButton.gameObject.SetActive(false);
                 rightButton.gameObject.SetActive(false);
+                StopAllCoroutines();
                 StartCoroutine(TypeSentence(node.DialogueText));
                 break;
             case 2:
