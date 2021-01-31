@@ -23,7 +23,7 @@ public class TwoDimensionalMovement : MonoBehaviour {
     // Start is called before the first frame update
     void Start() {
         normalzPosition = transform.position.z;
-        rb = GetComponent<Rigidbody>();
+        rb = GetComponentInChildren<Rigidbody>();
         
         MovementBus.OnChange.AddListener(obj => GoToObject(obj.transform.position));
         MovementBus2.OnChange.AddListener(obj => GoToObject(obj.position, true));
