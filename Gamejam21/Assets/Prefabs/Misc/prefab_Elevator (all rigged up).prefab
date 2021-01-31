@@ -323,7 +323,8 @@ PrefabInstance:
         type: 3}
       propertyPath: Dialogue
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: 420efc731efdc41799f99da0e7271387,
+        type: 2}
     - target: {fileID: 3270696217759686487, guid: fc7c620bb14d46243a80552b80edb5a0,
         type: 3}
       propertyPath: DialogueBus
