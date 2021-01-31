@@ -5,11 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class GoToEnd : MonoBehaviour
 {
+    public float Seconds;
     private void Start() {
         StartCoroutine(WaitAndEnd());
     }
     IEnumerator WaitAndEnd() {
-        yield return new WaitForSeconds(240);
+        yield return new WaitForSeconds(Seconds);
         SceneManager.LoadScene(2);
     }
 }
