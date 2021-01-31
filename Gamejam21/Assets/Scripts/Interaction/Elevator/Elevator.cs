@@ -63,6 +63,7 @@ public class Elevator : MonoBehaviour
         transitionCamera.gameObject.SetActive(true);
         player.gameObject.SetActive(false);
         player.transform.position = otherElevator.TargetPosition.position;
+        player.playermoddel.rotation = Quaternion.Euler(Vector3.zero);
         transitionCamera.MakeTransition(playerCamera.transform.position,player,otherElevator);
     }
 }

@@ -2,16 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShakingPhone : MonoBehaviour
-{
+public class ShakingPhone : MonoBehaviour {
     [SerializeField] private Vector3 rotation1;
     [SerializeField] private Vector3 rotation2;
     [SerializeField] private Transform horn;
     [SerializeField] private Transform wantedPosition;
     [SerializeField] private Transform dialogueBox;
-
+    [SerializeField] private AudioSource audiosource1;
+    [SerializeField] private AudioSource audioSource2;
+    [SerializeField] private AudioClip noise;
 
     public void Start() {
+        audiosource1 = GetComponent<AudioSource>();
         StartCoroutine(WaitTillRing());
     }
 
@@ -53,7 +55,10 @@ public class ShakingPhone : MonoBehaviour
 
     public void PickUpPhone() {
         StopAllCoroutines();
-        GetComponent<AudioSource>().Stop();
+        audiosource1.Stop();
+        audiosource1.clip = noise;
+        audiosource1.Play();
+        audioSource2.Play();
         StartCoroutine(AwnserPhone());
     }
 }
