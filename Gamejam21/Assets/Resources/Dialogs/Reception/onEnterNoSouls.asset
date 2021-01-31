@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
+  m_Name: onEnterNoSouls
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 5a09e2ad-33eb-4d67-ad1e-df329c524437
+    PortName: Next
+    TargetNodeGuid: 5bcd9101-862c-4dea-84c9-4e678252658d
+  - BaseNodeGuid: 9a6a0e45-0a45-4259-9b36-323df8c27887
+    PortName: I lost my elevatorcard
+    TargetNodeGuid: 3544884a-625c-4fee-b31c-b23c3c308002
+  - BaseNodeGuid: 9a6a0e45-0a45-4259-9b36-323df8c27887
+    PortName: I'm lost
+    TargetNodeGuid: 1516fcba-0f12-4d92-a56c-f5e31d87008f
+  - BaseNodeGuid: 9a6a0e45-0a45-4259-9b36-323df8c27887
+    PortName: I was planning to go home
+    TargetNodeGuid: 1516fcba-0f12-4d92-a56c-f5e31d87008f
+  - BaseNodeGuid: 3544884a-625c-4fee-b31c-b23c3c308002
+    PortName: Output
+    TargetNodeGuid: 3b2235e7-10bd-4ae2-a4f7-e350ce04793f
+  - BaseNodeGuid: 1516fcba-0f12-4d92-a56c-f5e31d87008f
+    PortName: Output
+    TargetNodeGuid: a8da5e50-0aff-4a73-9f14-29765adf5867
+  - BaseNodeGuid: 5bcd9101-862c-4dea-84c9-4e678252658d
+    PortName: Output
+    TargetNodeGuid: 3e874f4b-e24c-4c2b-abb6-1e21259a1abd
+  - BaseNodeGuid: 3e874f4b-e24c-4c2b-abb6-1e21259a1abd
+    PortName: Not grumpy
+    TargetNodeGuid: 9a6a0e45-0a45-4259-9b36-323df8c27887
+  - BaseNodeGuid: 3e874f4b-e24c-4c2b-abb6-1e21259a1abd
+    PortName: Grumpy
+    TargetNodeGuid: 20db9168-37a6-4d87-941b-fdd960f5ca90
+  - BaseNodeGuid: 20db9168-37a6-4d87-941b-fdd960f5ca90
+    PortName: I was planning to go home
+    TargetNodeGuid: 1516fcba-0f12-4d92-a56c-f5e31d87008f
+  - BaseNodeGuid: 20db9168-37a6-4d87-941b-fdd960f5ca90
+    PortName: I'm lost
+    TargetNodeGuid: 1516fcba-0f12-4d92-a56c-f5e31d87008f
+  - BaseNodeGuid: 20db9168-37a6-4d87-941b-fdd960f5ca90
+    PortName: I lost my elevatorcard
+    TargetNodeGuid: 3544884a-625c-4fee-b31c-b23c3c308002
+  - BaseNodeGuid: 20db9168-37a6-4d87-941b-fdd960f5ca90
+    PortName: I got you this plant as a present
+    TargetNodeGuid: c873011c-27c4-4afc-865d-a0c000f0fda9
+  - BaseNodeGuid: c873011c-27c4-4afc-865d-a0c000f0fda9
+    PortName: Output
+    TargetNodeGuid: c35a1db9-7c14-4d41-ae70-b7aafe171a22
+  DialogueNodeData:
+  - Guid: 3544884a-625c-4fee-b31c-b23c3c308002
+    DialogueText: I can't give you mine. Maybe it's in your office?
+    Position: {x: 987, y: 311}
+    type: 1
+    succes: 0
+  - Guid: 1516fcba-0f12-4d92-a56c-f5e31d87008f
+    DialogueText: You have to get the souls from the basement, remember?
+    Position: {x: 985, y: 27}
+    type: 1
+    succes: 0
+  - Guid: 3b2235e7-10bd-4ae2-a4f7-e350ce04793f
+    DialogueText: NPC Dialogue
+    Position: {x: 1340, y: 307}
+    type: 0
+    succes: 0
+  - Guid: a8da5e50-0aff-4a73-9f14-29765adf5867
+    DialogueText: NPC Dialogue
+    Position: {x: 1380, y: 41}
+    type: 0
+    succes: 0
+  - Guid: 5bcd9101-862c-4dea-84c9-4e678252658d
+    DialogueText: Marty! What are you going here?
+    Position: {x: 213, y: 85}
+    type: 1
+    succes: 0
+  - Guid: 3e874f4b-e24c-4c2b-abb6-1e21259a1abd
+    DialogueText: NPC Dialogue
+    Position: {x: 432, y: 250}
+    type: 3
+    succes: 0
+  - Guid: 9a6a0e45-0a45-4259-9b36-323df8c27887
+    DialogueText: NPC Dialogue
+    Position: {x: 636, y: 18}
+    type: 2
+    succes: 0
+  - Guid: 20db9168-37a6-4d87-941b-fdd960f5ca90
+    DialogueText: NPC Dialogue
+    Position: {x: 571, y: 417}
+    type: 2
+    succes: 0
+  - Guid: c873011c-27c4-4afc-865d-a0c000f0fda9
+    DialogueText: That's nice. Just put it on my desk
+    Position: {x: 1049, y: 473}
+    type: 1
+    succes: 0
+  - Guid: c35a1db9-7c14-4d41-ae70-b7aafe171a22
+    DialogueText: NPC Dialogue
+    Position: {x: 1360, y: 513}
+    type: 0
+    succes: 0
+  exposedProperties: []
+  CommentBlockData: []
