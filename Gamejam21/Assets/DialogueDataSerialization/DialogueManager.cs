@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Subtegral.DialogueSystem.DataContainers;
+using UnityEngine.SceneManagement;
 using System.Linq;
 
 public class DialogueManager : MonoBehaviour {
@@ -18,7 +19,8 @@ public class DialogueManager : MonoBehaviour {
     [Range(0, 1)] public int grumpy;
 
     private void Start() {
-        NPCname.text = "Harold from IT";
+        NPCname.text = "Mr. Eckhart (on the phone)";
+        PlayerDialogue.text = "";
         var narrativeData = dialogue.NodeLinks.First(); //Entrypoint node
         currentNode = NextNode(narrativeData.TargetNodeGuid);
         AddDialogueText(currentNode);
@@ -27,6 +29,7 @@ public class DialogueManager : MonoBehaviour {
     public void ContinueDialogue() {
         var choices = dialogue.NodeLinks.Where(x => x.BaseNodeGuid == currentNode.Guid);
         currentNode = NextNode(choices.ElementAt(currentSelected).TargetNodeGuid);
+        if(currentNode != null)
         AddDialogueText(currentNode);
     }
 
@@ -37,8 +40,10 @@ public class DialogueManager : MonoBehaviour {
             node = dialogue.DialogueNodeData.Find(x => x.Guid == choices.ElementAt(grumpy).TargetNodeGuid);
         }
         if(node.type == 0) {
-            var narrativeData = dialogue.NodeLinks.First(); //Entrypoint node
-            return NextNode(narrativeData.TargetNodeGuid);
+            Debug.Log("Succes: " + node.succes);
+            if(node.succes)
+            SceneManager.LoadScene(1);
+            return null;
         }
         return node;
     }

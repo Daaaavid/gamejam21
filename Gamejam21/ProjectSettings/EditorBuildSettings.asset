@@ -5,10 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
+    path: Assets/Scenes/DialogueScene.unity
+    guid: d16889b1c7d83654c83c27bfc2574f20
+  - enabled: 1
     path: Assets/Scenes/SampleScene + basement.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MovementSandbox.unity
     guid: 6413f2cfde3f70442ad28756fb3ce3ea
   m_configObjects: {}
