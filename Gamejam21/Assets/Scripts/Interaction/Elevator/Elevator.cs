@@ -39,7 +39,7 @@ public class Elevator : MonoBehaviour
         }
         else
         {
-            StartCoroutine(WaitForDelay());
+            if(Dialogue != null) StartCoroutine(WaitForDelay());
         }
     }
 
