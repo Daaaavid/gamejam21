@@ -15,6 +15,7 @@ public class TwoDimensionalMovement : MonoBehaviour {
     [FormerlySerializedAs("interacted")] public bool interactionComplete = false;
     [SerializeField] private Transform playermoddel;
     [SerializeField]private int state = 0; //0 = normal, 1 interacting, 2 = immovable (in converstation)
+    [SerializeField]private Animator myAnimator;
 
     public float ProximityTreshold = 0.5f;
     
@@ -33,6 +34,7 @@ public class TwoDimensionalMovement : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
+        myAnimator.SetFloat("speed", Vector3.Distance(rb.velocity,Vector3.zero));
         if (state == 0) {
             if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) {
                 //walk left
@@ -58,7 +60,7 @@ public class TwoDimensionalMovement : MonoBehaviour {
                     movement = new Vector2(Mathf.Clamp(walkingPosition.x - transform.position.x, -1, 1), Mathf.Clamp(walkingPosition.y - transform.position.z, -1, 1)) * speed;
                 }
             } else { // go to object
-                if (transform.position.x <= walkingPosition.x + 1 && transform.position.x >= walkingPosition.x - 1) {
+                if (transform.position.x <= walkingPosition.x + ProximityTreshold/2 && transform.position.x >= walkingPosition.x - ProximityTreshold/2) {
                     Debug.Log(Distance());
                     if (Distance() < ProximityTreshold) {
                         MovementBus.OnProximity.Invoke();
@@ -118,6 +120,7 @@ public class TwoDimensionalMovement : MonoBehaviour {
         } else {
             rb.velocity = Vector3.zero;
         }
-        playermoddel.LookAt(transform.position + new Vector3( movement.x, 0, movement.y));
+        //playermoddel.rotation = Quaternion.RotateTowards(playermoddel.rotation, Quaternion.LookRotation(transform.position + new Vector3(movement.x, 0, movement.y)), Time.deltaTime *10);
+        playermoddel.LookAt(transform.position + new Vector3(movement.x, 0, movement.y));
     }
 }
