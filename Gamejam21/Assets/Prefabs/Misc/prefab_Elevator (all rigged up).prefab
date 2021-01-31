@@ -321,6 +321,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3270696217759686487, guid: fc7c620bb14d46243a80552b80edb5a0,
         type: 3}
+      propertyPath: Dialogue
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3270696217759686487, guid: fc7c620bb14d46243a80552b80edb5a0,
+        type: 3}
+      propertyPath: DialogueBus
+      value: 
+      objectReference: {fileID: 11400000, guid: 9c7ed349dcdb00a459c31d69f56c8157,
+        type: 2}
+    - target: {fileID: 3270696217759686487, guid: fc7c620bb14d46243a80552b80edb5a0,
+        type: 3}
       propertyPath: playerCamera
       value: 
       objectReference: {fileID: 0}
@@ -767,6 +778,17 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 3270696217759686487, guid: fc7c620bb14d46243a80552b80edb5a0,
+        type: 3}
+      propertyPath: Dialogue
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3270696217759686487, guid: fc7c620bb14d46243a80552b80edb5a0,
+        type: 3}
+      propertyPath: DialogueBus
+      value: 
+      objectReference: {fileID: 11400000, guid: 9c7ed349dcdb00a459c31d69f56c8157,
+        type: 2}
     - target: {fileID: 3270696217759686487, guid: fc7c620bb14d46243a80552b80edb5a0,
         type: 3}
       propertyPath: playerCamera
