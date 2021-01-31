@@ -40,6 +40,7 @@ namespace Interaction
         public InteractionBus MoveSystem;
         public TransformBus MoveSystem2;
         private bool proximity;
+        public float ProximityTreshold;
         public bool ReturnOnDone;
         public Transform TargetPositionOnDone;
 

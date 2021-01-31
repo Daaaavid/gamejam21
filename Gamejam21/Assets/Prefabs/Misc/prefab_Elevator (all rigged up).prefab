@@ -323,7 +323,8 @@ PrefabInstance:
         type: 3}
       propertyPath: Dialogue
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: 420efc731efdc41799f99da0e7271387,
+        type: 2}
     - target: {fileID: 3270696217759686487, guid: fc7c620bb14d46243a80552b80edb5a0,
         type: 3}
       propertyPath: DialogueBus
@@ -450,6 +451,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5679260779219060169, guid: 8faa03a21e453fc449c98df76f07aaac,
         type: 3}
+      propertyPath: ProximityTreshold
+      value: 5.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679260779219060169, guid: 8faa03a21e453fc449c98df76f07aaac,
+        type: 3}
       propertyPath: TargetPositionOnDone
       value: 
       objectReference: {fileID: 6738449491083117526}
@@ -572,6 +578,11 @@ PrefabInstance:
         type: 3}
       propertyPath: ReturnOnDone
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679260779219060169, guid: 8faa03a21e453fc449c98df76f07aaac,
+        type: 3}
+      propertyPath: ProximityTreshold
+      value: 5.5
       objectReference: {fileID: 0}
     - target: {fileID: 5679260779219060169, guid: 8faa03a21e453fc449c98df76f07aaac,
         type: 3}

@@ -9,6 +9,7 @@ public class TwoDimensionalMovement : MonoBehaviour {
     private Vector2 movement;
     public Vector2 walkingPosition;
     public Vector2 targetPosition;
+    private float targetProximityTreshold;
 
     private Rigidbody rb;
     public float speed = 0.5f;
@@ -17,8 +18,6 @@ public class TwoDimensionalMovement : MonoBehaviour {
     [SerializeField]private int state = 0; //0 = normal, 1 interacting, 2 = immovable (in converstation)
     [SerializeField]private Animator myAnimator;
 
-    public float ProximityTreshold = 0.5f;
-    
     public InteractionBus MovementBus;
     public TransformBus MovementBus2;
     
@@ -27,8 +26,8 @@ public class TwoDimensionalMovement : MonoBehaviour {
         normalzPosition = transform.position.z;
         rb = GetComponentInChildren<Rigidbody>();
         
-        MovementBus.OnChange.AddListener(obj => GoToObject(obj.transform.position));
-        MovementBus2.OnChange.AddListener(obj => GoToObject(obj.position, true));
+        MovementBus.OnChange.AddListener(obj => GoToObject(obj.transform.position, obj.ProximityTreshold));
+        MovementBus2.OnChange.AddListener(obj => GoToObject(obj.position, 1f, true));
         MovementBus.OnInvokeReturnPlayer.AddListener(() => interactionComplete = true);
     }
 
@@ -60,9 +59,9 @@ public class TwoDimensionalMovement : MonoBehaviour {
                     movement = new Vector2(Mathf.Clamp(walkingPosition.x - transform.position.x, -1, 1), Mathf.Clamp(walkingPosition.y - transform.position.z, -1, 1)) * speed;
                 }
             } else { // go to object
-                if (transform.position.x <= walkingPosition.x + ProximityTreshold/2 && transform.position.x >= walkingPosition.x - ProximityTreshold/2) {
+                if (transform.position.x <= walkingPosition.x + targetProximityTreshold/2 && transform.position.x >= walkingPosition.x - targetProximityTreshold/2) {
                     Debug.Log(Distance());
-                    if (Distance() < ProximityTreshold) {
+                    if (Distance() < targetProximityTreshold) {
                         MovementBus.OnProximity.Invoke();
                     }//2
                     movement = new Vector2(Mathf.Clamp(targetPosition.x - transform.position.x, -1, 1), Mathf.Clamp(targetPosition.y - transform.position.z, -1, 1)) * speed;
@@ -82,19 +81,20 @@ public class TwoDimensionalMovement : MonoBehaviour {
         return Vector2.Distance(a, b);
     }
 
-    public bool GoToObject(Vector3 target, bool pushThis) {
-        return GoToObject(new Vector2(target.x, target.z), pushThis);
+    public bool GoToObject(Vector3 target, float proximityTreshold, bool pushThis) {
+        return GoToObject(new Vector2(target.x, target.z), proximityTreshold, pushThis);
     }
 
-    public bool GoToObject(Vector3 target) {
-       return GoToObject(new Vector2(target.x, target.z), false);
+    public bool GoToObject(Vector3 target, float proximityTreshold) {
+       return GoToObject(new Vector2(target.x, target.z), proximityTreshold, false);
     }
 
-    public bool GoToObject(Vector2 target, bool pushThis) {
+    public bool GoToObject(Vector2 target, float proximityTreshold, bool pushThis) {
         Debug.Log("Going to object");
         if(state == 0 || pushThis) {
             state = 1;
             targetPosition = target;
+            targetProximityTreshold = proximityTreshold;
             walkingPosition = new Vector2(target.x, normalzPosition);
             return true;
         } else {
