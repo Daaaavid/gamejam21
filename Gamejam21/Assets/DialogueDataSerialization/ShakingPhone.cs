@@ -58,6 +58,9 @@ public class ShakingPhone : MonoBehaviour {
     }
 
     public void PickUpPhone() {
+        if (this.GetComponent<InteractableObject>().SplitValue == 0 || dialogueBox.gameObject.activeSelf)
+            return;
+
         StopAllCoroutines();
         audiosource1.Stop();
         audiosource1.clip = noise;

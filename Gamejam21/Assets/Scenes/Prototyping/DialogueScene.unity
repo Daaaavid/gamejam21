@@ -14605,6 +14605,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6507585460820340040, guid: e99fbbfbe3cfc3341b0ec9c7386f4831,
         type: 3}
+      propertyPath: SplitValue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6507585460820340040, guid: e99fbbfbe3cfc3341b0ec9c7386f4831,
+        type: 3}
       propertyPath: BypassMovement
       value: 1
       objectReference: {fileID: 0}

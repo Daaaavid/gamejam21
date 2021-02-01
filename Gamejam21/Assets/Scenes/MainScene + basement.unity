@@ -10725,11 +10725,12 @@ PrefabInstance:
         type: 3}
       propertyPath: Dialogue
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: f31da3fe8c05d194983c57db06330985,
+        type: 2}
     - target: {fileID: 6507585460820340040, guid: e99fbbfbe3cfc3341b0ec9c7386f4831,
         type: 3}
       propertyPath: SplitValue
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6507585460820340040, guid: e99fbbfbe3cfc3341b0ec9c7386f4831,
         type: 3}
