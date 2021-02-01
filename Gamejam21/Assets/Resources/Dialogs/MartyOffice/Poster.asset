@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
+  m_Name: Poster
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 50d78bd6-98be-48a0-aa68-3f663fee8f68
+    PortName: Next
+    TargetNodeGuid: b3f78391-238d-4092-87d9-b75375db0474
+  - BaseNodeGuid: b3f78391-238d-4092-87d9-b75375db0474
+    PortName: False
+    TargetNodeGuid: 56e7c099-386f-4e07-8117-b547e61b8250
+  - BaseNodeGuid: b3f78391-238d-4092-87d9-b75375db0474
+    PortName: True
+    TargetNodeGuid: 26545ad5-b135-4b90-96ed-89c35e0c6b8b
+  - BaseNodeGuid: 56e7c099-386f-4e07-8117-b547e61b8250
+    PortName: Output
+    TargetNodeGuid: a8a90e97-1d6d-4262-b3fc-91678b0a9e6a
+  - BaseNodeGuid: 26545ad5-b135-4b90-96ed-89c35e0c6b8b
+    PortName: Output
+    TargetNodeGuid: a8a90e97-1d6d-4262-b3fc-91678b0a9e6a
+  DialogueNodeData:
+  - Guid: b3f78391-238d-4092-87d9-b75375db0474
+    DialogueText: NPC Dialogue
+    Position: {x: 155, y: -92}
+    type: 3
+    succes: 0
+  - Guid: a8a90e97-1d6d-4262-b3fc-91678b0a9e6a
+    DialogueText: NPC Dialogue
+    Position: {x: 693, y: 96}
+    type: 0
+    succes: 0
+  - Guid: 56e7c099-386f-4e07-8117-b547e61b8250
+    DialogueText: Use the force...
+    Position: {x: 396, y: -74}
+    type: 1
+    succes: 0
+  - Guid: 26545ad5-b135-4b90-96ed-89c35e0c6b8b
+    DialogueText: I could really use a new hope...
+    Position: {x: 396, y: 40}
+    type: 1
+    succes: 0
+  exposedProperties: []
+  CommentBlockData: []

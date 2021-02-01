@@ -46,6 +46,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Bus: {fileID: 11400000, guid: 54b817c7977a5a5468e30cfb283f3755, type: 2}
   Settings: {fileID: 11400000, guid: a27c2819ce36c7b4a9ecd11c88060441, type: 2}
+--- !u!114 &2576881662886744546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816536723178732747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d37abe64b3af4722a50eb98d79248604, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8941634498626550121
 GameObject:
   m_ObjectHideFlags: 0
@@ -106,11 +118,14 @@ MonoBehaviour:
   OnStopUseAudio:
     m_PersistentCalls:
       m_Calls: []
+  OnView:
+    m_PersistentCalls:
+      m_Calls: []
   OnConsumeAudio:
     m_PersistentCalls:
       m_Calls: []
   DialogBus: {fileID: 11400000, guid: 9c7ed349dcdb00a459c31d69f56c8157, type: 2}
-  Dialogue: {fileID: 0}
+  Dialogue: {fileID: 11400000, guid: e37f61e83cc57d540ace22f1f303d43c, type: 2}
   SplitValue: 0
   MoveSystem: {fileID: 11400000, guid: ade4e19ed7cc5494f809d127ff1cd268, type: 2}
   MoveSystem2: {fileID: 11400000, guid: f45d7c448954c674398e409c43c27ee0, type: 2}

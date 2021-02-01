@@ -129,10 +129,10 @@ public class DialogueGraphView : GraphView
             case 3:
                 dialogueNode.title = "Splitter";
                 var port1 = GeneratePort(dialogueNode, Direction.Output, Port.Capacity.Single);
-                port1.portName = "Grumpy";
+                port1.portName = "False";
                 dialogueNode.outputContainer.Add(port1);
                 var port2 = GeneratePort(dialogueNode, Direction.Output, Port.Capacity.Single);
-                port2.portName = "Not grumpy";
+                port2.portName = "True";
                 dialogueNode.outputContainer.Add(port2);
 
                 break;

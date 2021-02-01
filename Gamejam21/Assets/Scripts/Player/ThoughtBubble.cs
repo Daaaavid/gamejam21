@@ -21,16 +21,16 @@ public class ThoughtBubble : MonoBehaviour
     [SerializeField] private DialogueNodeData currentNode;
     [Tooltip("0 = false, 1 = true")]
     [Range(0, 1)] public int _splitterValue;
-
+    [SerializeField] private bool useable = true;
     private void Awake()
     {
         Bus.OnChange.AddListener(o => NewThoughtBubble(o.Dialogue, o.SplitValue));
     }
 
     public void NewThoughtBubble(DialogueContainer dialogue, int splittervalue) {
+        if(!dialogue ||!useable) return;
         audio.clip = open;
         audio.Play();
-        if(!dialogue) return;
         thoughtBubble.gameObject.SetActive(true);
         thoughtBubbleText.text = "";
         _dialogue = dialogue;
@@ -85,5 +85,14 @@ public class ThoughtBubble : MonoBehaviour
         currentNode = NextNode(choices.ElementAt(0).TargetNodeGuid);
         if (currentNode != null)
         AddThoughtText(currentNode);
+    }
+
+    public void TurnOff() {
+        if (thoughtBubble.gameObject.activeSelf) {
+            audio.clip = close;
+            audio.Play();
+            useable = false;
+        }
+        gameObject.SetActive(false);
     }
 }

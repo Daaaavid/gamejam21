@@ -13,22 +13,41 @@ MonoBehaviour:
   m_Name: CoffeeCup2
   m_EditorClassIdentifier: 
   NodeLinks:
-  - BaseNodeGuid: 3be4a500-581b-42d5-a570-7a21a64495aa
+  - BaseNodeGuid: a00da532-ed42-41bd-a0bd-fa600a561a2e
     PortName: Next
-    TargetNodeGuid: 627693f0-a07e-4d7f-8405-1f512a0ae175
-  - BaseNodeGuid: 627693f0-a07e-4d7f-8405-1f512a0ae175
+    TargetNodeGuid: 75f94669-c523-45c0-8521-eae69c04ec0b
+  - BaseNodeGuid: 75f94669-c523-45c0-8521-eae69c04ec0b
+    PortName: False
+    TargetNodeGuid: b4b96a08-de69-4d0e-8eb8-2fa9fe3ad752
+  - BaseNodeGuid: 75f94669-c523-45c0-8521-eae69c04ec0b
+    PortName: True
+    TargetNodeGuid: a1b21a1d-07af-477a-bc42-94bfe22ab503
+  - BaseNodeGuid: b4b96a08-de69-4d0e-8eb8-2fa9fe3ad752
     PortName: Output
-    TargetNodeGuid: 48327f3d-ff2a-4443-85e1-d4d2b181049a
+    TargetNodeGuid: d356d586-62a1-4c1e-99ed-8154eb6b26d5
+  - BaseNodeGuid: a1b21a1d-07af-477a-bc42-94bfe22ab503
+    PortName: Output
+    TargetNodeGuid: d356d586-62a1-4c1e-99ed-8154eb6b26d5
   DialogueNodeData:
-  - Guid: 48327f3d-ff2a-4443-85e1-d4d2b181049a
+  - Guid: 75f94669-c523-45c0-8521-eae69c04ec0b
     DialogueText: NPC Dialogue
-    Position: {x: 687, y: 170}
-    type: 0
+    Position: {x: 199, y: 97}
+    type: 3
     succes: 0
-  - Guid: 627693f0-a07e-4d7f-8405-1f512a0ae175
-    DialogueText: Mmmmm coffee
-    Position: {x: 312, y: 80}
+  - Guid: b4b96a08-de69-4d0e-8eb8-2fa9fe3ad752
+    DialogueText: hmm coffee
+    Position: {x: 342, y: 79}
     type: 1
+    succes: 0
+  - Guid: a1b21a1d-07af-477a-bc42-94bfe22ab503
+    DialogueText: I need more caffeine
+    Position: {x: 341, y: 183}
+    type: 1
+    succes: 0
+  - Guid: d356d586-62a1-4c1e-99ed-8154eb6b26d5
+    DialogueText: NPC Dialogue
+    Position: {x: 520, y: 148}
+    type: 0
     succes: 0
   exposedProperties: []
   CommentBlockData: []

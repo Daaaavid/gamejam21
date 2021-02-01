@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
+  m_Name: Elevator
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 1dcc01a6-5d22-4b13-85f4-fd5f93790939
+    PortName: Next
+    TargetNodeGuid: 0f5d7457-6d68-489a-b3fe-0f305ea55278
+  - BaseNodeGuid: 0f5d7457-6d68-489a-b3fe-0f305ea55278
+    PortName: False
+    TargetNodeGuid: e773c008-233a-441e-af3d-d2a43cf62302
+  - BaseNodeGuid: 0f5d7457-6d68-489a-b3fe-0f305ea55278
+    PortName: True
+    TargetNodeGuid: 9e976874-c985-4262-8a06-b92f07e567fd
+  - BaseNodeGuid: 9e976874-c985-4262-8a06-b92f07e567fd
+    PortName: Output
+    TargetNodeGuid: c37fe647-3c92-4926-833e-1acfd3aaa63f
+  - BaseNodeGuid: e773c008-233a-441e-af3d-d2a43cf62302
+    PortName: Output
+    TargetNodeGuid: c37fe647-3c92-4926-833e-1acfd3aaa63f
+  DialogueNodeData:
+  - Guid: 0f5d7457-6d68-489a-b3fe-0f305ea55278
+    DialogueText: NPC Dialogue
+    Position: {x: 172, y: 102}
+    type: 3
+    succes: 0
+  - Guid: 9e976874-c985-4262-8a06-b92f07e567fd
+    DialogueText: To the basement.
+    Position: {x: 314, y: 167}
+    type: 1
+    succes: 0
+  - Guid: c37fe647-3c92-4926-833e-1acfd3aaa63f
+    DialogueText: NPC Dialogue
+    Position: {x: 481, y: 83}
+    type: 0
+    succes: 0
+  - Guid: e773c008-233a-441e-af3d-d2a43cf62302
+    DialogueText: I need my keycard.
+    Position: {x: 313, y: 59}
+    type: 1
+    succes: 0
+  exposedProperties: []
+  CommentBlockData: []

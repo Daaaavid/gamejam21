@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 225094297678196578}
-  - component: {fileID: 6254507069882864173}
   m_Layer: 0
   m_Name: prefab_Big book
   m_TagString: Untagged
@@ -32,46 +31,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6254507069882864173
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 845399772048544225}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5db3849c6cf24bb49f0bdf660c17b8e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InteractionBus: {fileID: 11400000, guid: 645f2b9773ebf404e8d5fb2ff8ec7c66, type: 2}
-  ConsumeOnUse: 0
-  DestroyOnConsumeDelay: 0.5
-  InventoryIcon: {fileID: 21300000, guid: af958301d1622e9499a0a4f7a8f15b97, type: 3}
-  TextOnHover: 
-  IsInventoryItem: 1
-  IsInPlayerHand: 0
-  OnInteractAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnUseAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnStopUseAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnConsumeAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  DialogBus: {fileID: 11400000, guid: 9c7ed349dcdb00a459c31d69f56c8157, type: 2}
-  Dialogue: {fileID: 0}
-  SplitValue: 0
-  MoveSystem: {fileID: 11400000, guid: ade4e19ed7cc5494f809d127ff1cd268, type: 2}
-  MoveSystem2: {fileID: 11400000, guid: f45d7c448954c674398e409c43c27ee0, type: 2}
-  ProximityTreshold: 5
-  ReturnOnDone: 1
-  TargetPositionOnDone: {fileID: 0}
-  BypassMovement: 0
 --- !u!64 &1741420075980425916
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -86,50 +45,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -66333826979096818, guid: ddb01e818a851d54ba86ab9c2896fd43, type: 3}
---- !u!114 &3218540387002982014
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2551204248365507274}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidth: 2
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
---- !u!114 &3498039354633636665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2551204248365507274}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d37abe64b3af4722a50eb98d79248604, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &4405736150944900364
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2551204248365507274}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1ddfc4a32164cfa9c7463269967fbec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Bus: {fileID: 11400000, guid: 54b817c7977a5a5468e30cfb283f3755, type: 2}
-  Settings: {fileID: 11400000, guid: a27c2819ce36c7b4a9ecd11c88060441, type: 2}
 --- !u!1001 &3433673035054718875
 PrefabInstance:
   m_ObjectHideFlags: 0

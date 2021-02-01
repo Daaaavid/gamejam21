@@ -36,7 +36,7 @@ public class TwoDimensionalMovement : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        myAnimator.SetFloat("speed", Vector3.Distance(rb.velocity,Vector3.zero));
+        myAnimator.SetFloat("speed", Vector3.Distance(rb.velocity,Vector3.zero)*0.1f);
         if (state == 0) {
             if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) {
                 //walk left
@@ -112,18 +112,18 @@ public class TwoDimensionalMovement : MonoBehaviour {
 
     private void FixedUpdate()
     {
-        if(state == 0) {
-            rb.velocity = new Vector3(movement.x, rb.velocity.y, 0);
+        if (state == 0) {
+            rb.velocity = Vector3.Lerp(rb.velocity, new Vector3(movement.x, rb.velocity.y, 0), Time.deltaTime * 10);
             movement.x *= 0.9f;
             movement.y = 0;
         } else if (state == 1){
-            rb.velocity = new Vector3(movement.x, rb.velocity.y, movement.y);
+            rb.velocity = Vector3.Lerp(rb.velocity, new Vector3(movement.x, rb.velocity.y, movement.y), Time.deltaTime * 10);
             movement.x *= 0.9f;
             movement.y *= 0.9f;
         } else {
             rb.velocity = Vector3.zero;
         }
-        if(Vector3.Distance(rb.velocity,Vector3.zero) > 1)
+        if(Vector3.Distance(rb.velocity,Vector3.zero) > 5)
         playermoddel.rotation = Quaternion.RotateTowards(playermoddel.rotation, Quaternion.LookRotation(new Vector3(movement.x, 0, movement.y)), Time.deltaTime *400);
         //playermoddel.LookAt(transform.position + new Vector3(movement.x, 0, movement.y));
     }

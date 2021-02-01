@@ -50,7 +50,7 @@ MonoBehaviour:
   DestroyOnConsumeDelay: 0.5
   InventoryIcon: {fileID: 21300000, guid: eb86b8cba6230ad43a3294f640e9a9b8, type: 3}
   TextOnHover: 
-  IsInventoryItem: 1
+  IsInventoryItem: 0
   IsInPlayerHand: 0
   OnInteractAudio:
     m_PersistentCalls:
@@ -71,6 +71,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   OnStopUseAudio:
+    m_PersistentCalls:
+      m_Calls: []
+  OnView:
     m_PersistentCalls:
       m_Calls: []
   OnConsumeAudio:

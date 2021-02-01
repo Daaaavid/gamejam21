@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Interaction;
 
 public class ShakingPhone : MonoBehaviour {
     [SerializeField] private Vector3 rotation1;
@@ -11,6 +12,7 @@ public class ShakingPhone : MonoBehaviour {
     [SerializeField] private AudioSource audiosource1;
     [SerializeField] private AudioSource audioSource2;
     [SerializeField] private AudioClip noise;
+    [SerializeField] private ThoughtBubble FirstPersonThoughtBubble;
 
     public void Start() {
         audiosource1 = GetComponent<AudioSource>();
@@ -26,6 +28,7 @@ public class ShakingPhone : MonoBehaviour {
     IEnumerator WaitTillRing() {
         yield return new WaitForSeconds(8);
         GetComponent<AudioSource>().Play();
+        this.GetComponent<InteractableObject>().SplitValue = 1;
         StartCoroutine(ShakePhone(rotation1, rotation2));
     }
 
@@ -40,6 +43,7 @@ public class ShakingPhone : MonoBehaviour {
     }
 
     IEnumerator AwnserPhone() {
+        FirstPersonThoughtBubble.TurnOff();
         Vector3 startRotation = transform.rotation.eulerAngles;
         Vector3 startPosition = transform.position;
         Vector3 endRotation = wantedPosition.rotation.eulerAngles;

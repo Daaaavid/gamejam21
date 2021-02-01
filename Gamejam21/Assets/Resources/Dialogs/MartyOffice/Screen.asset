@@ -17,42 +17,37 @@ MonoBehaviour:
     PortName: Next
     TargetNodeGuid: af6d8b72-c958-48a9-bcea-95a638d81fcd
   - BaseNodeGuid: af6d8b72-c958-48a9-bcea-95a638d81fcd
-    PortName: Grumpy
-    TargetNodeGuid: 73020f17-a66f-4780-b1af-0b2307c56f92
-  - BaseNodeGuid: af6d8b72-c958-48a9-bcea-95a638d81fcd
-    PortName: Not grumpy
+    PortName: False
     TargetNodeGuid: 2a2a74d6-0dad-4380-9bdb-e10a09a52a59
-  - BaseNodeGuid: 73020f17-a66f-4780-b1af-0b2307c56f92
-    PortName: Output
-    TargetNodeGuid: 6381ab22-d6cc-4b71-b1b5-3a8ef431a62b
+  - BaseNodeGuid: af6d8b72-c958-48a9-bcea-95a638d81fcd
+    PortName: True
+    TargetNodeGuid: 818a18d2-1368-47d6-9cb7-c03e5cfa451b
   - BaseNodeGuid: 2a2a74d6-0dad-4380-9bdb-e10a09a52a59
     PortName: Output
-    TargetNodeGuid: 9cade74c-3f36-4dc5-b19c-52a5c5586365
+    TargetNodeGuid: e70c7cea-9501-481a-ae86-5df3bb62bc9f
+  - BaseNodeGuid: 818a18d2-1368-47d6-9cb7-c03e5cfa451b
+    PortName: Output
+    TargetNodeGuid: e70c7cea-9501-481a-ae86-5df3bb62bc9f
   DialogueNodeData:
-  - Guid: 6381ab22-d6cc-4b71-b1b5-3a8ef431a62b
-    DialogueText: NPC Dialogue
-    Position: {x: 884, y: 102}
-    type: 0
-    succes: 0
   - Guid: af6d8b72-c958-48a9-bcea-95a638d81fcd
     DialogueText: NPC Dialogue
     Position: {x: 365, y: 103}
     type: 3
     succes: 0
-  - Guid: 73020f17-a66f-4780-b1af-0b2307c56f92
-    DialogueText: It's all blue
-    Position: {x: 640, y: -118}
-    type: 1
-    succes: 0
   - Guid: 2a2a74d6-0dad-4380-9bdb-e10a09a52a59
     DialogueText: It's not on
-    Position: {x: 642, y: 205}
+    Position: {x: 517, y: 63}
     type: 1
     succes: 0
-  - Guid: 9cade74c-3f36-4dc5-b19c-52a5c5586365
+  - Guid: e70c7cea-9501-481a-ae86-5df3bb62bc9f
     DialogueText: NPC Dialogue
-    Position: {x: 891, y: 230}
+    Position: {x: 700, y: 72}
     type: 0
+    succes: 0
+  - Guid: 818a18d2-1368-47d6-9cb7-c03e5cfa451b
+    DialogueText: It's all blue
+    Position: {x: 513, y: 172}
+    type: 1
     succes: 0
   exposedProperties: []
   CommentBlockData: []

@@ -133,11 +133,26 @@ MonoBehaviour:
   OnStopUseAudio:
     m_PersistentCalls:
       m_Calls: []
+  OnView:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5459709964379966014}
+        m_TargetAssemblyTypeName: Interaction.InteractableObject, Assembly-CSharp
+        m_MethodName: InvertSplitValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnConsumeAudio:
     m_PersistentCalls:
       m_Calls: []
   DialogBus: {fileID: 11400000, guid: 9c7ed349dcdb00a459c31d69f56c8157, type: 2}
-  Dialogue: {fileID: 0}
+  Dialogue: {fileID: 11400000, guid: 6006c7f4f1a76184dad7de37ced0498a, type: 2}
   SplitValue: 0
   MoveSystem: {fileID: 11400000, guid: ade4e19ed7cc5494f809d127ff1cd268, type: 2}
   MoveSystem2: {fileID: 11400000, guid: f45d7c448954c674398e409c43c27ee0, type: 2}

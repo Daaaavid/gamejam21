@@ -20,7 +20,7 @@ public class DialogueManager : MonoBehaviour {
     [SerializeField] private AudioClip talking;
     [SerializeField] private AudioClip endOfSentence;
 
-    [Tooltip("0 = grumpy, 1 = not grumpy")]
+    [Tooltip("0 = false, 1 = true")]
     [Range(0, 1)] public int grumpy;
 
     private void Start() {

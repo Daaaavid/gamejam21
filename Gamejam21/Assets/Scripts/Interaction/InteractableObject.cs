@@ -24,6 +24,7 @@ namespace Interaction
         public UnityEvent OnInteractAudio;
         public UnityEvent OnUseAudio;
         public UnityEvent OnStopUseAudio;
+        public UnityEvent OnView;
         [Tooltip("Pas de 'DestroyOnConsumeDelay' aan naar minimaal de audiolengte!")] public UnityEvent OnConsumeAudio;
         
         public readonly InteractableObjectEvent OnUse = new InteractableObjectEvent();
@@ -87,6 +88,7 @@ namespace Interaction
         public void View()
         {
             DialogBus.SetValue(this);
+            OnView.Invoke();
         }
         
         public void OnMouseOverChild()
@@ -128,6 +130,13 @@ namespace Interaction
             yield return new WaitForSeconds(DestroyOnConsumeDelay);
             OnConsume.Invoke(this);
             Destroy(gameObject);
+        }
+
+        public void InvertSplitValue() {
+            if (SplitValue == 1)
+                SplitValue = 0;
+            else
+                SplitValue = 1;
         }
 
     }

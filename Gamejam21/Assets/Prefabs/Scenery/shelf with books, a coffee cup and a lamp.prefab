@@ -12,9 +12,6 @@ GameObject:
   - component: {fileID: 3306346009356799525}
   - component: {fileID: 3306346009356799522}
   - component: {fileID: 3306346009356799523}
-  - component: {fileID: 3306346009356799520}
-  - component: {fileID: 3306346009356799521}
-  - component: {fileID: 3306346009356799582}
   m_Layer: 0
   m_Name: Small book
   m_TagString: Untagged
@@ -100,50 +97,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2996422119697651380, guid: 16632183d370bab42897d4cc0f7596c4, type: 3}
---- !u!114 &3306346009356799520
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346009356799580}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d37abe64b3af4722a50eb98d79248604, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &3306346009356799521
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346009356799580}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1ddfc4a32164cfa9c7463269967fbec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Bus: {fileID: 11400000, guid: 54b817c7977a5a5468e30cfb283f3755, type: 2}
-  Settings: {fileID: 11400000, guid: a27c2819ce36c7b4a9ecd11c88060441, type: 2}
---- !u!114 &3306346009356799582
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346009356799580}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidth: 2
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &3306346009482966750
 GameObject:
   m_ObjectHideFlags: 0
@@ -156,9 +109,6 @@ GameObject:
   - component: {fileID: 3306346009482966695}
   - component: {fileID: 3306346009482966692}
   - component: {fileID: 3306346009482966693}
-  - component: {fileID: 3306346009482966690}
-  - component: {fileID: 3306346009482966691}
-  - component: {fileID: 3306346009482966688}
   m_Layer: 0
   m_Name: Small book
   m_TagString: Untagged
@@ -244,50 +194,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2996422119697651380, guid: 16632183d370bab42897d4cc0f7596c4, type: 3}
---- !u!114 &3306346009482966690
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346009482966750}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d37abe64b3af4722a50eb98d79248604, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &3306346009482966691
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346009482966750}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1ddfc4a32164cfa9c7463269967fbec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Bus: {fileID: 11400000, guid: 54b817c7977a5a5468e30cfb283f3755, type: 2}
-  Settings: {fileID: 11400000, guid: a27c2819ce36c7b4a9ecd11c88060441, type: 2}
---- !u!114 &3306346009482966688
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346009482966750}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidth: 2
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &3306346009537350036
 GameObject:
   m_ObjectHideFlags: 0
@@ -297,7 +203,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3306346010315804065}
-  - component: {fileID: 3306346009537350039}
   m_Layer: 0
   m_Name: prefab_Small book (7)
   m_TagString: Untagged
@@ -320,45 +225,6 @@ Transform:
   m_Father: {fileID: 3306346009783551205}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!114 &3306346009537350039
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346009537350036}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5db3849c6cf24bb49f0bdf660c17b8e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InteractionBus: {fileID: 11400000, guid: 645f2b9773ebf404e8d5fb2ff8ec7c66, type: 2}
-  ConsumeOnUse: 0
-  DestroyOnConsumeDelay: 0.5
-  InventoryIcon: {fileID: 0}
-  TextOnHover: 
-  IsInventoryItem: 0
-  IsInPlayerHand: 0
-  OnInteractAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnUseAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnStopUseAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnConsumeAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  DialogBus: {fileID: 11400000, guid: 9c7ed349dcdb00a459c31d69f56c8157, type: 2}
-  Dialogue: {fileID: 0}
-  SplitValue: 0
-  MoveSystem: {fileID: 11400000, guid: ade4e19ed7cc5494f809d127ff1cd268, type: 2}
-  MoveSystem2: {fileID: 11400000, guid: f45d7c448954c674398e409c43c27ee0, type: 2}
-  ReturnOnDone: 1
-  TargetPositionOnDone: {fileID: 0}
-  BypassMovement: 0
 --- !u!1 &3306346009559432047
 GameObject:
   m_ObjectHideFlags: 0
@@ -368,7 +234,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3306346009463901085}
-  - component: {fileID: 3306346009559432046}
   m_Layer: 0
   m_Name: prefab_Small book (13)
   m_TagString: Untagged
@@ -391,45 +256,6 @@ Transform:
   m_Father: {fileID: 3306346009783551205}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 1.848, y: 156.33, z: 89.004}
---- !u!114 &3306346009559432046
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346009559432047}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5db3849c6cf24bb49f0bdf660c17b8e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InteractionBus: {fileID: 11400000, guid: 645f2b9773ebf404e8d5fb2ff8ec7c66, type: 2}
-  ConsumeOnUse: 0
-  DestroyOnConsumeDelay: 0.5
-  InventoryIcon: {fileID: 0}
-  TextOnHover: 
-  IsInventoryItem: 0
-  IsInPlayerHand: 0
-  OnInteractAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnUseAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnStopUseAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnConsumeAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  DialogBus: {fileID: 11400000, guid: 9c7ed349dcdb00a459c31d69f56c8157, type: 2}
-  Dialogue: {fileID: 0}
-  SplitValue: 0
-  MoveSystem: {fileID: 11400000, guid: ade4e19ed7cc5494f809d127ff1cd268, type: 2}
-  MoveSystem2: {fileID: 11400000, guid: f45d7c448954c674398e409c43c27ee0, type: 2}
-  ReturnOnDone: 1
-  TargetPositionOnDone: {fileID: 0}
-  BypassMovement: 0
 --- !u!1 &3306346009620908900
 GameObject:
   m_ObjectHideFlags: 0
@@ -521,7 +347,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3306346010636626510}
-  - component: {fileID: 3306346009623053320}
   m_Layer: 0
   m_Name: prefab_Small book (2)
   m_TagString: Untagged
@@ -544,45 +369,6 @@ Transform:
   m_Father: {fileID: 3306346009783551205}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!114 &3306346009623053320
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346009623053321}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5db3849c6cf24bb49f0bdf660c17b8e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InteractionBus: {fileID: 11400000, guid: 645f2b9773ebf404e8d5fb2ff8ec7c66, type: 2}
-  ConsumeOnUse: 0
-  DestroyOnConsumeDelay: 0.5
-  InventoryIcon: {fileID: 0}
-  TextOnHover: 
-  IsInventoryItem: 0
-  IsInPlayerHand: 0
-  OnInteractAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnUseAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnStopUseAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnConsumeAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  DialogBus: {fileID: 11400000, guid: 9c7ed349dcdb00a459c31d69f56c8157, type: 2}
-  Dialogue: {fileID: 0}
-  SplitValue: 0
-  MoveSystem: {fileID: 11400000, guid: ade4e19ed7cc5494f809d127ff1cd268, type: 2}
-  MoveSystem2: {fileID: 11400000, guid: f45d7c448954c674398e409c43c27ee0, type: 2}
-  ReturnOnDone: 1
-  TargetPositionOnDone: {fileID: 0}
-  BypassMovement: 0
 --- !u!1 &3306346009726482801
 GameObject:
   m_ObjectHideFlags: 0
@@ -592,7 +378,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3306346009625525356}
-  - component: {fileID: 3306346009726482800}
   m_Layer: 0
   m_Name: prefab_Small book (1)
   m_TagString: Untagged
@@ -615,45 +400,6 @@ Transform:
   m_Father: {fileID: 3306346009783551205}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!114 &3306346009726482800
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346009726482801}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5db3849c6cf24bb49f0bdf660c17b8e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InteractionBus: {fileID: 11400000, guid: 645f2b9773ebf404e8d5fb2ff8ec7c66, type: 2}
-  ConsumeOnUse: 0
-  DestroyOnConsumeDelay: 0.5
-  InventoryIcon: {fileID: 0}
-  TextOnHover: 
-  IsInventoryItem: 0
-  IsInPlayerHand: 0
-  OnInteractAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnUseAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnStopUseAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnConsumeAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  DialogBus: {fileID: 11400000, guid: 9c7ed349dcdb00a459c31d69f56c8157, type: 2}
-  Dialogue: {fileID: 0}
-  SplitValue: 0
-  MoveSystem: {fileID: 11400000, guid: ade4e19ed7cc5494f809d127ff1cd268, type: 2}
-  MoveSystem2: {fileID: 11400000, guid: f45d7c448954c674398e409c43c27ee0, type: 2}
-  ReturnOnDone: 1
-  TargetPositionOnDone: {fileID: 0}
-  BypassMovement: 0
 --- !u!1 &3306346009783551202
 GameObject:
   m_ObjectHideFlags: 0
@@ -713,9 +459,6 @@ GameObject:
   - component: {fileID: 3306346009799194593}
   - component: {fileID: 3306346009799194142}
   - component: {fileID: 3306346009799194143}
-  - component: {fileID: 3306346009799194140}
-  - component: {fileID: 3306346009799194141}
-  - component: {fileID: 3306346009799194138}
   m_Layer: 0
   m_Name: Small book
   m_TagString: Untagged
@@ -801,50 +544,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2996422119697651380, guid: 16632183d370bab42897d4cc0f7596c4, type: 3}
---- !u!114 &3306346009799194140
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346009799194136}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d37abe64b3af4722a50eb98d79248604, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &3306346009799194141
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346009799194136}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1ddfc4a32164cfa9c7463269967fbec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Bus: {fileID: 11400000, guid: 54b817c7977a5a5468e30cfb283f3755, type: 2}
-  Settings: {fileID: 11400000, guid: a27c2819ce36c7b4a9ecd11c88060441, type: 2}
---- !u!114 &3306346009799194138
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346009799194136}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidth: 2
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &3306346009839281681
 GameObject:
   m_ObjectHideFlags: 0
@@ -857,9 +556,6 @@ GameObject:
   - component: {fileID: 3306346009839281686}
   - component: {fileID: 3306346009839281687}
   - component: {fileID: 3306346009839281684}
-  - component: {fileID: 3306346009839281685}
-  - component: {fileID: 3306346009839281682}
-  - component: {fileID: 3306346009839281683}
   m_Layer: 0
   m_Name: Small book
   m_TagString: Untagged
@@ -945,50 +641,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2996422119697651380, guid: 16632183d370bab42897d4cc0f7596c4, type: 3}
---- !u!114 &3306346009839281685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346009839281681}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d37abe64b3af4722a50eb98d79248604, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &3306346009839281682
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346009839281681}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1ddfc4a32164cfa9c7463269967fbec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Bus: {fileID: 11400000, guid: 54b817c7977a5a5468e30cfb283f3755, type: 2}
-  Settings: {fileID: 11400000, guid: a27c2819ce36c7b4a9ecd11c88060441, type: 2}
---- !u!114 &3306346009839281683
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346009839281681}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidth: 2
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &3306346009874923451
 GameObject:
   m_ObjectHideFlags: 0
@@ -1001,9 +653,6 @@ GameObject:
   - component: {fileID: 3306346009874923392}
   - component: {fileID: 3306346009874923393}
   - component: {fileID: 3306346009874923454}
-  - component: {fileID: 3306346009874923455}
-  - component: {fileID: 3306346009874923452}
-  - component: {fileID: 3306346009874923453}
   m_Layer: 0
   m_Name: Small book
   m_TagString: Untagged
@@ -1089,50 +738,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2996422119697651380, guid: 16632183d370bab42897d4cc0f7596c4, type: 3}
---- !u!114 &3306346009874923455
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346009874923451}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d37abe64b3af4722a50eb98d79248604, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &3306346009874923452
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346009874923451}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1ddfc4a32164cfa9c7463269967fbec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Bus: {fileID: 11400000, guid: 54b817c7977a5a5468e30cfb283f3755, type: 2}
-  Settings: {fileID: 11400000, guid: a27c2819ce36c7b4a9ecd11c88060441, type: 2}
---- !u!114 &3306346009874923453
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346009874923451}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidth: 2
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &3306346009945398240
 GameObject:
   m_ObjectHideFlags: 0
@@ -1145,9 +750,6 @@ GameObject:
   - component: {fileID: 3306346009945398249}
   - component: {fileID: 3306346009945398246}
   - component: {fileID: 3306346009945398247}
-  - component: {fileID: 3306346009945398244}
-  - component: {fileID: 3306346009945398245}
-  - component: {fileID: 3306346009945398242}
   m_Layer: 0
   m_Name: Small book
   m_TagString: Untagged
@@ -1233,50 +835,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2996422119697651380, guid: 16632183d370bab42897d4cc0f7596c4, type: 3}
---- !u!114 &3306346009945398244
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346009945398240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d37abe64b3af4722a50eb98d79248604, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &3306346009945398245
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346009945398240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1ddfc4a32164cfa9c7463269967fbec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Bus: {fileID: 11400000, guid: 54b817c7977a5a5468e30cfb283f3755, type: 2}
-  Settings: {fileID: 11400000, guid: a27c2819ce36c7b4a9ecd11c88060441, type: 2}
---- !u!114 &3306346009945398242
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346009945398240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidth: 2
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &3306346010001591949
 GameObject:
   m_ObjectHideFlags: 0
@@ -1286,7 +844,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3306346010972214186}
-  - component: {fileID: 3306346010001591948}
   m_Layer: 0
   m_Name: prefab_Small book (10)
   m_TagString: Untagged
@@ -1309,45 +866,6 @@ Transform:
   m_Father: {fileID: 3306346009783551205}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0.64, y: 142.661, z: 88.819}
---- !u!114 &3306346010001591948
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346010001591949}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5db3849c6cf24bb49f0bdf660c17b8e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InteractionBus: {fileID: 11400000, guid: 645f2b9773ebf404e8d5fb2ff8ec7c66, type: 2}
-  ConsumeOnUse: 0
-  DestroyOnConsumeDelay: 0.5
-  InventoryIcon: {fileID: 0}
-  TextOnHover: 
-  IsInventoryItem: 0
-  IsInPlayerHand: 0
-  OnInteractAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnUseAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnStopUseAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnConsumeAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  DialogBus: {fileID: 11400000, guid: 9c7ed349dcdb00a459c31d69f56c8157, type: 2}
-  Dialogue: {fileID: 0}
-  SplitValue: 0
-  MoveSystem: {fileID: 11400000, guid: ade4e19ed7cc5494f809d127ff1cd268, type: 2}
-  MoveSystem2: {fileID: 11400000, guid: f45d7c448954c674398e409c43c27ee0, type: 2}
-  ReturnOnDone: 1
-  TargetPositionOnDone: {fileID: 0}
-  BypassMovement: 0
 --- !u!1 &3306346010075554207
 GameObject:
   m_ObjectHideFlags: 0
@@ -1357,7 +875,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3306346009832370759}
-  - component: {fileID: 3306346010075554206}
   m_Layer: 0
   m_Name: prefab_Small book (11)
   m_TagString: Untagged
@@ -1380,45 +897,6 @@ Transform:
   m_Father: {fileID: 3306346009783551205}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 68.755, y: -90, z: -90}
---- !u!114 &3306346010075554206
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346010075554207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5db3849c6cf24bb49f0bdf660c17b8e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InteractionBus: {fileID: 11400000, guid: 645f2b9773ebf404e8d5fb2ff8ec7c66, type: 2}
-  ConsumeOnUse: 0
-  DestroyOnConsumeDelay: 0.5
-  InventoryIcon: {fileID: 0}
-  TextOnHover: 
-  IsInventoryItem: 0
-  IsInPlayerHand: 0
-  OnInteractAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnUseAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnStopUseAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnConsumeAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  DialogBus: {fileID: 11400000, guid: 9c7ed349dcdb00a459c31d69f56c8157, type: 2}
-  Dialogue: {fileID: 0}
-  SplitValue: 0
-  MoveSystem: {fileID: 11400000, guid: ade4e19ed7cc5494f809d127ff1cd268, type: 2}
-  MoveSystem2: {fileID: 11400000, guid: f45d7c448954c674398e409c43c27ee0, type: 2}
-  ReturnOnDone: 1
-  TargetPositionOnDone: {fileID: 0}
-  BypassMovement: 0
 --- !u!1 &3306346010101488740
 GameObject:
   m_ObjectHideFlags: 0
@@ -1428,7 +906,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3306346009989693186}
-  - component: {fileID: 3306346010101488743}
   m_Layer: 0
   m_Name: prefab_Small book (15)
   m_TagString: Untagged
@@ -1451,45 +928,6 @@ Transform:
   m_Father: {fileID: 3306346009783551205}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0.64, y: 142.661, z: 88.819}
---- !u!114 &3306346010101488743
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346010101488740}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5db3849c6cf24bb49f0bdf660c17b8e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InteractionBus: {fileID: 11400000, guid: 645f2b9773ebf404e8d5fb2ff8ec7c66, type: 2}
-  ConsumeOnUse: 0
-  DestroyOnConsumeDelay: 0.5
-  InventoryIcon: {fileID: 0}
-  TextOnHover: 
-  IsInventoryItem: 0
-  IsInPlayerHand: 0
-  OnInteractAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnUseAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnStopUseAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnConsumeAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  DialogBus: {fileID: 11400000, guid: 9c7ed349dcdb00a459c31d69f56c8157, type: 2}
-  Dialogue: {fileID: 0}
-  SplitValue: 0
-  MoveSystem: {fileID: 11400000, guid: ade4e19ed7cc5494f809d127ff1cd268, type: 2}
-  MoveSystem2: {fileID: 11400000, guid: f45d7c448954c674398e409c43c27ee0, type: 2}
-  ReturnOnDone: 1
-  TargetPositionOnDone: {fileID: 0}
-  BypassMovement: 0
 --- !u!1 &3306346010177005852
 GameObject:
   m_ObjectHideFlags: 0
@@ -1502,9 +940,6 @@ GameObject:
   - component: {fileID: 3306346010177006309}
   - component: {fileID: 3306346010177006306}
   - component: {fileID: 3306346010177006307}
-  - component: {fileID: 3306346010177006304}
-  - component: {fileID: 3306346010177006305}
-  - component: {fileID: 3306346010177005854}
   m_Layer: 0
   m_Name: Small book
   m_TagString: Untagged
@@ -1590,50 +1025,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2996422119697651380, guid: 16632183d370bab42897d4cc0f7596c4, type: 3}
---- !u!114 &3306346010177006304
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346010177005852}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d37abe64b3af4722a50eb98d79248604, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &3306346010177006305
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346010177005852}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1ddfc4a32164cfa9c7463269967fbec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Bus: {fileID: 11400000, guid: 54b817c7977a5a5468e30cfb283f3755, type: 2}
-  Settings: {fileID: 11400000, guid: a27c2819ce36c7b4a9ecd11c88060441, type: 2}
---- !u!114 &3306346010177005854
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346010177005852}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidth: 2
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &3306346010178286083
 GameObject:
   m_ObjectHideFlags: 0
@@ -1643,7 +1034,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3306346010008424362}
-  - component: {fileID: 3306346010178286082}
   m_Layer: 0
   m_Name: prefab_Small book (8)
   m_TagString: Untagged
@@ -1666,45 +1056,6 @@ Transform:
   m_Father: {fileID: 3306346009783551205}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0.965, y: 160.138, z: 89.066}
---- !u!114 &3306346010178286082
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346010178286083}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5db3849c6cf24bb49f0bdf660c17b8e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InteractionBus: {fileID: 11400000, guid: 645f2b9773ebf404e8d5fb2ff8ec7c66, type: 2}
-  ConsumeOnUse: 0
-  DestroyOnConsumeDelay: 0.5
-  InventoryIcon: {fileID: 0}
-  TextOnHover: 
-  IsInventoryItem: 0
-  IsInPlayerHand: 0
-  OnInteractAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnUseAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnStopUseAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnConsumeAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  DialogBus: {fileID: 11400000, guid: 9c7ed349dcdb00a459c31d69f56c8157, type: 2}
-  Dialogue: {fileID: 0}
-  SplitValue: 0
-  MoveSystem: {fileID: 11400000, guid: ade4e19ed7cc5494f809d127ff1cd268, type: 2}
-  MoveSystem2: {fileID: 11400000, guid: f45d7c448954c674398e409c43c27ee0, type: 2}
-  ReturnOnDone: 1
-  TargetPositionOnDone: {fileID: 0}
-  BypassMovement: 0
 --- !u!1 &3306346010234787246
 GameObject:
   m_ObjectHideFlags: 0
@@ -1717,9 +1068,6 @@ GameObject:
   - component: {fileID: 3306346010234787255}
   - component: {fileID: 3306346010234787252}
   - component: {fileID: 3306346010234787253}
-  - component: {fileID: 3306346010234787250}
-  - component: {fileID: 3306346010234787251}
-  - component: {fileID: 3306346010234787248}
   m_Layer: 0
   m_Name: Small book
   m_TagString: Untagged
@@ -1805,50 +1153,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2996422119697651380, guid: 16632183d370bab42897d4cc0f7596c4, type: 3}
---- !u!114 &3306346010234787250
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346010234787246}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d37abe64b3af4722a50eb98d79248604, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &3306346010234787251
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346010234787246}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1ddfc4a32164cfa9c7463269967fbec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Bus: {fileID: 11400000, guid: 54b817c7977a5a5468e30cfb283f3755, type: 2}
-  Settings: {fileID: 11400000, guid: a27c2819ce36c7b4a9ecd11c88060441, type: 2}
---- !u!114 &3306346010234787248
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346010234787246}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidth: 2
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &3306346010239773874
 GameObject:
   m_ObjectHideFlags: 0
@@ -1861,9 +1165,6 @@ GameObject:
   - component: {fileID: 3306346010239773883}
   - component: {fileID: 3306346010239773880}
   - component: {fileID: 3306346010239773881}
-  - component: {fileID: 3306346010239773878}
-  - component: {fileID: 3306346010239773879}
-  - component: {fileID: 3306346010239773876}
   m_Layer: 0
   m_Name: Small book
   m_TagString: Untagged
@@ -1949,50 +1250,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2996422119697651380, guid: 16632183d370bab42897d4cc0f7596c4, type: 3}
---- !u!114 &3306346010239773878
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346010239773874}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d37abe64b3af4722a50eb98d79248604, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &3306346010239773879
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346010239773874}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1ddfc4a32164cfa9c7463269967fbec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Bus: {fileID: 11400000, guid: 54b817c7977a5a5468e30cfb283f3755, type: 2}
-  Settings: {fileID: 11400000, guid: a27c2819ce36c7b4a9ecd11c88060441, type: 2}
---- !u!114 &3306346010239773876
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346010239773874}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidth: 2
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &3306346010243380155
 GameObject:
   m_ObjectHideFlags: 0
@@ -2002,7 +1259,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3306346010692668355}
-  - component: {fileID: 3306346010243380154}
   m_Layer: 0
   m_Name: prefab_Small book (9)
   m_TagString: Untagged
@@ -2025,45 +1281,6 @@ Transform:
   m_Father: {fileID: 3306346009783551205}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0.827, y: 152.24, z: 88.942}
---- !u!114 &3306346010243380154
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346010243380155}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5db3849c6cf24bb49f0bdf660c17b8e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InteractionBus: {fileID: 11400000, guid: 645f2b9773ebf404e8d5fb2ff8ec7c66, type: 2}
-  ConsumeOnUse: 0
-  DestroyOnConsumeDelay: 0.5
-  InventoryIcon: {fileID: 0}
-  TextOnHover: 
-  IsInventoryItem: 0
-  IsInPlayerHand: 0
-  OnInteractAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnUseAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnStopUseAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnConsumeAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  DialogBus: {fileID: 11400000, guid: 9c7ed349dcdb00a459c31d69f56c8157, type: 2}
-  Dialogue: {fileID: 0}
-  SplitValue: 0
-  MoveSystem: {fileID: 11400000, guid: ade4e19ed7cc5494f809d127ff1cd268, type: 2}
-  MoveSystem2: {fileID: 11400000, guid: f45d7c448954c674398e409c43c27ee0, type: 2}
-  ReturnOnDone: 1
-  TargetPositionOnDone: {fileID: 0}
-  BypassMovement: 0
 --- !u!1 &3306346010474363382
 GameObject:
   m_ObjectHideFlags: 0
@@ -2076,9 +1293,6 @@ GameObject:
   - component: {fileID: 3306346010474363391}
   - component: {fileID: 3306346010474363388}
   - component: {fileID: 3306346010474363389}
-  - component: {fileID: 3306346010474363386}
-  - component: {fileID: 3306346010474363387}
-  - component: {fileID: 3306346010474363384}
   m_Layer: 0
   m_Name: Small book
   m_TagString: Untagged
@@ -2164,50 +1378,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2996422119697651380, guid: 16632183d370bab42897d4cc0f7596c4, type: 3}
---- !u!114 &3306346010474363386
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346010474363382}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d37abe64b3af4722a50eb98d79248604, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &3306346010474363387
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346010474363382}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1ddfc4a32164cfa9c7463269967fbec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Bus: {fileID: 11400000, guid: 54b817c7977a5a5468e30cfb283f3755, type: 2}
-  Settings: {fileID: 11400000, guid: a27c2819ce36c7b4a9ecd11c88060441, type: 2}
---- !u!114 &3306346010474363384
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346010474363382}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidth: 2
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &3306346010545017429
 GameObject:
   m_ObjectHideFlags: 0
@@ -2220,9 +1390,6 @@ GameObject:
   - component: {fileID: 3306346010545017434}
   - component: {fileID: 3306346010545017435}
   - component: {fileID: 3306346010545017432}
-  - component: {fileID: 3306346010545017433}
-  - component: {fileID: 3306346010545017430}
-  - component: {fileID: 3306346010545017431}
   m_Layer: 0
   m_Name: Small book
   m_TagString: Untagged
@@ -2308,50 +1475,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2996422119697651380, guid: 16632183d370bab42897d4cc0f7596c4, type: 3}
---- !u!114 &3306346010545017433
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346010545017429}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d37abe64b3af4722a50eb98d79248604, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &3306346010545017430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346010545017429}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1ddfc4a32164cfa9c7463269967fbec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Bus: {fileID: 11400000, guid: 54b817c7977a5a5468e30cfb283f3755, type: 2}
-  Settings: {fileID: 11400000, guid: a27c2819ce36c7b4a9ecd11c88060441, type: 2}
---- !u!114 &3306346010545017431
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346010545017429}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidth: 2
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &3306346010563960734
 GameObject:
   m_ObjectHideFlags: 0
@@ -2364,9 +1487,6 @@ GameObject:
   - component: {fileID: 3306346010563960679}
   - component: {fileID: 3306346010563960676}
   - component: {fileID: 3306346010563960677}
-  - component: {fileID: 3306346010563960674}
-  - component: {fileID: 3306346010563960675}
-  - component: {fileID: 3306346010563960672}
   m_Layer: 0
   m_Name: Small book
   m_TagString: Untagged
@@ -2452,50 +1572,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2996422119697651380, guid: 16632183d370bab42897d4cc0f7596c4, type: 3}
---- !u!114 &3306346010563960674
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346010563960734}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d37abe64b3af4722a50eb98d79248604, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &3306346010563960675
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346010563960734}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1ddfc4a32164cfa9c7463269967fbec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Bus: {fileID: 11400000, guid: 54b817c7977a5a5468e30cfb283f3755, type: 2}
-  Settings: {fileID: 11400000, guid: a27c2819ce36c7b4a9ecd11c88060441, type: 2}
---- !u!114 &3306346010563960672
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346010563960734}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidth: 2
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &3306346010621026406
 GameObject:
   m_ObjectHideFlags: 0
@@ -2505,7 +1581,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3306346010488259239}
-  - component: {fileID: 3306346010621026409}
   m_Layer: 0
   m_Name: prefab_Small book (3)
   m_TagString: Untagged
@@ -2528,45 +1603,6 @@ Transform:
   m_Father: {fileID: 3306346009783551205}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!114 &3306346010621026409
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346010621026406}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5db3849c6cf24bb49f0bdf660c17b8e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InteractionBus: {fileID: 11400000, guid: 645f2b9773ebf404e8d5fb2ff8ec7c66, type: 2}
-  ConsumeOnUse: 0
-  DestroyOnConsumeDelay: 0.5
-  InventoryIcon: {fileID: 0}
-  TextOnHover: 
-  IsInventoryItem: 0
-  IsInPlayerHand: 0
-  OnInteractAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnUseAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnStopUseAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnConsumeAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  DialogBus: {fileID: 11400000, guid: 9c7ed349dcdb00a459c31d69f56c8157, type: 2}
-  Dialogue: {fileID: 0}
-  SplitValue: 0
-  MoveSystem: {fileID: 11400000, guid: ade4e19ed7cc5494f809d127ff1cd268, type: 2}
-  MoveSystem2: {fileID: 11400000, guid: f45d7c448954c674398e409c43c27ee0, type: 2}
-  ReturnOnDone: 1
-  TargetPositionOnDone: {fileID: 0}
-  BypassMovement: 0
 --- !u!1 &3306346010663508109
 GameObject:
   m_ObjectHideFlags: 0
@@ -2576,7 +1612,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3306346010259623446}
-  - component: {fileID: 3306346010663508108}
   m_Layer: 0
   m_Name: prefab_Small book (14)
   m_TagString: Untagged
@@ -2599,45 +1634,6 @@ Transform:
   m_Father: {fileID: 3306346009783551205}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0.64, y: 142.661, z: 88.819}
---- !u!114 &3306346010663508108
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346010663508109}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5db3849c6cf24bb49f0bdf660c17b8e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InteractionBus: {fileID: 11400000, guid: 645f2b9773ebf404e8d5fb2ff8ec7c66, type: 2}
-  ConsumeOnUse: 0
-  DestroyOnConsumeDelay: 0.5
-  InventoryIcon: {fileID: 0}
-  TextOnHover: 
-  IsInventoryItem: 0
-  IsInPlayerHand: 0
-  OnInteractAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnUseAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnStopUseAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnConsumeAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  DialogBus: {fileID: 11400000, guid: 9c7ed349dcdb00a459c31d69f56c8157, type: 2}
-  Dialogue: {fileID: 0}
-  SplitValue: 0
-  MoveSystem: {fileID: 11400000, guid: ade4e19ed7cc5494f809d127ff1cd268, type: 2}
-  MoveSystem2: {fileID: 11400000, guid: f45d7c448954c674398e409c43c27ee0, type: 2}
-  ReturnOnDone: 1
-  TargetPositionOnDone: {fileID: 0}
-  BypassMovement: 0
 --- !u!1 &3306346010742367080
 GameObject:
   m_ObjectHideFlags: 0
@@ -2647,7 +1643,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3306346009916265191}
-  - component: {fileID: 3306346010742367083}
   m_Layer: 0
   m_Name: prefab_Small book (6)
   m_TagString: Untagged
@@ -2670,45 +1665,6 @@ Transform:
   m_Father: {fileID: 3306346009783551205}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!114 &3306346010742367083
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346010742367080}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5db3849c6cf24bb49f0bdf660c17b8e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InteractionBus: {fileID: 11400000, guid: 645f2b9773ebf404e8d5fb2ff8ec7c66, type: 2}
-  ConsumeOnUse: 0
-  DestroyOnConsumeDelay: 0.5
-  InventoryIcon: {fileID: 0}
-  TextOnHover: 
-  IsInventoryItem: 0
-  IsInPlayerHand: 0
-  OnInteractAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnUseAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnStopUseAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnConsumeAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  DialogBus: {fileID: 11400000, guid: 9c7ed349dcdb00a459c31d69f56c8157, type: 2}
-  Dialogue: {fileID: 0}
-  SplitValue: 0
-  MoveSystem: {fileID: 11400000, guid: ade4e19ed7cc5494f809d127ff1cd268, type: 2}
-  MoveSystem2: {fileID: 11400000, guid: f45d7c448954c674398e409c43c27ee0, type: 2}
-  ReturnOnDone: 1
-  TargetPositionOnDone: {fileID: 0}
-  BypassMovement: 0
 --- !u!1 &3306346010753189676
 GameObject:
   m_ObjectHideFlags: 0
@@ -2718,7 +1674,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3306346010600626193}
-  - component: {fileID: 3306346010753189679}
   m_Layer: 0
   m_Name: prefab_Small book (12)
   m_TagString: Untagged
@@ -2741,45 +1696,6 @@ Transform:
   m_Father: {fileID: 3306346009783551205}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 1.263, y: 224.098, z: 90.456}
---- !u!114 &3306346010753189679
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346010753189676}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5db3849c6cf24bb49f0bdf660c17b8e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InteractionBus: {fileID: 11400000, guid: 645f2b9773ebf404e8d5fb2ff8ec7c66, type: 2}
-  ConsumeOnUse: 0
-  DestroyOnConsumeDelay: 0.5
-  InventoryIcon: {fileID: 0}
-  TextOnHover: 
-  IsInventoryItem: 0
-  IsInPlayerHand: 0
-  OnInteractAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnUseAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnStopUseAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnConsumeAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  DialogBus: {fileID: 11400000, guid: 9c7ed349dcdb00a459c31d69f56c8157, type: 2}
-  Dialogue: {fileID: 0}
-  SplitValue: 0
-  MoveSystem: {fileID: 11400000, guid: ade4e19ed7cc5494f809d127ff1cd268, type: 2}
-  MoveSystem2: {fileID: 11400000, guid: f45d7c448954c674398e409c43c27ee0, type: 2}
-  ReturnOnDone: 1
-  TargetPositionOnDone: {fileID: 0}
-  BypassMovement: 0
 --- !u!1 &3306346010798833445
 GameObject:
   m_ObjectHideFlags: 0
@@ -2792,9 +1708,6 @@ GameObject:
   - component: {fileID: 3306346010798833450}
   - component: {fileID: 3306346010798833451}
   - component: {fileID: 3306346010798833448}
-  - component: {fileID: 3306346010798833449}
-  - component: {fileID: 3306346010798833446}
-  - component: {fileID: 3306346010798833447}
   m_Layer: 0
   m_Name: Small book
   m_TagString: Untagged
@@ -2880,50 +1793,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2996422119697651380, guid: 16632183d370bab42897d4cc0f7596c4, type: 3}
---- !u!114 &3306346010798833449
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346010798833445}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d37abe64b3af4722a50eb98d79248604, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &3306346010798833446
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346010798833445}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1ddfc4a32164cfa9c7463269967fbec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Bus: {fileID: 11400000, guid: 54b817c7977a5a5468e30cfb283f3755, type: 2}
-  Settings: {fileID: 11400000, guid: a27c2819ce36c7b4a9ecd11c88060441, type: 2}
---- !u!114 &3306346010798833447
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346010798833445}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidth: 2
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &3306346010799100765
 GameObject:
   m_ObjectHideFlags: 0
@@ -2933,7 +1802,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3306346010681657621}
-  - component: {fileID: 3306346010799100764}
   m_Layer: 0
   m_Name: prefab_Small book
   m_TagString: Untagged
@@ -2956,45 +1824,6 @@ Transform:
   m_Father: {fileID: 3306346009783551205}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!114 &3306346010799100764
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346010799100765}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5db3849c6cf24bb49f0bdf660c17b8e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InteractionBus: {fileID: 11400000, guid: 645f2b9773ebf404e8d5fb2ff8ec7c66, type: 2}
-  ConsumeOnUse: 0
-  DestroyOnConsumeDelay: 0.5
-  InventoryIcon: {fileID: 0}
-  TextOnHover: 
-  IsInventoryItem: 0
-  IsInPlayerHand: 0
-  OnInteractAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnUseAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnStopUseAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnConsumeAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  DialogBus: {fileID: 11400000, guid: 9c7ed349dcdb00a459c31d69f56c8157, type: 2}
-  Dialogue: {fileID: 0}
-  SplitValue: 0
-  MoveSystem: {fileID: 11400000, guid: ade4e19ed7cc5494f809d127ff1cd268, type: 2}
-  MoveSystem2: {fileID: 11400000, guid: f45d7c448954c674398e409c43c27ee0, type: 2}
-  ReturnOnDone: 1
-  TargetPositionOnDone: {fileID: 0}
-  BypassMovement: 0
 --- !u!1 &3306346010823861635
 GameObject:
   m_ObjectHideFlags: 0
@@ -3004,7 +1833,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3306346010499177736}
-  - component: {fileID: 3306346010823861634}
   m_Layer: 0
   m_Name: prefab_Small book (5)
   m_TagString: Untagged
@@ -3027,45 +1855,6 @@ Transform:
   m_Father: {fileID: 3306346009783551205}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0.426, y: 117.432, z: 88.88}
---- !u!114 &3306346010823861634
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346010823861635}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5db3849c6cf24bb49f0bdf660c17b8e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InteractionBus: {fileID: 11400000, guid: 645f2b9773ebf404e8d5fb2ff8ec7c66, type: 2}
-  ConsumeOnUse: 0
-  DestroyOnConsumeDelay: 0.5
-  InventoryIcon: {fileID: 0}
-  TextOnHover: 
-  IsInventoryItem: 0
-  IsInPlayerHand: 0
-  OnInteractAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnUseAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnStopUseAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnConsumeAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  DialogBus: {fileID: 11400000, guid: 9c7ed349dcdb00a459c31d69f56c8157, type: 2}
-  Dialogue: {fileID: 0}
-  SplitValue: 0
-  MoveSystem: {fileID: 11400000, guid: ade4e19ed7cc5494f809d127ff1cd268, type: 2}
-  MoveSystem2: {fileID: 11400000, guid: f45d7c448954c674398e409c43c27ee0, type: 2}
-  ReturnOnDone: 1
-  TargetPositionOnDone: {fileID: 0}
-  BypassMovement: 0
 --- !u!1 &3306346010863962459
 GameObject:
   m_ObjectHideFlags: 0
@@ -3078,9 +1867,6 @@ GameObject:
   - component: {fileID: 3306346010863962400}
   - component: {fileID: 3306346010863962401}
   - component: {fileID: 3306346010863962462}
-  - component: {fileID: 3306346010863962463}
-  - component: {fileID: 3306346010863962460}
-  - component: {fileID: 3306346010863962461}
   m_Layer: 0
   m_Name: Small book
   m_TagString: Untagged
@@ -3166,50 +1952,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2996422119697651380, guid: 16632183d370bab42897d4cc0f7596c4, type: 3}
---- !u!114 &3306346010863962463
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346010863962459}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d37abe64b3af4722a50eb98d79248604, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &3306346010863962460
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346010863962459}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1ddfc4a32164cfa9c7463269967fbec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Bus: {fileID: 11400000, guid: 54b817c7977a5a5468e30cfb283f3755, type: 2}
-  Settings: {fileID: 11400000, guid: a27c2819ce36c7b4a9ecd11c88060441, type: 2}
---- !u!114 &3306346010863962461
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346010863962459}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidth: 2
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &3306346011066770914
 GameObject:
   m_ObjectHideFlags: 0
@@ -3253,9 +1995,6 @@ GameObject:
   - component: {fileID: 3306346011272834416}
   - component: {fileID: 3306346011272834417}
   - component: {fileID: 3306346011272834414}
-  - component: {fileID: 3306346011272834415}
-  - component: {fileID: 3306346011272834412}
-  - component: {fileID: 3306346011272834413}
   m_Layer: 0
   m_Name: Small book
   m_TagString: Untagged
@@ -3341,50 +2080,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2996422119697651380, guid: 16632183d370bab42897d4cc0f7596c4, type: 3}
---- !u!114 &3306346011272834415
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346011272834411}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d37abe64b3af4722a50eb98d79248604, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &3306346011272834412
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346011272834411}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1ddfc4a32164cfa9c7463269967fbec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Bus: {fileID: 11400000, guid: 54b817c7977a5a5468e30cfb283f3755, type: 2}
-  Settings: {fileID: 11400000, guid: a27c2819ce36c7b4a9ecd11c88060441, type: 2}
---- !u!114 &3306346011272834413
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346011272834411}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidth: 2
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &3306346011297268604
 GameObject:
   m_ObjectHideFlags: 0
@@ -3397,9 +2092,6 @@ GameObject:
   - component: {fileID: 3306346011297268549}
   - component: {fileID: 3306346011297268546}
   - component: {fileID: 3306346011297268547}
-  - component: {fileID: 3306346011297268544}
-  - component: {fileID: 3306346011297268545}
-  - component: {fileID: 3306346011297268606}
   m_Layer: 0
   m_Name: Small book
   m_TagString: Untagged
@@ -3485,50 +2177,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2996422119697651380, guid: 16632183d370bab42897d4cc0f7596c4, type: 3}
---- !u!114 &3306346011297268544
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346011297268604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d37abe64b3af4722a50eb98d79248604, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &3306346011297268545
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346011297268604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1ddfc4a32164cfa9c7463269967fbec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Bus: {fileID: 11400000, guid: 54b817c7977a5a5468e30cfb283f3755, type: 2}
-  Settings: {fileID: 11400000, guid: a27c2819ce36c7b4a9ecd11c88060441, type: 2}
---- !u!114 &3306346011297268606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346011297268604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidth: 2
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &3306346011369276372
 GameObject:
   m_ObjectHideFlags: 0
@@ -3538,7 +2186,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3306346010333602439}
-  - component: {fileID: 3306346011369276375}
   m_Layer: 0
   m_Name: prefab_Small book (4)
   m_TagString: Untagged
@@ -3561,42 +2208,3 @@ Transform:
   m_Father: {fileID: 3306346009783551205}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!114 &3306346011369276375
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306346011369276372}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5db3849c6cf24bb49f0bdf660c17b8e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InteractionBus: {fileID: 11400000, guid: 645f2b9773ebf404e8d5fb2ff8ec7c66, type: 2}
-  ConsumeOnUse: 0
-  DestroyOnConsumeDelay: 0.5
-  InventoryIcon: {fileID: 0}
-  TextOnHover: 
-  IsInventoryItem: 0
-  IsInPlayerHand: 0
-  OnInteractAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnUseAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnStopUseAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  OnConsumeAudio:
-    m_PersistentCalls:
-      m_Calls: []
-  DialogBus: {fileID: 11400000, guid: 9c7ed349dcdb00a459c31d69f56c8157, type: 2}
-  Dialogue: {fileID: 0}
-  SplitValue: 0
-  MoveSystem: {fileID: 11400000, guid: ade4e19ed7cc5494f809d127ff1cd268, type: 2}
-  MoveSystem2: {fileID: 11400000, guid: f45d7c448954c674398e409c43c27ee0, type: 2}
-  ReturnOnDone: 1
-  TargetPositionOnDone: {fileID: 0}
-  BypassMovement: 0
