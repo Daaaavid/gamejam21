@@ -14,7 +14,11 @@ public class Elevator : MonoBehaviour
     [SerializeField] private Transform TargetPosition;
     [SerializeField] private TwoDimensionalMovement player;
     [SerializeField] private Camera playerCamera;
-
+    [SerializeField] private AudioSource elevatorDoor;
+    [SerializeField] public AudioSource elevatorDone;
+    [SerializeField] private AudioClip keycardAccepted;
+    [SerializeField] private AudioClip keycardDenied;
+    [SerializeField] private AudioSource buttons;
     [SerializeField] private float WaitTillCloseDelay = 1.5f;
 
     [Header("OnExitDialogue")]
@@ -24,12 +28,22 @@ public class Elevator : MonoBehaviour
     public int SplitValue;
     
     public void OpenElevator(bool gettingIn) {
+        if(buttons.GetComponent<InteractableObject>().SplitValue == 0) {
+            buttons.clip = keycardDenied;
+            buttons.Play();
+            player.interactionComplete = true;
+            return;
+        }
+        buttons.clip = keycardAccepted;
+        buttons.Play();
+        elevatorDoor.Play();
         leftDoor.Open();
         rightDoor.Open();
         StartCoroutine(WaitTillClose(gettingIn));
     }
 
     public void CloseElevator(bool gettingIn) {
+        elevatorDoor.Play();
         leftDoor.Close();
         rightDoor.Close();
         if (gettingIn)
