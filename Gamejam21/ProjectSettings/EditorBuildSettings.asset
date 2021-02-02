@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Prototyping/EndingScene.unity
     guid: ca275296442fb23448de3d00c75f9963
+  - enabled: 1
+    path: Assets/Scenes/Prototyping/LivDialogue.unity
+    guid: 3b3bc87325757c545bb33e7f49e25008
   m_configObjects: {}
