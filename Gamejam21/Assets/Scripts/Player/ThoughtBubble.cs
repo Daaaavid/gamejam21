@@ -91,8 +91,8 @@ public class ThoughtBubble : MonoBehaviour
         if (thoughtBubble.gameObject.activeSelf) {
             audio.clip = close;
             audio.Play();
-            useable = false;
+            thoughtBubble.gameObject.SetActive(false);
         }
-        gameObject.SetActive(false);
+        useable = false;
     }
 }

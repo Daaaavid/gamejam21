@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
+  m_Name: Liv
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 5844c0ac-cfaa-4ca5-aecf-b0163cbfd8d8
+    PortName: Next
+    TargetNodeGuid: 1d5d5dfe-4340-4d59-9f93-192bdf18b7d8
+  - BaseNodeGuid: 1d5d5dfe-4340-4d59-9f93-192bdf18b7d8
+    PortName: False
+    TargetNodeGuid: bd129ca7-bd17-4449-a7d6-74cd6b8993a3
+  - BaseNodeGuid: 1d5d5dfe-4340-4d59-9f93-192bdf18b7d8
+    PortName: True
+    TargetNodeGuid: afc004b4-99f0-43fc-b4e8-5528d385f7b5
+  - BaseNodeGuid: bd129ca7-bd17-4449-a7d6-74cd6b8993a3
+    PortName: Output
+    TargetNodeGuid: 4daf8b8d-206d-428f-af2d-3655f7e6aea3
+  - BaseNodeGuid: afc004b4-99f0-43fc-b4e8-5528d385f7b5
+    PortName: Output
+    TargetNodeGuid: 4daf8b8d-206d-428f-af2d-3655f7e6aea3
+  DialogueNodeData:
+  - Guid: bd129ca7-bd17-4449-a7d6-74cd6b8993a3
+    DialogueText: There she is.
+    Position: {x: 332, y: 76}
+    type: 1
+    succes: 0
+  - Guid: afc004b4-99f0-43fc-b4e8-5528d385f7b5
+    DialogueText: Maybe I should go talk to her...
+    Position: {x: 333, y: 182}
+    type: 1
+    succes: 0
+  - Guid: 1d5d5dfe-4340-4d59-9f93-192bdf18b7d8
+    DialogueText: NPC Dialogue
+    Position: {x: 184, y: 108}
+    type: 3
+    succes: 0
+  - Guid: 4daf8b8d-206d-428f-af2d-3655f7e6aea3
+    DialogueText: NPC Dialogue
+    Position: {x: 595, y: 132}
+    type: 0
+    succes: 0
+  exposedProperties: []
+  CommentBlockData: []
