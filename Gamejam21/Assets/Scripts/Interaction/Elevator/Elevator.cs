@@ -16,8 +16,6 @@ public class Elevator : MonoBehaviour
     [SerializeField] private Camera playerCamera;
     [SerializeField] private AudioSource elevatorDoor;
     [SerializeField] public AudioSource elevatorDone;
-    [SerializeField] private AudioClip keycardAccepted;
-    [SerializeField] private AudioClip keycardDenied;
     [SerializeField] private AudioSource buttons;
     [SerializeField] private float WaitTillCloseDelay = 1.5f;
 
@@ -26,16 +24,12 @@ public class Elevator : MonoBehaviour
     public InteractionBus DialogueBus;
     public DialogueContainer Dialogue;
     public int SplitValue;
-    
+
     public void OpenElevator(bool gettingIn) {
-        if(buttons.GetComponent<InteractableObject>().SplitValue == 0) {
-            buttons.clip = keycardDenied;
-            buttons.Play();
+        if (buttons.GetComponent<InteractableObject>().SplitValue == 0) {
             player.interactionComplete = true;
             return;
         }
-        buttons.clip = keycardAccepted;
-        buttons.Play();
         elevatorDoor.Play();
         leftDoor.Open();
         rightDoor.Open();
@@ -66,7 +60,11 @@ public class Elevator : MonoBehaviour
     }
 
     IEnumerator WaitTillClose(bool gettingIn) {
-        yield return new WaitForSeconds(WaitTillCloseDelay);
+        yield return new WaitForSeconds(0.5f);
+        if (!gettingIn) {
+            player.interactionComplete = true;
+        }
+        yield return new WaitForSeconds(WaitTillCloseDelay -0.5f);
         CloseElevator(gettingIn);
     }
 

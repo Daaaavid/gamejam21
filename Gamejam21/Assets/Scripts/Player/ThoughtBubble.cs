@@ -22,9 +22,12 @@ public class ThoughtBubble : MonoBehaviour
     [Tooltip("0 = false, 1 = true")]
     [Range(0, 1)] public int _splitterValue;
     [SerializeField] private bool useable = true;
-    private void Awake()
-    {
-        Bus.OnChange.AddListener(o => NewThoughtBubble(o.Dialogue, o.SplitValue));
+    public void ActiveListener(bool value) {
+        if (value) {
+            Bus.OnChange.AddListener(o => NewThoughtBubble(o.Dialogue, o.SplitValue));
+        } else {
+            Bus.RemoveListener(o => NewThoughtBubble(o.Dialogue, o.SplitValue));
+        }
     }
 
     public void NewThoughtBubble(DialogueContainer dialogue, int splittervalue) {
@@ -70,7 +73,6 @@ public class ThoughtBubble : MonoBehaviour
 
     IEnumerator TypeSentence(string sentence) {
         thoughtBubbleText.text = "";
-        Debug.Log(sentence);
         foreach (char letter in sentence.ToCharArray()) {
             thoughtBubbleText.text += letter;
             yield return new WaitForSeconds(0.05f);
@@ -93,6 +95,6 @@ public class ThoughtBubble : MonoBehaviour
             audio.Play();
             thoughtBubble.gameObject.SetActive(false);
         }
-        useable = false;
+        ActiveListener(false);
     }
 }

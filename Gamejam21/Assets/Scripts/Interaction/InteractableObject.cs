@@ -6,36 +6,39 @@ using UnityEngine.Events;
 
 namespace Interaction
 {
-    public class InteractableObject : MonoBehaviour
-    {
+    public class InteractableObject : MonoBehaviour {
+        private TwoDimensionalMovement player;
+
         public InteractionBus InteractionBus;
         public bool ConsumeOnUse;
         public float DestroyOnConsumeDelay = 0.5f;
-        
+
         [Header("Inventory")]
         public Sprite InventoryIcon;
         public string TextOnHover;
         private bool _interactable = true;
         public bool IsInventoryItem;
-        [HideInInspector]public bool IsInPlayerHand;
-        
+        [HideInInspector] public bool IsInPlayerHand;
+
         [Space(10)]
         [Header("Audio events")]
         public UnityEvent OnInteractAudio;
+        public float InteractionDelay = 0;
+        [Tooltip("Pas de 'InteractionDelay' aan naar minimaal de audiolengte van de interaction!")]
         public UnityEvent OnUseAudio;
         public UnityEvent OnStopUseAudio;
         public UnityEvent OnView;
         [Tooltip("Pas de 'DestroyOnConsumeDelay' aan naar minimaal de audiolengte!")] public UnityEvent OnConsumeAudio;
-        
+
         public readonly InteractableObjectEvent OnUse = new InteractableObjectEvent();
         public readonly InteractableObjectEvent OnStopUse = new InteractableObjectEvent();
-       
+
         [Space(10)]
         [Header("Dialogue")]
         public InteractionBus DialogBus;
         public DialogueContainer Dialogue;
         public int SplitValue;
-        
+
         [Space(10)]
         [Header("Movement")]
         public InteractionBus MoveSystem;
@@ -46,49 +49,49 @@ namespace Interaction
         public Transform TargetPositionOnDone;
 
         public bool BypassMovement;
-        
-        public void Interact()
-        {
+
+        private void Start() {
+            player = GameObject.FindWithTag("Player").GetComponent<TwoDimensionalMovement>();
+        }
+
+        public void Interact() {
             Debug.Log("InvokedInteract");
             MoveSystem.SetValue(this);
 
-            if (BypassMovement)
-            {
+            if (player.State == 2) {
                 InteractionBus.SetValue(this);
                 OnInteractAudio.Invoke();
             }
             StartCoroutine(WaitForMovement(
-                () =>
-                {
+                () => {
                     Debug.Log("InvokedDone");
                     InteractionBus.SetValue(this);
-                    OnInteractAudio.Invoke();
-                    if(ReturnOnDone) MoveSystem.OnInvokeReturnPlayer.Invoke();
-                    else
-                    {
+                    if (ReturnOnDone) MoveSystem.OnInvokeReturnPlayer.Invoke();
+                    else {
                         MoveSystem2.SetValue(TargetPositionOnDone);
                     }
                 }));
         }
 
-        private bool Proximity()
-        {
+        private bool Proximity() {
             return proximity;
         }
 
-        IEnumerator WaitForMovement(UnityAction OnDone)
-        {
+        IEnumerator WaitForMovement(UnityAction OnDone) {
             MoveSystem.OnProximity.AddListener(() => proximity = true);
             yield return new WaitUntil(Proximity);
             proximity = false;
+            OnInteractAudio.Invoke();
+            yield return new WaitForSeconds(InteractionDelay);
             MoveSystem.OnProximity.RemoveListener(() => proximity = true);
             OnDone.Invoke();
         }
 
-        public void View()
-        {
-            DialogBus.SetValue(this);
-            OnView.Invoke();
+        public void View() {
+            if (player.State == 0 || player.State == 2) {
+                DialogBus.SetValue(this);
+                OnView.Invoke();
+            }
         }
         
         public void OnMouseOverChild()

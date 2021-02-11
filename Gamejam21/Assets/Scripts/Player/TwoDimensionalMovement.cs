@@ -15,8 +15,11 @@ public class TwoDimensionalMovement : MonoBehaviour {
     public float speed = 0.5f;
     [FormerlySerializedAs("interacted")] public bool interactionComplete = false;
     [SerializeField] public Transform playermoddel;
-    [SerializeField]private int state = 0; //0 = normal, 1 interacting, 2 = immovable (in converstation)
+    [SerializeField]private int state = 0; //0 = normal, 1 interacting, 2 = first person (normal), 3 first person (in converstation)
+    public int State { get { return state; } }
     [SerializeField]private Animator myAnimator;
+    [SerializeField] private ThoughtBubble myThoughtBubble;
+    [SerializeField] private Camera myCamera;
 
     public InteractionBus MovementBus;
     public TransformBus MovementBus2;
@@ -32,6 +35,7 @@ public class TwoDimensionalMovement : MonoBehaviour {
         MovementBus.OnChange.AddListener(obj => GoToObject(obj.transform.position, obj.ProximityTreshold));
         MovementBus2.OnChange.AddListener(obj => GoToObject(obj.position, 1f, true));
         MovementBus.OnInvokeReturnPlayer.AddListener(() => interactionComplete = true);
+        myThoughtBubble = GetComponent<ThoughtBubble>();
     }
 
     // Update is called once per frame
@@ -63,11 +67,11 @@ public class TwoDimensionalMovement : MonoBehaviour {
                 }
             } else { // go to object
                 if (transform.position.x <= walkingPosition.x + 2.5f && transform.position.x >= walkingPosition.x - 2.5f) {
-                    Debug.Log(Distance());
                     if (Distance() < targetProximityTreshold) {
                         MovementBus.OnProximity.Invoke();
-                    }//2
-                    movement = new Vector2(Mathf.Clamp(targetPosition.x - transform.position.x, -1, 1), Mathf.Clamp(targetPosition.y - transform.position.z, -1, 1)) * speed;
+                    } else {
+                        movement = new Vector2(Mathf.Clamp(targetPosition.x - transform.position.x, -1, 1), Mathf.Clamp(targetPosition.y - transform.position.z, -1, 1)) * speed;
+                    } //2
                 } else {//1
                     movement = new Vector2(Mathf.Clamp(walkingPosition.x - transform.position.x, -1, 1), Mathf.Clamp(walkingPosition.y - transform.position.z, -1, 1)) * speed;
                 }
@@ -95,10 +99,12 @@ public class TwoDimensionalMovement : MonoBehaviour {
     public bool GoToObject(Vector2 target, float proximityTreshold, bool pushThis) {
         Debug.Log("Going to object");
         if(state == 0 || pushThis) {
+            if(state == 0)
             state = 1;
             targetPosition = target;
             targetProximityTreshold = proximityTreshold;
             walkingPosition = new Vector2(target.x, normalzPosition);
+            myThoughtBubble.ActiveListener(false);
             return true;
         } else {
             return false;
@@ -108,6 +114,24 @@ public class TwoDimensionalMovement : MonoBehaviour {
         transform.position = new Vector3(transform.position.x, transform.position.y, normalzPosition);
         interactionComplete = false;
         state = 0;
+        myThoughtBubble.ActiveListener(true);
+    }
+
+    public void SetFirstPersonMode(bool value) {
+        Debug.Log("setting first person mode: " + value);
+        if (value)
+            state = 2;
+        else
+            state = 1;
+        myCamera.gameObject.SetActive(!value);
+        myAnimator.gameObject.SetActive(!value);
+    }
+
+    public void GoToDialogueState() {
+        if (state == 2)
+            state = 3;
+        else
+            Debug.LogError("state needs to be 2 before going to dialogue state");
     }
 
     private void FixedUpdate()

@@ -13,10 +13,14 @@ public class ShakingPhone : MonoBehaviour {
     [SerializeField] private AudioSource audioSource2;
     [SerializeField] private AudioClip noise;
     [SerializeField] private ThoughtBubble FirstPersonThoughtBubble;
+    [SerializeField] private Transform normalPosition;
+    private TwoDimensionalMovement player;
+    [SerializeField] private FirstPersonMode firstPersonMode;
 
     public void Start() {
         audiosource1 = GetComponent<AudioSource>();
         StartCoroutine(WaitTillRing());
+        player = GameObject.FindWithTag("Player").GetComponent<TwoDimensionalMovement>();
     }
 
     public void Update() {
@@ -43,10 +47,8 @@ public class ShakingPhone : MonoBehaviour {
     }
 
     IEnumerator AwnserPhone() {
-        FirstPersonThoughtBubble.TurnOff();
         Vector3 startRotation = transform.rotation.eulerAngles;
         Vector3 startPosition = transform.position;
-        Vector3 endRotation = wantedPosition.rotation.eulerAngles;
         float time = 0;
         while (time < 1) {
             transform.rotation = Quaternion.Lerp(Quaternion.Euler(startRotation),wantedPosition.rotation, time);
@@ -60,12 +62,32 @@ public class ShakingPhone : MonoBehaviour {
     public void PickUpPhone() {
         if (this.GetComponent<InteractableObject>().SplitValue == 0 || dialogueBox.gameObject.activeSelf)
             return;
-
+        GetComponent<InteractableObject>().SplitValue = 0;
+        firstPersonMode.EnterFirstPerson();
         StopAllCoroutines();
         audiosource1.Stop();
         audiosource1.clip = noise;
         audiosource1.Play();
         audioSource2.Play();
+        player.GoToDialogueState();
+        FirstPersonThoughtBubble.TurnOff();
         StartCoroutine(AwnserPhone());
+    }
+
+    public void PutDownPhone() {
+        StartCoroutine(ReturnToNormal());
+    }
+
+    IEnumerator ReturnToNormal() {
+        Vector3 startRotation = transform.rotation.eulerAngles;
+        Vector3 startPosition = transform.position;
+        Vector3 endRotation = normalPosition.rotation.eulerAngles;
+        float time = 0;
+        while (time < 1) {
+            transform.rotation = Quaternion.Lerp(Quaternion.Euler(startRotation), normalPosition.rotation, time);
+            transform.position = Vector3.Lerp(startPosition, normalPosition.position, time);
+            time += Time.deltaTime * 2;
+            yield return null;
+        }
     }
 }

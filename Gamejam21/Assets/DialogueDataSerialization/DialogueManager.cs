@@ -19,6 +19,8 @@ public class DialogueManager : MonoBehaviour {
     [SerializeField] private AudioSource audio;
     [SerializeField] private AudioClip talking;
     [SerializeField] private AudioClip endOfSentence;
+    [SerializeField] private ShakingPhone phone;
+    [SerializeField] FirstPersonMode firstPersonMode;
 
     [Tooltip("0 = false, 1 = true")]
     [Range(0, 1)] public int grumpy;
@@ -44,9 +46,13 @@ public class DialogueManager : MonoBehaviour {
             node = dialogue.DialogueNodeData.Find(x => x.Guid == choices.ElementAt(grumpy).TargetNodeGuid);
         }
         if(node.type == 0) {
+            if (phone != null)
+                phone.PutDownPhone();
+            firstPersonMode.EnterFirstPerson();
+            gameObject.SetActive(false);
             Debug.Log("Succes: " + node.succes);
             if (node.succes)
-                SceneManager.LoadScene(nextScene);
+                firstPersonMode.ExitFirstPerson();
             else
                 Application.Quit();
             return null;
