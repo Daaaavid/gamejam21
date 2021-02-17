@@ -127,14 +127,36 @@ public class DialogueGraphView : GraphView
                 dialogueNode.titleContainer.Add(button);
                 break;
             case 3:
-                dialogueNode.title = "Splitter";
+                dialogueNode.title = "Switch";
+                dialogueNode.tooltip = "Starts at 0 and itterates 1 each time the node is accessed. Returns from the highest number back to 0 and resets when the game restarts.";
                 var port1 = GeneratePort(dialogueNode, Direction.Output, Port.Capacity.Single);
-                port1.portName = "False";
+                port1.portName = "0";
                 dialogueNode.outputContainer.Add(port1);
                 var port2 = GeneratePort(dialogueNode, Direction.Output, Port.Capacity.Single);
-                port2.portName = "True";
+                port2.portName = "1";
                 dialogueNode.outputContainer.Add(port2);
-
+                var button1 = new Button(clickEvent: () => { AddIntPort(dialogueNode, dialogueNode.outputContainer.Query(name: "connector").ToList().Count); });
+                button1.text = "new Choice";
+                dialogueNode.titleContainer.Add(button1);
+                break;
+            case 4:
+                dialogueNode.title = "Splitter";
+                var textField1 = new TextField(string.Empty);
+                textField1.RegisterValueChangedCallback(evt => {
+                    dialogueNode.dialogueText = evt.newValue;
+                });
+                textField1.SetValueWithoutNotify(dialogueNode.dialogueText == "NPC Dialogue" ? "*value*": dialogueNode.dialogueText);
+                dialogueNode.inputContainer.Add(textField1);
+                dialogueNode.tooltip = "Takes route based on the value of a variable with the same name.";
+                var port3 = GeneratePort(dialogueNode, Direction.Output, Port.Capacity.Single);
+                port3.portName = "0";
+                dialogueNode.outputContainer.Add(port3);
+                var port4 = GeneratePort(dialogueNode, Direction.Output, Port.Capacity.Single);
+                port4.portName = "1";
+                dialogueNode.outputContainer.Add(port4);
+                var button2 = new Button(clickEvent: () => { AddIntPort(dialogueNode, dialogueNode.outputContainer.Query(name: "connector").ToList().Count); });
+                button2.text = "new Choice";
+                dialogueNode.titleContainer.Add(button2);
                 break;
         }
 
@@ -154,6 +176,12 @@ public class DialogueGraphView : GraphView
         AddElement(group);
         group.SetPosition(rect);
         return group;
+    }
+
+    public void AddIntPort(DialogueNode dialogueNode, int portValue, string overriddenPortName = "") {
+        var port1 = GeneratePort(dialogueNode, Direction.Output, Port.Capacity.Single);
+        port1.portName = portValue.ToString();
+        dialogueNode.outputContainer.Add(port1);
     }
 
     public void AddChoicePort(DialogueNode dialogueNode, string overriddenPortName = "") {

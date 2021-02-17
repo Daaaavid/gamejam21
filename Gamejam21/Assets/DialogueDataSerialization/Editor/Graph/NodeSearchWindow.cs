@@ -35,12 +35,16 @@ public class NodeSearchWindow : ScriptableObject, ISearchWindowProvider
             new SearchTreeEntry(new GUIContent("End Node", _indentationIcon)) {
                 userData = new DialogueNode(){type = 0}, level =2
             },
+            new SearchTreeGroupEntry(new GUIContent("Logic"), 1){ level = 1},
+            new SearchTreeEntry(new GUIContent("Splitter", _indentationIcon)) {
+                level = 2, userData = new DialogueNode(){type = 4}
+            },
+            new SearchTreeEntry(new GUIContent("Switch", _indentationIcon)) {
+                level = 2, userData = new DialogueNode(){type = 3}
+            },
             new SearchTreeEntry(new GUIContent("Comment Block", _indentationIcon)) {
                 level = 1,
                 userData = new Group()
-            },
-            new SearchTreeEntry(new GUIContent("splitter", _indentationIcon)) {
-                level = 1, userData = new DialogueNode(){type = 3}
             }
         };
         return tree;
