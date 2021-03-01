@@ -178,10 +178,21 @@ public class DialogueGraphView : GraphView
         return group;
     }
 
+    void DeleteIfLastPort(DialogueNode dialogueNode, Port generatedPort) {
+        Debug.Log(generatedPort.portName);
+        Debug.Log("hello");
+        Debug.Log(dialogueNode.outputContainer.Query(name: "connector").ToList().Count-1);
+        if((dialogueNode.outputContainer.Query(name: "connector").ToList().Count -1).ToString() == generatedPort.portName)
+            RemovePort(dialogueNode,generatedPort);
+    }
+
     public void AddIntPort(DialogueNode dialogueNode, int portValue, string overriddenPortName = "") {
         var port1 = GeneratePort(dialogueNode, Direction.Output, Port.Capacity.Single);
         port1.portName = portValue.ToString();
         dialogueNode.outputContainer.Add(port1);
+
+        var deleteButton = new Button(clickEvent: () => DeleteIfLastPort(dialogueNode, port1)) { text = "X" };
+        port1.contentContainer.Add(deleteButton);
     }
 
     public void AddChoicePort(DialogueNode dialogueNode, string overriddenPortName = "") {

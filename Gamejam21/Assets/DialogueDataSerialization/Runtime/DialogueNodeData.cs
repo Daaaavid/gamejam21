@@ -9,4 +9,9 @@ public class DialogueNodeData
     public Vector2 Position;
     public int type;
     public bool succes;
+    public int switchValue = 0;
+
+    void Awake() {
+        switchValue = 0;
+    }
 }

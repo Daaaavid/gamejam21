@@ -13,41 +13,45 @@ MonoBehaviour:
   m_Name: Elevator
   m_EditorClassIdentifier: 
   NodeLinks:
-  - BaseNodeGuid: 1dcc01a6-5d22-4b13-85f4-fd5f93790939
-    PortName: Next
-    TargetNodeGuid: 0f5d7457-6d68-489a-b3fe-0f305ea55278
-  - BaseNodeGuid: 0f5d7457-6d68-489a-b3fe-0f305ea55278
-    PortName: False
-    TargetNodeGuid: e773c008-233a-441e-af3d-d2a43cf62302
-  - BaseNodeGuid: 0f5d7457-6d68-489a-b3fe-0f305ea55278
-    PortName: True
-    TargetNodeGuid: 9e976874-c985-4262-8a06-b92f07e567fd
-  - BaseNodeGuid: 9e976874-c985-4262-8a06-b92f07e567fd
-    PortName: Output
-    TargetNodeGuid: c37fe647-3c92-4926-833e-1acfd3aaa63f
   - BaseNodeGuid: e773c008-233a-441e-af3d-d2a43cf62302
+    PortName: Next
+    TargetNodeGuid: 508ded58-b3d3-48f4-b865-6e9838846ef5
+  - BaseNodeGuid: 5eee9284-e1f6-4c9d-a039-904b92c6103d
     PortName: Output
-    TargetNodeGuid: c37fe647-3c92-4926-833e-1acfd3aaa63f
+    TargetNodeGuid: 6a28b8be-d676-40aa-bd03-46c77b63181d
+  - BaseNodeGuid: 2c371a55-67dc-41e2-ae20-bf594c2fa841
+    PortName: Output
+    TargetNodeGuid: 6a28b8be-d676-40aa-bd03-46c77b63181d
+  - BaseNodeGuid: 508ded58-b3d3-48f4-b865-6e9838846ef5
+    PortName: 0
+    TargetNodeGuid: 5eee9284-e1f6-4c9d-a039-904b92c6103d
+  - BaseNodeGuid: 508ded58-b3d3-48f4-b865-6e9838846ef5
+    PortName: 1
+    TargetNodeGuid: 2c371a55-67dc-41e2-ae20-bf594c2fa841
   DialogueNodeData:
-  - Guid: 0f5d7457-6d68-489a-b3fe-0f305ea55278
-    DialogueText: NPC Dialogue
-    Position: {x: 172, y: 102}
-    type: 3
+  - Guid: 508ded58-b3d3-48f4-b865-6e9838846ef5
+    DialogueText: HasKeyCard
+    Position: {x: 186.4, y: 101.600006}
+    type: 4
     succes: 0
-  - Guid: 9e976874-c985-4262-8a06-b92f07e567fd
-    DialogueText: To the basement.
-    Position: {x: 314, y: 167}
-    type: 1
-    succes: 0
-  - Guid: c37fe647-3c92-4926-833e-1acfd3aaa63f
+    switchValue: 0
+  - Guid: 6a28b8be-d676-40aa-bd03-46c77b63181d
     DialogueText: NPC Dialogue
-    Position: {x: 481, y: 83}
+    Position: {x: 560, y: 92.8}
     type: 0
     succes: 0
-  - Guid: e773c008-233a-441e-af3d-d2a43cf62302
+    switchValue: 0
+  - Guid: 5eee9284-e1f6-4c9d-a039-904b92c6103d
     DialogueText: I need my keycard.
-    Position: {x: 313, y: 59}
+    Position: {x: 379.2, y: 62.399998}
     type: 1
     succes: 0
+    switchValue: 0
+  - Guid: 2c371a55-67dc-41e2-ae20-bf594c2fa841
+    DialogueText: To the basement.
+    Position: {x: 383.2, y: 164}
+    type: 1
+    succes: 0
+    switchValue: 0
   exposedProperties: []
   CommentBlockData: []

@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3729c28ec347ca644b7b8833e6d9b3ad, type: 3}
+  m_Name: splitterTest
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 714fe9bb-2aa0-4093-b411-379098e7a00d
+    PortName: Next
+    TargetNodeGuid: 4248d137-9a68-4ed6-a7fc-d88156f8bd26
+  - BaseNodeGuid: 7f642ecf-99e1-4103-b321-1fbade4a8172
+    PortName: Output
+    TargetNodeGuid: b27ac3c9-b989-4bc3-bf8e-ed3ed2553390
+  - BaseNodeGuid: 0e550853-701f-417b-b065-0cf11097d81b
+    PortName: Output
+    TargetNodeGuid: dea6fe9e-46a3-49c9-9ffb-c2acb052f766
+  - BaseNodeGuid: b27ac3c9-b989-4bc3-bf8e-ed3ed2553390
+    PortName: 0
+    TargetNodeGuid: dea6fe9e-46a3-49c9-9ffb-c2acb052f766
+  - BaseNodeGuid: b27ac3c9-b989-4bc3-bf8e-ed3ed2553390
+    PortName: 1
+    TargetNodeGuid: dea6fe9e-46a3-49c9-9ffb-c2acb052f766
+  - BaseNodeGuid: 2eea75b3-a699-4a90-989a-cbaeedfc2388
+    PortName: Output
+    TargetNodeGuid: b27ac3c9-b989-4bc3-bf8e-ed3ed2553390
+  - BaseNodeGuid: 46f9b8ba-73e2-434a-b1b7-6ba0bca4b0d6
+    PortName: Output
+    TargetNodeGuid: dea6fe9e-46a3-49c9-9ffb-c2acb052f766
+  - BaseNodeGuid: 4248d137-9a68-4ed6-a7fc-d88156f8bd26
+    PortName: 0
+    TargetNodeGuid: 2eea75b3-a699-4a90-989a-cbaeedfc2388
+  - BaseNodeGuid: 4248d137-9a68-4ed6-a7fc-d88156f8bd26
+    PortName: 1
+    TargetNodeGuid: 7f642ecf-99e1-4103-b321-1fbade4a8172
+  - BaseNodeGuid: 4248d137-9a68-4ed6-a7fc-d88156f8bd26
+    PortName: 2
+    TargetNodeGuid: 0e550853-701f-417b-b065-0cf11097d81b
+  - BaseNodeGuid: 4248d137-9a68-4ed6-a7fc-d88156f8bd26
+    PortName: 3
+    TargetNodeGuid: 46f9b8ba-73e2-434a-b1b7-6ba0bca4b0d6
+  - BaseNodeGuid: b27ac3c9-b989-4bc3-bf8e-ed3ed2553390
+    PortName: 2
+    TargetNodeGuid: dea6fe9e-46a3-49c9-9ffb-c2acb052f766
+  - BaseNodeGuid: b27ac3c9-b989-4bc3-bf8e-ed3ed2553390
+    PortName: 3
+    TargetNodeGuid: dea6fe9e-46a3-49c9-9ffb-c2acb052f766
+  - BaseNodeGuid: b27ac3c9-b989-4bc3-bf8e-ed3ed2553390
+    PortName: 4
+    TargetNodeGuid: dea6fe9e-46a3-49c9-9ffb-c2acb052f766
+  DialogueNodeData:
+  - Guid: 7f642ecf-99e1-4103-b321-1fbade4a8172
+    DialogueText: NPC Dialogue
+    Position: {x: 380, y: 206.4}
+    type: 1
+    succes: 0
+    switchValue: 0
+  - Guid: 0e550853-701f-417b-b065-0cf11097d81b
+    DialogueText: NPC Dialogue
+    Position: {x: 379.2, y: 311.2}
+    type: 1
+    succes: 0
+    switchValue: 0
+  - Guid: b27ac3c9-b989-4bc3-bf8e-ed3ed2553390
+    DialogueText: NPC Dialogue
+    Position: {x: 536.8, y: 108.8}
+    type: 3
+    succes: 0
+    switchValue: 0
+  - Guid: dea6fe9e-46a3-49c9-9ffb-c2acb052f766
+    DialogueText: NPC Dialogue
+    Position: {x: 779.2, y: 296.80002}
+    type: 0
+    succes: 0
+    switchValue: 0
+  - Guid: 2eea75b3-a699-4a90-989a-cbaeedfc2388
+    DialogueText: NPC Dialogue
+    Position: {x: 384.8, y: 100.8}
+    type: 1
+    succes: 0
+    switchValue: 0
+  - Guid: 46f9b8ba-73e2-434a-b1b7-6ba0bca4b0d6
+    DialogueText: NPC Dialogue
+    Position: {x: 380.8, y: 421.6}
+    type: 1
+    succes: 0
+    switchValue: 0
+  - Guid: 4248d137-9a68-4ed6-a7fc-d88156f8bd26
+    DialogueText: somevalue
+    Position: {x: 142.4, y: 232}
+    type: 4
+    succes: 0
+    switchValue: 0
+  exposedProperties: []
+  CommentBlockData: []

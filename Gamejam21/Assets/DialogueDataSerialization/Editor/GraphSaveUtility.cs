@@ -153,6 +153,14 @@ namespace Subtegral.DialogueSystem.DataContainers {
                     var nodePorts = _containerCache.NodeLinks.Where(x => x.BaseNodeGuid == nodeData.Guid).ToList();
                     nodePorts.ForEach(x => _targetGraphView.AddChoicePort(tempNode, x.PortName));
                 }
+                if(nodeData.type == 3 || nodeData.type == 4) {
+                    var nodePorts = _containerCache.NodeLinks.Where(x => x.BaseNodeGuid == nodeData.Guid).ToList();
+                    foreach(NodeLinkData x in nodePorts) {
+                        int.TryParse(x.PortName, out int n);
+                        if (n > 1)
+                            _targetGraphView.AddIntPort(tempNode, int.Parse(x.PortName));
+                    }
+                }
             }
         }
 

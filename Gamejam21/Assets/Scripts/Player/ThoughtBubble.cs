@@ -46,9 +46,21 @@ public class ThoughtBubble : MonoBehaviour
 
     private DialogueNodeData NextNode(string narrativeDataGUID) {
         DialogueNodeData node = _dialogue.DialogueNodeData.Find(x => x.Guid == narrativeDataGUID);
-        while (node.type == 3) {
+        while (node.type == 3 || node.type == 4) {
             var choices = _dialogue.NodeLinks.Where(x => x.BaseNodeGuid == node.Guid);
-            node = _dialogue.DialogueNodeData.Find(x => x.Guid == choices.ElementAt(_splitterValue).TargetNodeGuid);
+            DialogueNodeData tempNode;
+            if(node.type == 3)
+                tempNode = _dialogue.DialogueNodeData.Find(x => x.Guid == choices.ElementAt(node.switchValue).TargetNodeGuid);
+            else {
+                Debug.Log(node.DialogueText + ": " + PlayerPrefs.GetInt(node.DialogueText));
+                Debug.Log(choices.ElementAt(PlayerPrefs.GetInt(node.DialogueText)).PortName);
+                tempNode = _dialogue.DialogueNodeData.Find(x => x.Guid == choices.ElementAt(PlayerPrefs.GetInt(node.DialogueText)).TargetNodeGuid);
+            } 
+            node.switchValue += 1;
+            if (node.switchValue > choices.Count() - 1) {
+                node.switchValue = 0;
+            }
+            node = tempNode;
         }
         if (node.type == 0) {
             audio.clip = close;

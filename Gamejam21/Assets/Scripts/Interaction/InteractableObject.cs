@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using Subtegral.DialogueSystem.DataContainers;
 using UnityEngine;
 using UnityEngine.Events;
@@ -21,6 +22,10 @@ namespace Interaction
         [HideInInspector] public bool IsInPlayerHand;
 
         [Space(10)]
+
+        [Tooltip("Use in ChangeGlobalVariableUsingIndex the index of the int that you define here to change the global variable to this value.")]
+        public List<GlobalInt> variableChanges = new List<GlobalInt>();
+
         [Header("Audio events")]
         public UnityEvent OnInteractAudio;
         public float InteractionDelay = 0;
@@ -49,6 +54,7 @@ namespace Interaction
         public Transform TargetPositionOnDone;
 
         public bool BypassMovement;
+
 
         private void Start() {
             player = GameObject.FindWithTag("Player").GetComponent<TwoDimensionalMovement>();
@@ -135,11 +141,11 @@ namespace Interaction
             Destroy(gameObject);
         }
 
-        public void InvertSplitValue() {
-            if (SplitValue == 1)
-                SplitValue = 0;
-            else
-                SplitValue = 1;
+        public void ChangeGlobalVariableUsingIndex(int value) {
+            ChangeGlobalVariable(variableChanges[value]);
+        }
+        void ChangeGlobalVariable(GlobalInt variable) {
+            PlayerPrefs.SetInt(variable.key, variable.value);
         }
 
     }
