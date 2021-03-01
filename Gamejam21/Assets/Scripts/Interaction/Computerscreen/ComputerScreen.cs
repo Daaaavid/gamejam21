@@ -9,9 +9,9 @@ public class ComputerScreen : MonoBehaviour
     public void TurnOnOrOff() {
         gameObject.SetActive(!gameObject.activeSelf);
         if (gameObject.activeSelf) {
-            myObject.SplitValue = 1;
+            PlayerPrefs.SetInt("BlueScreen", 1);
         } else {
-            myObject.SplitValue = 0;
+            PlayerPrefs.SetInt("BlueScreen", 0);
         }
     }
 }

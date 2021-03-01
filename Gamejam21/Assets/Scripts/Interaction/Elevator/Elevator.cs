@@ -53,10 +53,10 @@ public class Elevator : MonoBehaviour
     IEnumerator WaitForDelay()
     {
         yield return new WaitForSeconds(OnExitDialogDelay);
-        //var io = new InteractableObject();
-        //io.Dialogue = Dialogue;
-        //io.SplitValue = SplitValue;
-        //DialogueBus.SetValue(io);
+        var io = new InteractableObject();
+        io.Dialogue = Dialogue;
+        io.SplitValue = SplitValue;
+        DialogueBus.SetValue(io);
     }
 
     IEnumerator WaitTillClose(bool gettingIn) {

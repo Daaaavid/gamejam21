@@ -13,41 +13,45 @@ MonoBehaviour:
   m_Name: PhoneDesc
   m_EditorClassIdentifier: 
   NodeLinks:
-  - BaseNodeGuid: 828481e3-7949-4cc1-a205-e0c05687d12e
+  - BaseNodeGuid: 1245ef3a-c0bd-48f3-9759-8c35d7682cd6
     PortName: Next
-    TargetNodeGuid: 40907dae-f81a-4dcc-ab87-565e284f26a8
-  - BaseNodeGuid: e2bb3697-bc4f-4164-a38f-3d6ae6d7875a
-    PortName: Output
-    TargetNodeGuid: 50ccaac6-c933-4384-8040-634ac95a464b
+    TargetNodeGuid: beee24f2-debe-41b7-af19-f99007f6fe8e
   - BaseNodeGuid: a6ee704d-18bf-4861-bf9b-8931dccc1e4f
     PortName: Output
     TargetNodeGuid: 50ccaac6-c933-4384-8040-634ac95a464b
-  - BaseNodeGuid: 40907dae-f81a-4dcc-ab87-565e284f26a8
-    PortName: Grumpy
+  - BaseNodeGuid: beee24f2-debe-41b7-af19-f99007f6fe8e
+    PortName: 0
     TargetNodeGuid: a6ee704d-18bf-4861-bf9b-8931dccc1e4f
-  - BaseNodeGuid: 40907dae-f81a-4dcc-ab87-565e284f26a8
-    PortName: Not grumpy
+  - BaseNodeGuid: beee24f2-debe-41b7-af19-f99007f6fe8e
+    PortName: 1
     TargetNodeGuid: e2bb3697-bc4f-4164-a38f-3d6ae6d7875a
+  - BaseNodeGuid: e2bb3697-bc4f-4164-a38f-3d6ae6d7875a
+    PortName: Output
+    TargetNodeGuid: 50ccaac6-c933-4384-8040-634ac95a464b
   DialogueNodeData:
-  - Guid: 40907dae-f81a-4dcc-ab87-565e284f26a8
-    DialogueText: NPC Dialogue
-    Position: {x: 249, y: 105}
-    type: 3
+  - Guid: beee24f2-debe-41b7-af19-f99007f6fe8e
+    DialogueText: PhoneRinging
+    Position: {x: 184.8, y: 102.399994}
+    type: 4
     succes: 0
-  - Guid: 50ccaac6-c933-4384-8040-634ac95a464b
-    DialogueText: NPC Dialogue
-    Position: {x: 912, y: 167}
-    type: 0
-    succes: 0
+    switchValue: 0
   - Guid: a6ee704d-18bf-4861-bf9b-8931dccc1e4f
     DialogueText: All is quiet...
-    Position: {x: 556, y: 113}
+    Position: {x: 380, y: 55.999996}
     type: 1
     succes: 0
+    switchValue: 0
   - Guid: e2bb3697-bc4f-4164-a38f-3d6ae6d7875a
     DialogueText: I wonder who it is?
-    Position: {x: 530, y: 237}
+    Position: {x: 384, y: 162.40001}
     type: 1
     succes: 0
+    switchValue: 0
+  - Guid: 50ccaac6-c933-4384-8040-634ac95a464b
+    DialogueText: NPC Dialogue
+    Position: {x: 589.60004, y: 59.999996}
+    type: 0
+    succes: 0
+    switchValue: 0
   exposedProperties: []
   CommentBlockData: []

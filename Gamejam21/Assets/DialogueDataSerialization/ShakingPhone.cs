@@ -32,7 +32,7 @@ public class ShakingPhone : MonoBehaviour {
     IEnumerator WaitTillRing() {
         yield return new WaitForSeconds(8);
         GetComponent<AudioSource>().Play();
-        this.GetComponent<InteractableObject>().SplitValue = 1;
+        PlayerPrefs.SetInt("PhoneRinging", 1);
         StartCoroutine(ShakePhone(rotation1, rotation2));
     }
 
@@ -60,9 +60,12 @@ public class ShakingPhone : MonoBehaviour {
     }
 
     public void PickUpPhone() {
-        if (this.GetComponent<InteractableObject>().SplitValue == 0 || dialogueBox.gameObject.activeSelf)
+        if (PlayerPrefs.GetInt("PhoneRinging") == 0 || dialogueBox.gameObject.activeSelf) {
+            Debug.Log("? " + PlayerPrefs.GetInt("PhoneRinging"));
             return;
-        GetComponent<InteractableObject>().SplitValue = 0;
+        }
+
+        PlayerPrefs.SetInt("PhoneRinging", 0);
         firstPersonMode.EnterFirstPerson();
         StopAllCoroutines();
         audiosource1.Stop();

@@ -17,10 +17,10 @@ MonoBehaviour:
     PortName: Next
     TargetNodeGuid: b3f78391-238d-4092-87d9-b75375db0474
   - BaseNodeGuid: b3f78391-238d-4092-87d9-b75375db0474
-    PortName: False
+    PortName: 0
     TargetNodeGuid: 56e7c099-386f-4e07-8117-b547e61b8250
   - BaseNodeGuid: b3f78391-238d-4092-87d9-b75375db0474
-    PortName: True
+    PortName: 1
     TargetNodeGuid: 26545ad5-b135-4b90-96ed-89c35e0c6b8b
   - BaseNodeGuid: 56e7c099-386f-4e07-8117-b547e61b8250
     PortName: Output
@@ -31,23 +31,27 @@ MonoBehaviour:
   DialogueNodeData:
   - Guid: b3f78391-238d-4092-87d9-b75375db0474
     DialogueText: NPC Dialogue
-    Position: {x: 155, y: -92}
+    Position: {x: 192, y: 99.2}
     type: 3
     succes: 0
-  - Guid: a8a90e97-1d6d-4262-b3fc-91678b0a9e6a
-    DialogueText: NPC Dialogue
-    Position: {x: 693, y: 96}
-    type: 0
-    succes: 0
+    switchValue: 0
   - Guid: 56e7c099-386f-4e07-8117-b547e61b8250
     DialogueText: Use the force...
-    Position: {x: 396, y: -74}
+    Position: {x: 390.40002, y: 108.8}
     type: 1
     succes: 0
+    switchValue: 0
   - Guid: 26545ad5-b135-4b90-96ed-89c35e0c6b8b
     DialogueText: I could really use a new hope...
-    Position: {x: 396, y: 40}
+    Position: {x: 390.40002, y: 223.2}
     type: 1
     succes: 0
+    switchValue: 0
+  - Guid: a8a90e97-1d6d-4262-b3fc-91678b0a9e6a
+    DialogueText: NPC Dialogue
+    Position: {x: 629.60004, y: 110.40001}
+    type: 0
+    succes: 0
+    switchValue: 0
   exposedProperties: []
   CommentBlockData: []

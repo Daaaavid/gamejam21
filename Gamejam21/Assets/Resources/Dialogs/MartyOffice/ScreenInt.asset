@@ -13,49 +13,54 @@ MonoBehaviour:
   m_Name: ScreenInt
   m_EditorClassIdentifier: 
   NodeLinks:
-  - BaseNodeGuid: 9e3a2d74-cb87-4d77-b00b-dcdfcd2727ae
-    PortName: Next
-    TargetNodeGuid: e516e99e-aff6-471e-b24b-d94d3cb65604
   - BaseNodeGuid: 55332b8c-5a22-47a1-a9ef-030b554883e1
+    PortName: Next
+    TargetNodeGuid: 326409d1-f73e-4b74-8160-6e4e8673f325
+  - BaseNodeGuid: 1dda6c5e-6df5-45de-90a8-56c654cd0cc0
     PortName: Output
-    TargetNodeGuid: 99a57027-68c0-4e11-8a7e-818b28798131
-  - BaseNodeGuid: e516e99e-aff6-471e-b24b-d94d3cb65604
-    PortName: False
-    TargetNodeGuid: 55332b8c-5a22-47a1-a9ef-030b554883e1
-  - BaseNodeGuid: e516e99e-aff6-471e-b24b-d94d3cb65604
-    PortName: True
-    TargetNodeGuid: aa616d97-7314-48fb-8307-b883d7707695
-  - BaseNodeGuid: aa616d97-7314-48fb-8307-b883d7707695
+    TargetNodeGuid: 6e6eb199-f34e-4cdd-a043-b39cd523c4e7
+  - BaseNodeGuid: 76ede40a-faca-4590-804a-106aa8c188fe
     PortName: Output
-    TargetNodeGuid: 40089e84-c204-4cd7-acff-c130e7e3f1a4
-  - BaseNodeGuid: 40089e84-c204-4cd7-acff-c130e7e3f1a4
+    TargetNodeGuid: 747c0c59-d31b-4b00-8fb6-36e6e935ad53
+  - BaseNodeGuid: 6e6eb199-f34e-4cdd-a043-b39cd523c4e7
     PortName: Output
-    TargetNodeGuid: 99a57027-68c0-4e11-8a7e-818b28798131
+    TargetNodeGuid: 747c0c59-d31b-4b00-8fb6-36e6e935ad53
+  - BaseNodeGuid: 326409d1-f73e-4b74-8160-6e4e8673f325
+    PortName: 0
+    TargetNodeGuid: 76ede40a-faca-4590-804a-106aa8c188fe
+  - BaseNodeGuid: 326409d1-f73e-4b74-8160-6e4e8673f325
+    PortName: 1
+    TargetNodeGuid: 1dda6c5e-6df5-45de-90a8-56c654cd0cc0
   DialogueNodeData:
-  - Guid: 55332b8c-5a22-47a1-a9ef-030b554883e1
-    DialogueText: Maybe someone fixed it?
-    Position: {x: 449, y: 31}
-    type: 1
-    succes: 0
-  - Guid: e516e99e-aff6-471e-b24b-d94d3cb65604
+  - Guid: 747c0c59-d31b-4b00-8fb6-36e6e935ad53
     DialogueText: NPC Dialogue
-    Position: {x: 294, y: 90}
-    type: 3
-    succes: 0
-  - Guid: aa616d97-7314-48fb-8307-b883d7707695
-    DialogueText: Still blue...
-    Position: {x: 453, y: 136}
-    type: 1
-    succes: 0
-  - Guid: 40089e84-c204-4cd7-acff-c130e7e3f1a4
-    DialogueText: I'll just turn it off.
-    Position: {x: 592, y: 139}
-    type: 1
-    succes: 0
-  - Guid: 99a57027-68c0-4e11-8a7e-818b28798131
-    DialogueText: NPC Dialogue
-    Position: {x: 742, y: 138}
+    Position: {x: 634.4, y: 105.600006}
     type: 0
     succes: 0
+    switchValue: 0
+  - Guid: 1dda6c5e-6df5-45de-90a8-56c654cd0cc0
+    DialogueText: Still blue...
+    Position: {x: 349.6, y: 229.59999}
+    type: 1
+    succes: 0
+    switchValue: 0
+  - Guid: 76ede40a-faca-4590-804a-106aa8c188fe
+    DialogueText: Maybe somebody fixed it?
+    Position: {x: 396, y: 48.000004}
+    type: 1
+    succes: 0
+    switchValue: 0
+  - Guid: 6e6eb199-f34e-4cdd-a043-b39cd523c4e7
+    DialogueText: I'll just turn it off.
+    Position: {x: 488, y: 229.59999}
+    type: 1
+    succes: 0
+    switchValue: 0
+  - Guid: 326409d1-f73e-4b74-8160-6e4e8673f325
+    DialogueText: BlueScreen
+    Position: {x: 185.6, y: 92}
+    type: 4
+    succes: 0
+    switchValue: 0
   exposedProperties: []
   CommentBlockData: []
