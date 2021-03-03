@@ -8,7 +8,7 @@ public class ShakingPhone : MonoBehaviour {
     [SerializeField] private Vector3 rotation2;
     [SerializeField] private Transform horn;
     [SerializeField] private Transform wantedPosition;
-    [SerializeField] private Transform dialogueBox;
+    [SerializeField] private DialogueManager dialogueBox;
     [SerializeField] private AudioSource audiosource1;
     [SerializeField] private AudioSource audioSource2;
     [SerializeField] private AudioClip noise;
@@ -57,6 +57,7 @@ public class ShakingPhone : MonoBehaviour {
             yield return null;
         }
         dialogueBox.gameObject.SetActive(true);
+        dialogueBox.StartDialogue();
     }
 
     public void PickUpPhone() {

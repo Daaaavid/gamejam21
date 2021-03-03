@@ -16,95 +16,156 @@ MonoBehaviour:
   - BaseNodeGuid: 5a09e2ad-33eb-4d67-ad1e-df329c524437
     PortName: Next
     TargetNodeGuid: 5bcd9101-862c-4dea-84c9-4e678252658d
+  - BaseNodeGuid: 5bcd9101-862c-4dea-84c9-4e678252658d
+    PortName: Output
+    TargetNodeGuid: c3743c06-52c8-4bae-b2e4-c67383287ecc
+  - BaseNodeGuid: e91e43d7-a1a4-436d-ab0f-3390c81b667e
+    PortName: 0
+    TargetNodeGuid: 9a6a0e45-0a45-4259-9b36-323df8c27887
+  - BaseNodeGuid: e91e43d7-a1a4-436d-ab0f-3390c81b667e
+    PortName: 1
+    TargetNodeGuid: 20db9168-37a6-4d87-941b-fdd960f5ca90
+  - BaseNodeGuid: c3743c06-52c8-4bae-b2e4-c67383287ecc
+    PortName: 0
+    TargetNodeGuid: e91e43d7-a1a4-436d-ab0f-3390c81b667e
+  - BaseNodeGuid: c3743c06-52c8-4bae-b2e4-c67383287ecc
+    PortName: 1
+    TargetNodeGuid: 385bd192-f230-461e-8b9a-5ec2ca299cd0
+  - BaseNodeGuid: 385bd192-f230-461e-8b9a-5ec2ca299cd0
+    PortName: 0
+    TargetNodeGuid: 70713e7f-6700-4d54-8e5d-f3ca90a5b334
+  - BaseNodeGuid: 385bd192-f230-461e-8b9a-5ec2ca299cd0
+    PortName: 1
+    TargetNodeGuid: 212320e9-fba1-4198-a309-0e1ca4b8fb7f
+  - BaseNodeGuid: 9a6a0e45-0a45-4259-9b36-323df8c27887
+    PortName: I lost my elevatorcard.
+    TargetNodeGuid: 3544884a-625c-4fee-b31c-b23c3c308002
+  - BaseNodeGuid: 9a6a0e45-0a45-4259-9b36-323df8c27887
+    PortName: I'm lost.
+    TargetNodeGuid: 1516fcba-0f12-4d92-a56c-f5e31d87008f
+  - BaseNodeGuid: 9a6a0e45-0a45-4259-9b36-323df8c27887
+    PortName: I was planning to go home.
+    TargetNodeGuid: 1516fcba-0f12-4d92-a56c-f5e31d87008f
+  - BaseNodeGuid: 212320e9-fba1-4198-a309-0e1ca4b8fb7f
+    PortName: I'm lost.
+    TargetNodeGuid: 1516fcba-0f12-4d92-a56c-f5e31d87008f
+  - BaseNodeGuid: 212320e9-fba1-4198-a309-0e1ca4b8fb7f
+    PortName: I was planning to go home.
+    TargetNodeGuid: 1516fcba-0f12-4d92-a56c-f5e31d87008f
+  - BaseNodeGuid: 212320e9-fba1-4198-a309-0e1ca4b8fb7f
+    PortName: I got you this plant as a present.
+    TargetNodeGuid: c873011c-27c4-4afc-865d-a0c000f0fda9
+  - BaseNodeGuid: c873011c-27c4-4afc-865d-a0c000f0fda9
+    PortName: Output
+    TargetNodeGuid: c35a1db9-7c14-4d41-ae70-b7aafe171a22
+  - BaseNodeGuid: 70713e7f-6700-4d54-8e5d-f3ca90a5b334
+    PortName: I was planning to go home.
+    TargetNodeGuid: 1516fcba-0f12-4d92-a56c-f5e31d87008f
+  - BaseNodeGuid: 70713e7f-6700-4d54-8e5d-f3ca90a5b334
+    PortName: I'm lost.
+    TargetNodeGuid: 1516fcba-0f12-4d92-a56c-f5e31d87008f
+  - BaseNodeGuid: 20db9168-37a6-4d87-941b-fdd960f5ca90
+    PortName: I was planning to go home.
+    TargetNodeGuid: 1516fcba-0f12-4d92-a56c-f5e31d87008f
+  - BaseNodeGuid: 20db9168-37a6-4d87-941b-fdd960f5ca90
+    PortName: I'm lost.
+    TargetNodeGuid: 1516fcba-0f12-4d92-a56c-f5e31d87008f
+  - BaseNodeGuid: 20db9168-37a6-4d87-941b-fdd960f5ca90
+    PortName: I lost my elevatorcard.
+    TargetNodeGuid: 3544884a-625c-4fee-b31c-b23c3c308002
+  - BaseNodeGuid: 20db9168-37a6-4d87-941b-fdd960f5ca90
+    PortName: I got you this plant as a present.
+    TargetNodeGuid: c873011c-27c4-4afc-865d-a0c000f0fda9
   - BaseNodeGuid: 3544884a-625c-4fee-b31c-b23c3c308002
     PortName: Output
     TargetNodeGuid: 3b2235e7-10bd-4ae2-a4f7-e350ce04793f
   - BaseNodeGuid: 1516fcba-0f12-4d92-a56c-f5e31d87008f
     PortName: Output
     TargetNodeGuid: a8da5e50-0aff-4a73-9f14-29765adf5867
-  - BaseNodeGuid: 5bcd9101-862c-4dea-84c9-4e678252658d
-    PortName: Output
-    TargetNodeGuid: 3e874f4b-e24c-4c2b-abb6-1e21259a1abd
-  - BaseNodeGuid: 3e874f4b-e24c-4c2b-abb6-1e21259a1abd
-    PortName: False
-    TargetNodeGuid: 9a6a0e45-0a45-4259-9b36-323df8c27887
-  - BaseNodeGuid: 3e874f4b-e24c-4c2b-abb6-1e21259a1abd
-    PortName: True
-    TargetNodeGuid: 20db9168-37a6-4d87-941b-fdd960f5ca90
-  - BaseNodeGuid: 9a6a0e45-0a45-4259-9b36-323df8c27887
-    PortName: I lost my elevatorcard
-    TargetNodeGuid: 3544884a-625c-4fee-b31c-b23c3c308002
-  - BaseNodeGuid: 9a6a0e45-0a45-4259-9b36-323df8c27887
-    PortName: I'm lost
-    TargetNodeGuid: 1516fcba-0f12-4d92-a56c-f5e31d87008f
-  - BaseNodeGuid: 9a6a0e45-0a45-4259-9b36-323df8c27887
-    PortName: I was planning to go home
-    TargetNodeGuid: 1516fcba-0f12-4d92-a56c-f5e31d87008f
-  - BaseNodeGuid: 20db9168-37a6-4d87-941b-fdd960f5ca90
-    PortName: I was planning to go home
-    TargetNodeGuid: 1516fcba-0f12-4d92-a56c-f5e31d87008f
-  - BaseNodeGuid: 20db9168-37a6-4d87-941b-fdd960f5ca90
-    PortName: I'm lost
-    TargetNodeGuid: 1516fcba-0f12-4d92-a56c-f5e31d87008f
-  - BaseNodeGuid: 20db9168-37a6-4d87-941b-fdd960f5ca90
-    PortName: I lost my elevatorcard
-    TargetNodeGuid: 3544884a-625c-4fee-b31c-b23c3c308002
-  - BaseNodeGuid: 20db9168-37a6-4d87-941b-fdd960f5ca90
-    PortName: I got you this plant as a present
-    TargetNodeGuid: c873011c-27c4-4afc-865d-a0c000f0fda9
-  - BaseNodeGuid: c873011c-27c4-4afc-865d-a0c000f0fda9
-    PortName: Output
-    TargetNodeGuid: c35a1db9-7c14-4d41-ae70-b7aafe171a22
   DialogueNodeData:
-  - Guid: 3544884a-625c-4fee-b31c-b23c3c308002
-    DialogueText: I can't give you mine. Maybe it's in your office?
-    Position: {x: 987, y: 311}
-    type: 1
-    succes: 0
-  - Guid: 1516fcba-0f12-4d92-a56c-f5e31d87008f
-    DialogueText: You have to get the souls from the basement, remember?
-    Position: {x: 985, y: 27}
-    type: 1
-    succes: 0
-  - Guid: 3b2235e7-10bd-4ae2-a4f7-e350ce04793f
-    DialogueText: NPC Dialogue
-    Position: {x: 1340, y: 307}
-    type: 0
-    succes: 1
-  - Guid: a8da5e50-0aff-4a73-9f14-29765adf5867
-    DialogueText: NPC Dialogue
-    Position: {x: 1380, y: 41}
-    type: 0
-    succes: 1
   - Guid: 5bcd9101-862c-4dea-84c9-4e678252658d
-    DialogueText: Marty! What are you going here?
-    Position: {x: 213, y: 85}
+    DialogueText: Marty! What are you doing here?
+    Position: {x: 180.8, y: 100}
     type: 1
     succes: 0
-  - Guid: 3e874f4b-e24c-4c2b-abb6-1e21259a1abd
-    DialogueText: NPC Dialogue
-    Position: {x: 432, y: 250}
-    type: 3
+    switchValue: 0
+  - Guid: e91e43d7-a1a4-436d-ab0f-3390c81b667e
+    DialogueText: CarryingPlant
+    Position: {x: 632, y: 51.999996}
+    type: 4
     succes: 0
+    switchValue: 0
+  - Guid: c3743c06-52c8-4bae-b2e4-c67383287ecc
+    DialogueText: HasKeyCard
+    Position: {x: 420, y: 100}
+    type: 4
+    succes: 0
+    switchValue: 0
+  - Guid: 385bd192-f230-461e-8b9a-5ec2ca299cd0
+    DialogueText: CarryingPlant
+    Position: {x: 630.4, y: 161.6}
+    type: 4
+    succes: 0
+    switchValue: 0
   - Guid: 9a6a0e45-0a45-4259-9b36-323df8c27887
     DialogueText: NPC Dialogue
-    Position: {x: 636, y: 18}
+    Position: {x: 931.2, y: -14.400001}
     type: 2
     succes: 0
-  - Guid: 20db9168-37a6-4d87-941b-fdd960f5ca90
+    switchValue: 0
+  - Guid: 212320e9-fba1-4198-a309-0e1ca4b8fb7f
     DialogueText: NPC Dialogue
-    Position: {x: 571, y: 417}
+    Position: {x: 939.2, y: 392}
     type: 2
     succes: 0
+    switchValue: 0
   - Guid: c873011c-27c4-4afc-865d-a0c000f0fda9
     DialogueText: That's nice. Just put it on my desk
-    Position: {x: 1049, y: 473}
+    Position: {x: 1392, y: 420.8}
     type: 1
     succes: 0
+    switchValue: 0
+  - Guid: 70713e7f-6700-4d54-8e5d-f3ca90a5b334
+    DialogueText: NPC Dialogue
+    Position: {x: 932, y: 123.2}
+    type: 2
+    succes: 0
+    switchValue: 0
+  - Guid: 20db9168-37a6-4d87-941b-fdd960f5ca90
+    DialogueText: NPC Dialogue
+    Position: {x: 931.2, y: 232.8}
+    type: 2
+    succes: 0
+    switchValue: 0
+  - Guid: 3544884a-625c-4fee-b31c-b23c3c308002
+    DialogueText: I can't give you mine. Maybe it's in your office?
+    Position: {x: 1381.6, y: 101.600006}
+    type: 1
+    succes: 0
+    switchValue: 0
+  - Guid: 3b2235e7-10bd-4ae2-a4f7-e350ce04793f
+    DialogueText: NPC Dialogue
+    Position: {x: 1704.7999, y: 104.8}
+    type: 0
+    succes: 0
+    switchValue: 0
+  - Guid: 1516fcba-0f12-4d92-a56c-f5e31d87008f
+    DialogueText: You have to get the souls from the basement, remember?
+    Position: {x: 1301.6, y: -11.200001}
+    type: 1
+    succes: 0
+    switchValue: 0
+  - Guid: a8da5e50-0aff-4a73-9f14-29765adf5867
+    DialogueText: NPC Dialogue
+    Position: {x: 1686.3999, y: -9.6}
+    type: 0
+    succes: 0
+    switchValue: 0
   - Guid: c35a1db9-7c14-4d41-ae70-b7aafe171a22
     DialogueText: NPC Dialogue
-    Position: {x: 1360, y: 513}
+    Position: {x: 1644.7999, y: 423.19998}
     type: 0
     succes: 1
+    switchValue: 0
   exposedProperties: []
   CommentBlockData: []

@@ -7,6 +7,7 @@ public class FirstPersonMode : MonoBehaviour
     TwoDimensionalMovement player;
     public Camera firstPersonCamera;
     [SerializeField] ThoughtBubble firstPersonThoughts;
+    [SerializeField] DialogueManager OpenDialogue;
     // Start is called before the first frame update
     void Awake()
     {
@@ -18,6 +19,11 @@ public class FirstPersonMode : MonoBehaviour
         firstPersonCamera.gameObject.SetActive(true);
         if (firstPersonThoughts != null)
             firstPersonThoughts.ActiveListener(true);
+        if(OpenDialogue != null) {
+            OpenDialogue.gameObject.SetActive(true);
+            OpenDialogue.StartDialogue();
+            OpenDialogue.firstPersonMode = this;
+        }
     }
 
     public void ExitFirstPerson() {

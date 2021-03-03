@@ -17,37 +17,41 @@ MonoBehaviour:
     PortName: Next
     TargetNodeGuid: 1d5d5dfe-4340-4d59-9f93-192bdf18b7d8
   - BaseNodeGuid: 1d5d5dfe-4340-4d59-9f93-192bdf18b7d8
-    PortName: False
+    PortName: 0
     TargetNodeGuid: bd129ca7-bd17-4449-a7d6-74cd6b8993a3
+  - BaseNodeGuid: afc004b4-99f0-43fc-b4e8-5528d385f7b5
+    PortName: Output
+    TargetNodeGuid: 4daf8b8d-206d-428f-af2d-3655f7e6aea3
   - BaseNodeGuid: 1d5d5dfe-4340-4d59-9f93-192bdf18b7d8
-    PortName: True
+    PortName: 1
     TargetNodeGuid: afc004b4-99f0-43fc-b4e8-5528d385f7b5
   - BaseNodeGuid: bd129ca7-bd17-4449-a7d6-74cd6b8993a3
     PortName: Output
     TargetNodeGuid: 4daf8b8d-206d-428f-af2d-3655f7e6aea3
-  - BaseNodeGuid: afc004b4-99f0-43fc-b4e8-5528d385f7b5
-    PortName: Output
-    TargetNodeGuid: 4daf8b8d-206d-428f-af2d-3655f7e6aea3
   DialogueNodeData:
-  - Guid: bd129ca7-bd17-4449-a7d6-74cd6b8993a3
-    DialogueText: There she is.
-    Position: {x: 332, y: 76}
-    type: 1
-    succes: 0
-  - Guid: afc004b4-99f0-43fc-b4e8-5528d385f7b5
-    DialogueText: Maybe I should go talk to her...
-    Position: {x: 333, y: 182}
-    type: 1
-    succes: 0
   - Guid: 1d5d5dfe-4340-4d59-9f93-192bdf18b7d8
     DialogueText: NPC Dialogue
     Position: {x: 184, y: 108}
     type: 3
     succes: 0
+    switchValue: 0
   - Guid: 4daf8b8d-206d-428f-af2d-3655f7e6aea3
     DialogueText: NPC Dialogue
-    Position: {x: 595, y: 132}
+    Position: {x: 635.2, y: 124}
     type: 0
     succes: 0
+    switchValue: 0
+  - Guid: afc004b4-99f0-43fc-b4e8-5528d385f7b5
+    DialogueText: Maybe I should go talk to her...
+    Position: {x: 385.6, y: 153.6}
+    type: 1
+    succes: 0
+    switchValue: 0
+  - Guid: bd129ca7-bd17-4449-a7d6-74cd6b8993a3
+    DialogueText: There she is.
+    Position: {x: 385.6, y: 56.8}
+    type: 1
+    succes: 0
+    switchValue: 0
   exposedProperties: []
   CommentBlockData: []
